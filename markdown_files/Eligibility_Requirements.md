@@ -1,4 +1,6 @@
 
+# Eligibility Requirements
+
 This section is for more **study-specific requirements** that are not included in our [[available pre-screeners]].
 
 >[!question]

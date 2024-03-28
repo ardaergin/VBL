@@ -5,31 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <!-- Include Bootstrap for styling if you prefer -->
+    <!-- Load Bootstrap first -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Your custom styles should come after Bootstrap -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
+
             <!-- Navigation Pane -->
             <div class="col-md-3">
-                <div class="list-group">
-                    <!-- These links should correspond to your Flask app routes -->
-                    <a href="{{ url_for('show_page', page_name='home') }}" class="list-group-item list-group-item-action">Home</a>
-                    <a href="{{ url_for('show_page', page_name='page1') }}" class="list-group-item list-group-item-action">Page 1</a>
-                    <a href="{{ url_for('show_page', page_name='page2') }}" class="list-group-item list-group-item-action">Page 2</a>
-                    <!-- Add more links as needed -->
+
+                <!-- Logo -->
+                <div class="logo-container mb-3">
+                    <a href="{{ url_for('show_page', page_name='home') }}">
+                        <img src="{{ url_for('static', filename='images/vu_logo.png') }}" alt="Logo" class="img-fluid">
+                    </a>
+                </div>
+
+                <!-- Navigation Pane -->
+                <div id="accordion">
+                    {% for section in navigation %}
+                    <div class="card">
+                        <div class="card-header" id="heading{{ loop.index }}">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
+                                    {{ section.title }}
+                                </button>
+                            </h5>
+                        </div>
+                
+                        <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#accordion">
+                            <div class="card-body">
+                                {% for page in section.pages %}
+                                <a href="{{ url_for('show_page', page_name=page.name) }}">{{ page.display }}</a>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
                 </div>
             </div>
 
             <!-- Main Content Area -->
             <div class="col-md-9">
                 <div class="content-container">
-                    <!-- Table of contents will be inserted here by the 'toc' extension if present -->
+                    <!-- Table of contents will be inserted here by the 'toc' extension if present 
                     <div class="toc">
                         {{ toc|safe }}
-                    </div>
+                    </div> -->
                     <!-- Your main content goes here -->
                     {% block content %}
                     <!-- The content from markdown files will be rendered inside this block -->
@@ -39,5 +65,23 @@
             </div>
         </div>
     </div>
+    <!-- Optional: Include jQuery if it's not already included -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+    <script>
+        function toggleVisibility(id) {
+            var x = document.getElementById(id);
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
+
 </body>
 </html>

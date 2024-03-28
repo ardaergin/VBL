@@ -1,3 +1,6 @@
+
+# Create, modify, or Schedule Time Slots
+
 Go to “My Studies” in the menu at the top. You will see all studies (experiments); now click “Time slots” to the right of the study you want to give time slots. You will be shown a display of the current schedule/time slots. If you have not yet posted any times lots none will appear.
 
 - To add one new time slot click the ‘Add A Time slot’ statement

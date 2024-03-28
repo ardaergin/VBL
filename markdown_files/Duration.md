@@ -1,4 +1,6 @@
 
+# Duration
+
 Here you insert the time in minutes needed for the completion of the study by the participants. 
 
 Please **round the time** of your study e.g., 8 min to 10 or 3 min to 5 min as the coordinators give research per 5 minutes of participation. 

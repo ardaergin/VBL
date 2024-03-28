@@ -1,0 +1,43 @@
+<!-- templates/base.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <!-- Include Bootstrap for styling if you prefer -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Navigation Pane -->
+            <div class="col-md-3">
+                <div class="list-group">
+                    <!-- These links should correspond to your Flask app routes -->
+                    <a href="{{ url_for('show_page', page_name='home') }}" class="list-group-item list-group-item-action">Home</a>
+                    <a href="{{ url_for('show_page', page_name='page1') }}" class="list-group-item list-group-item-action">Page 1</a>
+                    <a href="{{ url_for('show_page', page_name='page2') }}" class="list-group-item list-group-item-action">Page 2</a>
+                    <!-- Add more links as needed -->
+                </div>
+            </div>
+
+            <!-- Main Content Area -->
+            <div class="col-md-9">
+                <div class="content-container">
+                    <!-- Table of contents will be inserted here by the 'toc' extension if present -->
+                    <div class="toc">
+                        {{ toc|safe }}
+                    </div>
+                    <!-- Your main content goes here -->
+                    {% block content %}
+                    <!-- The content from markdown files will be rendered inside this block -->
+                    {{ content|safe }}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

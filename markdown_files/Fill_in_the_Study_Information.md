@@ -1,10 +1,10 @@
 
 # Fill in the Study Information
 
-After you [[select the study type]], you will need to fill in your study information.
+After you select the study type, you will need to fill in your study information.
 
->[!screenshot]-
->![[Screen Shot 2024-02-19 at 14.16.36.png]]
+>[!screenshot]- <i class="fa-solid fa-camera"></i> &nbsp Image: Fill in Study Information
+><img src="/static/images/fill_study_info.png" alt="Add New Study" class="responsive-image">
 
 The first section of the study planner contains information about the **'promotion' of the study**. This is information that will be visible for students when they are able to register for the study. Please fill in:
 

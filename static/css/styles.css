@@ -170,11 +170,15 @@ p {
 
 
 /* Callout Styles */
+
+/* GENERAL */
 .callout {
     padding: 15px;
     margin: 20px 0;
     border-left: 4px solid;
+    border-width: 20px;
     background-color: #d7eaff;
+    padding-left: 20px; /* Give enough space for the icon */
 }
 
 .callout button {
@@ -184,40 +188,8 @@ p {
     text-align: left;
     padding: 0;
     font-size: 1em;
-    color: #0b7000;
     cursor: pointer;
 }
-
-/* Style for different types of callouts */
-.callout-info {
-    border-color: #0b7000; /* Info blue */
-}
-
-
-.callout-screenshot {
-    border-color: #f9ff4c; /* Info blue */
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
-    padding-left: 40px; /* Give enough space for the icon */
-}
-
-
-
-
-.callout-success {
-    border-color: #4CAF50; /* Green for success */
-}
-
-/* Add additional styles for other types of callouts as needed */
-.callout-warning {
-    border-color: #ffeb3b; /* Yellow for warning */
-}
-
-.callout-danger {
-    border-color: #f44336; /* Red for danger */
-}
-
-/* ... and so on for other types like 'info', 'note', etc. */
-
 .callout ul, .callout ol {
     padding-left: 20px; /* Adjust as needed for indentation */
     margin-left: 1em;
@@ -228,8 +200,58 @@ p {
 }
 
 
-/* Images */
-.img-responsive {
-    max-width: 100%; /* This makes the image responsive, it will never be larger than its container */
-    height: auto; /* This keeps the aspect ratio intact */
+
+/* SCREENSHOT */
+.callout-screenshot {
+    border-color: #5f2eb9; /* Info blue */
 }
+.callout-screenshot button {
+    color: #5f2eb9;
+}
+
+/* WARNING */
+.callout-warning {
+    border-color: #ff3b3b; 
+}
+.callout-warning button {
+    color: #ff3b3b; 
+}
+
+/* ERROR */
+/*    <i class="fa-regular fa-circle-xmark"></i>    */
+.callout-error {
+    border-color: #ff3b3b;
+}
+.callout-error button {
+    color: #ff3b3b;
+}
+
+/* SUCCESS */
+/*    <i class="fa-regular fa-thumbs-up"></i>    */
+.callout-success {
+    border-color: #4CAF50;
+}
+.callout-success button {
+    color: #4CAF50;
+}
+
+/* INFO */
+/*    <i class="fa-solid fa-info"></i>    */
+.callout-info {
+    border-color: #3532e7; /* Info blue */
+}
+.callout-info button {
+    color: #3532e7;
+}
+
+
+
+
+
+
+
+.responsive-image {
+    width: 98%; /* or any percentage that suits your design */
+    height: auto; /* keeps the aspect ratio */
+  }
+  

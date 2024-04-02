@@ -3,7 +3,6 @@
 Setting up your study in the SONA Pool is easier than you think! Just follow the steps below, and in case your study has special requirements, contact [vbl@vu.nl](mailto:vbl@vu.nl).
 
 ### Step 1: Study Creation
-
 1) Log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**		
 2) [Create a New Study](Create_a_New_Study):		
 

@@ -26,7 +26,7 @@ NAVIGATION = [
 ]
 
 CALLOUT_RE = re.compile(
-    r">\[\!(\w+)\]\-(.*?)\n((?:>\s?.*?\n)+)(?=\n[^>]|$)",
+    r">\[\!(\w+)\](.*?)\n((?:>\s?.*?\n)+)(?=\n[^>]|$)",
     re.MULTILINE | re.DOTALL
 )
 

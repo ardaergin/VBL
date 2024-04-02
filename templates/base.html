@@ -52,6 +52,16 @@
 
             <!-- Main Content Area -->
             <div class="col-md-9">
+                <nav aria-label="breadcrumb" style="font-size: 1rem;">
+                    <ol class="breadcrumb">
+                      {% for crumb in breadcrumb_path %}
+                      <li class="breadcrumb-item">
+                        <a href="{{ url_for('show_page', page_name=crumb.name) }}">{{ crumb.display }}</a>
+                      </li>
+                      {% endfor %}
+                    </ol>
+                </nav>
+
                 <div class="content-container">
                     <!-- Table of contents will be inserted here by the 'toc' extension if present 
                     <div class="toc">

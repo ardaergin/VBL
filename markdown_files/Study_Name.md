@@ -1,3 +1,8 @@
+---
+title: "Study Name"
+parent: "Fill_in_the_Study_Information"
+display: "Study Name"
+---
 
 # Study Name
 

@@ -105,7 +105,7 @@ p {
     text-align: left;
     width: 100%;
     padding: 0.5em 1em; /* Increased padding */
-    font-size: 1em; /* Increased font size */
+    font-size: 0.8em; /* Increased font size */
     text-decoration: none;
     box-sizing: border-box; /* Ensures padding is included in width */
 }
@@ -121,7 +121,7 @@ p {
     display: block;
     color: #868e96;
     padding: 0.5em 1em; /* Increased padding */
-    font-size: 1em; /* Set font size */
+    font-size: 0.75em; /* Set font size */
     text-decoration: none;
     box-sizing: border-box; /* Ensures padding is included in width */
 }
@@ -254,4 +254,12 @@ p {
     width: 98%; /* or any percentage that suits your design */
     height: auto; /* keeps the aspect ratio */
   }
-  
+
+
+
+
+
+
+
+
+

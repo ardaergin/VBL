@@ -1,12 +1,12 @@
 page_hierarchy = {
     "home": 0,
 
-    "overview-on-requesting-a-study": {
+    "overview-on-conducting-a-study": {
         "parent": "home", 
-        "display": "Overview on Requesting a Study"
+        "display": "Overview on Conducting a Study"
         },
     "create-a-new-study": {
-        "parent": "overview-on-requesting-a-study", 
+        "parent": "overview-on-conducting-a-study", 
         "display": "Create a New Study"
         },
         "Select_the_Study_Type": {

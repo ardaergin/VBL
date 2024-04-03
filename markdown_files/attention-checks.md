@@ -1,7 +1,9 @@
 
+# Attention Checks
+
 Even though it is not mandatory, we strongly advise you to incorporate attention checks in your survey, as the process of [[Granting or Denying Payment]] will be much easier for you if you do so.
 
->[!example]- Example: Attention Check Item
+>[!example] Example: Attention Check Item
 >"This is an attention check item, please select 'four' as your response."
 
 ---

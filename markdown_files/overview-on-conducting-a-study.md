@@ -1,4 +1,4 @@
-# Overview on Requesting a Study
+# Overview on Conducting a Study through VBL
 
 Setting up your study in the SONA Pool is easier than you think! Just follow the steps below, and in case your study has special requirements, contact [vbl@vu.nl](mailto:vbl@vu.nl).
 

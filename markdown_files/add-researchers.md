@@ -1,8 +1,9 @@
 
+# Adding Researchers to Your Study
+
 Here you select your name as a researcher.
 
 ==You can also add colleagues from VU.== ==It is important that the research assistants are added to the study so that they can open and administer time slots.==
-
 
 
 **These feel obsolete**: 

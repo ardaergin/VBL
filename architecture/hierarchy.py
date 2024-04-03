@@ -1,12 +1,12 @@
 page_hierarchy = {
     "home": 0,
 
-    "Request_a_Physical_Lab_or_Online_Study": {
+    "overview-on-requesting-a-study": {
         "parent": "home", 
         "display": "Overview on Requesting a Study"
         },
-    "Create_a_New_Study": {
-        "parent": "Request_a_Physical_Lab_or_Online_Study", 
+    "create-a-new-study": {
+        "parent": "overview-on-requesting-a-study", 
         "display": "Create a New Study"
         },
         "Select_the_Study_Type": {

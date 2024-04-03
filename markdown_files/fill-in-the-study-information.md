@@ -8,18 +8,18 @@ After you select the study type, you will need to fill in your study information
 
 The first section of the study planner contains information about the **'promotion' of the study**. This is information that will be visible for students when they are able to register for the study. Please fill in:
 
-1. [Study Name](Study_Name)
-2. [Brief Abstract](Brief_Abstract)
-3. [Detailed Description of the Study](Detailed_Description_of_the_Study)
+1. [Study Name](study-name)
+2. [Brief Abstract](brief-abstract)
+3. [Detailed Description of the Study](detailed-description)
 4. Language
-5. [Eligibility Requirements](Eligibility_Requirements)
-6. [Duration](Duration)
+5. [Eligibility Requirements](eligibility-requirements)
+6. [Duration](duration)
 7. Payment
-8. [Preparation](Preparation)
-9. [Researcher](Researcher)
-10. [IRB Approval Code](Ethical_Approval)
+8. [Preparation](preparation)
+9. [(Add) Researcher(s)](add-researchers)
+10. [IRB Approval Code](ethical-approval)
 
-Make sure to check out the pages above if you have not set up a study in SONA before. In the next stage of the process, we will conduct an [initial study verification](Initial_Study_Verification), where we will carefully review your study information. Studies with missing information will be **rejected**. 
+Make sure to check out the pages above if you have not set up a study in SONA before. In the next stage of the process, we will conduct an [initial study verification](initial-study-verification), where we will carefully review your study information. Studies with missing information will be **rejected**. 
 
 Avoid these **most common mistakes** that lead to the rejection of a study:
 

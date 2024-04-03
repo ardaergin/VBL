@@ -9,7 +9,7 @@ Additionally, explain **who organizes** the studies and mention the **collaborat
 
 For your ease, you can **copy-paste the following text**. Adjust the `{...}` fields according to your study.
 
->[!info]- <i class="fa-solid fa-info"></i> &nbsp Text to Copy Paste 
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Text to Copy Paste 
 ><br>
 > This study will take approximately {...} minutes. The study language is {...}. Payments will only be allocated when you carefully up on all instructions of the researchers.   
 >  

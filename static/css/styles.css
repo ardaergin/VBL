@@ -14,20 +14,20 @@ body, h1, h2, h3, p, button { /* Added button to the list */
 
 body {
     background-color: #f8f9fa;
-    font-size: 22px; /* Increase the font size as needed */
+    font-size: 1.25em; /* Increase the font size as needed */
 }
 
 h1 {
     color: #007bff;
-    font-size: 2.5em; /* Larger size for h1 */
+    font-size: 2em; /* Larger size for h1 */
 }
 
 h2 {
-    font-size: 2em; /* Larger size for h2 */
+    font-size: 1.75em; /* Larger size for h2 */
 }
 
 h3 {
-    font-size: 1.75em; /* Larger size for h3 */
+    font-size: 1.5em; /* Larger size for h3 */
 }
 
 p {
@@ -36,21 +36,8 @@ p {
 
 
 
-/* Navigation Pane Styles */
-.list-group-item {
-    background-color: #f8f9fa;
-    color: #333;
-    border: none; /* Remove borders */
-}
-.list-group-item:hover,
-.list-group-item:focus {
-    background-color: #e9ecef;
-    color: #000;
-}
-.list-group-item.active {
-    background-color: #007bff;
-    color: #fff;
-}
+
+
 
 
 
@@ -58,9 +45,9 @@ p {
 
 /* Main Content Styles */
 .content-container {
-    max-width: 800px;
+    max-width: 70%;
     margin: auto;
-    padding: 20px;
+    padding: 25px;
 }
 
 /* Style for unordered list items */
@@ -88,7 +75,13 @@ p {
 
 
 
-/* Accordion Styles */
+
+
+
+
+
+
+/* Navigation Pane (Accordion) Styles */
 #accordion .card {
     border: none;
     background: none;
@@ -97,15 +90,15 @@ p {
 #accordion .card-header {
     background-color: #0b5dae;
     border-bottom: none;
-    padding: 0.5em 1em; /* Increased padding */
+    padding: 0.5em 1em;
 }
 
 #accordion .btn-link {
     color: white;
     text-align: left;
     width: 100%;
-    padding: 0.5em 1em; /* Increased padding */
-    font-size: 0.8em; /* Increased font size */
+    padding: 0.5em 1em;
+    font-size: 0.8em;
     text-decoration: none;
     box-sizing: border-box; /* Ensures padding is included in width */
 }
@@ -121,7 +114,7 @@ p {
     display: block;
     color: #868e96;
     padding: 0.5em 1em; /* Increased padding */
-    font-size: 0.75em; /* Set font size */
+    font-size: 0.8em; /* Set font size */
     text-decoration: none;
     box-sizing: border-box; /* Ensures padding is included in width */
 }
@@ -145,6 +138,10 @@ p {
 
 
 
+
+
+
+
 /* Responsive and Helper Classes */
 /* These are generally utility classes to help with spacing and responsiveness */
 .row.no-gutters {
@@ -162,6 +159,9 @@ p {
     max-width: 100%;
     height: auto;
 }
+
+
+
 
 
 
@@ -198,8 +198,6 @@ p {
 .callout li {
     margin-bottom: 10px; /* Space between list items */
 }
-
-
 
 /* SCREENSHOT */
 .callout-screenshot {
@@ -250,16 +248,10 @@ p {
 
 
 
+
+
+/* Images */
 .responsive-image {
     width: 98%; /* or any percentage that suits your design */
     height: auto; /* keeps the aspect ratio */
   }
-
-
-
-
-
-
-
-
-

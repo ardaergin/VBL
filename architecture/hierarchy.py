@@ -1,56 +1,83 @@
 page_hierarchy = {
     "home": 0,
 
+    "how-to-participate": {
+        "parent": "home", 
+        "display": "How to Participate"
+        },
+    
     "overview-on-conducting-a-study": {
         "parent": "home", 
         "display": "Overview on Conducting a Study"
         },
-    "create-a-new-study": {
-        "parent": "overview-on-conducting-a-study", 
-        "display": "Create a New Study"
-        },
-        "Select_the_Study_Type": {
-            "parent": "Create_a_New_Study", 
-            "display": "Select the Study Type"
+
+        "create-a-new-study": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Create a New Study"
             },
-            
-        "Fill_in_the_Study_Information": {
-            "parent": "Create_a_New_Study", 
-            "display": "Fill in the Study Information"
+            "select-the-study-type": {
+                "parent": "create-a-new-study", 
+                "display": "Select the Study Type"
+                },
+                
+            "fill-in-the-study-information": {
+                "parent": "create-a-new-study", 
+                "display": "Fill in the Study Information"
+                },
+
+                "study-name": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Study Name"
+                    },
+                "brief-abstract": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Brief Abstract"
+                    },
+                "detailed-description": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Detailed Description"
+                    },
+                "eligibility-requirements": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Eligibility Requirements"
+                    },
+                "duration": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Duration"
+                    },
+                "preparation": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Preparation"
+                    },
+                "ethical-approval": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Ethical Approval"
+                    },
+
+        "initial-study-verification": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Initial Study Verification"
             },
 
-            "Study_Name": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Study Name"
-                },
-            "Brief_Abstract": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Brief Abstract"
-                },
-            "Detailed_Description": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Detailed Description"
-                },
-            "Eligibility_Requirements": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Eligibility Requirements"
-                },
-            "Duration": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Duration"
-                },
-            "Preparation": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Preparation"
-                },
-            "Duration": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Duration"
-                },
-            "Ethical_Approval": {
-                "parent": "Fill_in_the_Study_Information", 
-                "display": "Ethical Approval"
-                },
+        "schedule-a-pilot-testing": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Schedule a Pilot Testing"
+            },
+        
+        "pick-available-dates": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Pick Available Dates"
+            },
+
+        "arranging-time-slots": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Arranging Time Slots"
+            },
+        
+        "arranging-time-slots": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Arranging Time Slots"
+            },
             
 }
 

@@ -255,3 +255,19 @@ p {
     width: 98%; /* or any percentage that suits your design */
     height: auto; /* keeps the aspect ratio */
   }
+
+
+
+
+
+/* Slider */
+
+input[type="range"] {
+    width: 100%; /* Full-width slider */
+    margin: 10px 0; /* Some vertical space around the slider */
+}
+
+/* Styling for the display elements */
+#timeDisplay, #totalAmount {
+    font-weight: bold;
+}

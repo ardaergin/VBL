@@ -11,3 +11,10 @@ $(document).ready(function(){
 });
 
 
+function updateAmount() {
+    var ratePerMinute = 0.17; // Change the rate here
+    var minutes = document.getElementById("timeSlider").value;
+    document.getElementById("timeDisplay").textContent = minutes;
+    var totalAmount = ratePerMinute * minutes;
+    document.getElementById("totalAmount").textContent = `€${totalAmount.toFixed(2)}`;
+}

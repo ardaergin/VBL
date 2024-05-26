@@ -11,7 +11,7 @@ For a smoother process:
 1. Make sure you have your [ethical approval](ethical-approval).        
 2. Know your [desired number of participants](desired-number-of-participants).      
 3. Incorporate [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
-4. If you would like to have any prescreeners for your study, check out how to do it [here](prescreeners).      
+4. Are you planning to only allow participation based on a certain criteria? Then you should check out how to set up an initial [prescreening study](prescreening-study).
 
 <br>
 
@@ -26,8 +26,6 @@ For a smoother process:
 
 ### Step 2: After Creating Your Study
 
-(*divide this part into two seperate pages possibly*?)
-
 After creating your study, **contact us** for [Initial Study Verification](initial-study-verification) at [vbl@vu.nl](mailto:vbl@vu.nl).
 
 After we have verified your study details and have given you a green light,	if you have **an Online Study**, you can simply [Submit your Study for Final Approval](submission-for-final-approval), and wait for us to launch your study!
@@ -35,8 +33,8 @@ After we have verified your study details and have given you a green light,	if y
 On the other hand, if you have **a Physical Lab Study**:	
 
 1. First, we would like you to [Schedule a Pilot Testing](schedule-a-pilot-testing) with us			
-2. After a successful pilot testing, [Pick Available Dates](pick-available-dates) for the Lab		
-3. After selecting the dates for the lab, you can [create time slots](arranging-time-slots) for participants in SONA.			
+2. After a successful pilot testing, [make a reservation for the lab](lab-reservation) in which you would like your research to be conducted		
+3. After selecting the dates for the lab, you can [create time slots](arranging-time-slots) for participants in SONA.		
 
 <br>
 

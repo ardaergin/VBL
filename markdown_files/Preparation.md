@@ -1,4 +1,6 @@
 
+# Preparation
+
 For this section, enter any preparation a student must do **before the actual study** participation.
 
 >[!example] Examples for Preparation Requests

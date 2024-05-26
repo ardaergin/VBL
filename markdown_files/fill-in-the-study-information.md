@@ -14,7 +14,7 @@ The first section of the study planner contains information about the 'promotion
 4. Language
 5. [Eligibility Requirements](eligibility-requirements)
 6. [Duration](duration)
-7. Payment
+7. [Payment](payment)
 8. [Preparation](preparation)
 9. [(Add) Researcher(s)](add-researchers)
 10. [IRB Approval Code](ethical-approval)

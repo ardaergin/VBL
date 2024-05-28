@@ -10,22 +10,25 @@
     <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
     <!-- Your custom styles should come after Bootstrap -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-
 </head>
 <body>
     <div class="container-fluid">
         <div class="row">
-
             <!-- Navigation Pane -->
             <div class="col-md-3">
-
                 <!-- Logo -->
                 <div class="logo-container mb-3">
-                    <a href="{{ url_for('show_page', page_name='home') }}">
+                    <a href="{{ url_for('main.show_page', page_name='home') }}">
                         <img src="{{ url_for('static', filename='images/logo.webp') }}" alt="Logo" class="img-fluid">
                     </a>
                 </div>
 
+                <!-- Search Form -->
+                <form class="form-inline my-2 my-lg-0 search-form" action="{{ url_for('search.search') }}" method="get">
+                    <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" name="q">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+                
                 <!-- Navigation Pane -->
                 <div id="accordion">
                     {% for section in navigation %}
@@ -37,11 +40,10 @@
                                 </button>
                             </h5>
                         </div>
-                
                         <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#accordion">
                             <div class="card-body">
                                 {% for page in section.pages %}
-                                <a href="{{ url_for('show_page', page_name=page.name) }}">{{ page.display }}</a>
+                                <a href="{{ url_for('main.show_page', page_name=page.name) }}">{{ page.display }}</a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -56,18 +58,13 @@
                     <ol class="breadcrumb">
                       {% for crumb in breadcrumb_path %}
                       <li class="breadcrumb-item">
-                        <a href="{{ url_for('show_page', page_name=crumb.name) }}">{{ crumb.display }}</a>
+                        <a href="{{ url_for('main.show_page', page_name=crumb.name) }}">{{ crumb.display }}</a>
                       </li>
                       {% endfor %}
                     </ol>
                 </nav>
 
                 <div class="content-container">
-                    <!-- Table of contents will be inserted here by the 'toc' extension if present 
-                    <div class="toc">
-                        {{ toc|safe }}
-                    </div> -->
-                    <!-- Your main content goes here -->
                     {% block content %}
                     <!-- The content from markdown files will be rendered inside this block -->
                     {{ content|safe }}
@@ -80,9 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-
     <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-
     <script>
         function toggleVisibility(id) {
             var x = document.getElementById(id);
@@ -93,6 +88,5 @@
             }
         }
     </script>
-
 </body>
 </html>

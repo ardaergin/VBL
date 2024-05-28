@@ -10,15 +10,15 @@ NAVIGATION = [
     {
         "title": "Participate in Research as a Student",
         "pages": [
-            {"name": "overview-on-requesting-a-study", "display": "How to Participate"},
+            {"name": "how-to-participate", "display": "How to Participate"},
             {"name": "faq-for-students", "display": "FAQ"}
         ]
     },
     {
         "title": "About us",
         "pages": [
-            {"name": "conduct_study", "display": "Who are we?"},
-            {"name": "Log_in_to_SONA", "display": "Contact"}
+            {"name": "who-are-we", "display": "Who are we?"},
+            {"name": "contact", "display": "Contact"}
         ]
     },
 

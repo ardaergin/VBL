@@ -24,10 +24,10 @@
                 </div>
 
                 <!-- Search Form -->
-                <form class="form-inline my-2 my-lg-0 search-form" action="{{ url_for('search.search') }}" method="get">
-                    <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" name="q">
+                <form id="search-form" class="form-inline my-2 my-lg-0 search-form" onsubmit="event.preventDefault(); performSearch();">
+                    <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" name="query" id="search-query">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
+                </form>                
                 
                 <!-- Navigation Pane -->
                 <div id="accordion">
@@ -70,6 +70,10 @@
                     {{ content|safe }}
                     {% endblock %}
                 </div>
+
+                <div id="search-results-container">
+                    <!-- Search results will be rendered here -->
+                </div>
             </div>
         </div>
     </div>
@@ -87,6 +91,37 @@
                 x.style.display = "none";
             }
         }
+    
+        function performSearch() {
+            const query = document.getElementById('search-query').value;
+            console.log('Search function triggered with query: ' + query);
+            fetch("{{ url_for('search.search') }}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: query })
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "{{ url_for('search.results_page') }}";
+                } else {
+                    response.json().then(data => {
+                        const container = document.getElementById('search-results-container');
+                        container.innerHTML = `<p>${data.error}</p>`;
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+
+    
+        // Add a function to capitalize the first letter of each word
+        String.prototype.capitalize = function() {
+            return this.replace(/\b\w/g, function(char) { return char.toUpperCase(); });
+        };
     </script>
+    
 </body>
 </html>

@@ -1,8 +1,7 @@
 from flask import Blueprint, render_template, request
 import os
-from utils.utils import markdown_to_html
-from architecture.navigation import NAVIGATION
-from architecture.hierarchy import full_page_hierarchy
+from app.utils import markdown_to_html
+from app.utils import NAVIGATION, full_page_hierarchy
 
 bp = Blueprint('main', __name__)
 

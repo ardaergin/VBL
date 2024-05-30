@@ -1,7 +1,7 @@
 import faiss
 import numpy as np
 import json
-from nlp import generate_embeddings
+from search.nlp import generate_embeddings
 
 def load_embeddings(file_path):
     return np.load(file_path)

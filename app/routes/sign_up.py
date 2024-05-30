@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash
 import csv
-from architecture.navigation import NAVIGATION
+from app.utils import NAVIGATION
 
 bp = Blueprint('sign_up', __name__)
 

@@ -4,7 +4,7 @@ from whoosh.fields import Schema, TEXT, ID
 from whoosh.qparser import QueryParser
 import os
 import markdown
-from architecture.navigation import NAVIGATION
+from utils.navigation import NAVIGATION
 
 bp = Blueprint('search', __name__)
 

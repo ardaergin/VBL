@@ -1,6 +1,6 @@
 import json
 import numpy as np
-from embedding_utils import initialize_model_and_tokenizer, embed_text
+from app.utils.embedding_utils import initialize_model_and_tokenizer, embed_text
 
 def load_json_file(file_path):
     """

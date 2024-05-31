@@ -3,7 +3,7 @@ import os
 import json
 import logging
 import uuid
-from app.utils import embed_text
+from app.utils import initialize_model_and_tokenizer, embed_text
 from app.services import load_embeddings_metadata, create_faiss_index
 import gc
 
@@ -12,6 +12,10 @@ bp = Blueprint('search', __name__)
 
 # Setup logging to record information and errors
 logging.basicConfig(level=logging.INFO)
+
+# Initialize the tokenizer and model for embedding text
+tokenizer, model, device = initialize_model_and_tokenizer()
+logging.info("Model and tokenizer loaded successfully on %s", device)
 
 # Load the embeddings and metadata from files
 embeddings, metadata = load_embeddings_metadata()
@@ -40,7 +44,7 @@ def search():
             return jsonify({"error": "Invalid input"}), 400
 
         # Embed the query text
-        query_embedding = embed_text(query).reshape(1, -1)
+        query_embedding = embed_text(query, tokenizer, model, device).reshape(1, -1)
         logging.info("Query embedding created successfully")
 
         # Perform the search using the FAISS index

@@ -1,7 +1,6 @@
 import json
-import torch
-from transformers import AutoTokenizer, AutoModel
 import numpy as np
+from embedding_utils import initialize_model_and_tokenizer, embed_text
 
 def load_json_file(file_path):
     """
@@ -14,7 +13,6 @@ def load_json_file(file_path):
         data = json.load(json_file)
     return data
 
-
 def generate_embeddings(texts, model_name='sentence-transformers/all-MiniLM-L6-v2'):
     """
     Generate embeddings for a list of texts using a pre-trained model.
@@ -23,26 +21,9 @@ def generate_embeddings(texts, model_name='sentence-transformers/all-MiniLM-L6-v
     :param model_name: Name of the pre-trained model to use.
     :return: Numpy array of embeddings.
     """
-    # This was necessary because of memory issues
-    device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-
-    # Load the tokenizer and model for embedding text
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
+    tokenizer, model, device = initialize_model_and_tokenizer(model_name)
     
-    def embed_text(text):
-        """
-        Embed a single text using the pre-trained model.
-
-        :param text: Text to be embedded.
-        :return: Embedding vector as a numpy array.
-        """
-        inputs = tokenizer(text, return_tensors='pt', truncation=True, padding=True, max_length=512)
-        with torch.no_grad():
-            embeddings = model(**inputs).last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
-        return embeddings
-    
-    embeddings = [embed_text(text) for text in texts]
+    embeddings = [embed_text(text, tokenizer, model, device) for text in texts]
     return np.array(embeddings)
 
 def main():

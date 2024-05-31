@@ -3,7 +3,8 @@ import os
 import json
 import logging
 import uuid
-from app.services.embedding_service import embed_text, create_faiss_index, load_embeddings_metadata
+from app.utils import embed_text
+from app.services import load_embeddings_metadata, create_faiss_index
 import gc
 
 # Define a Blueprint for the search functionality

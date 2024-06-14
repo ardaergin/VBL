@@ -1,6 +1,11 @@
 import torch
 from transformers import AutoTokenizer, AutoModel
 import gc
+import os
+
+# Set proxy environment variables
+os.environ['HTTP_PROXY'] = "http://proxy.labs.vu.nl"
+os.environ['HTTPS_PROXY'] = "http://proxy.labs.vu.nl"
 
 def initialize_model_and_tokenizer(model_name='sentence-transformers/all-MiniLM-L6-v2'):
     """

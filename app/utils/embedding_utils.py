@@ -3,10 +3,6 @@ from transformers import AutoTokenizer, AutoModel
 import gc
 import os
 
-# Set proxy environment variables
-os.environ['HTTP_PROXY'] = "http://proxy.labs.vu.nl"
-os.environ['HTTPS_PROXY'] = "http://proxy.labs.vu.nl"
-
 def initialize_model_and_tokenizer(model_name='sentence-transformers/all-MiniLM-L6-v2'):
     """
     Initialize the model and tokenizer.
@@ -20,9 +16,13 @@ def initialize_model_and_tokenizer(model_name='sentence-transformers/all-MiniLM-
     # This was necessary because of memory issues
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-    # Load the tokenizer and model for embedding text
-    tokenizer = AutoTokenizer.from_pretrained(model_name)
-    model = AutoModel.from_pretrained(model_name).to(device)
+    # Load the tokenizer and model for embedding text with proxy settings
+    proxies = {
+        "http": os.environ.get('HTTP_PROXY'),
+        "https": os.environ.get('HTTPS_PROXY')
+    }
+    tokenizer = AutoTokenizer.from_pretrained(model_name, proxies=proxies)
+    model = AutoModel.from_pretrained(model_name, proxies=proxies).to(device)
     return tokenizer, model, device
 
 def embed_text(text, tokenizer, model, device):

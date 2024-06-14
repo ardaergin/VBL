@@ -59,7 +59,11 @@ def search():
 
         # Generate a unique ID for the search results
         search_id = str(uuid.uuid4())
-        search_results_path = os.path.join('/tmp/flask_session/', f'{search_id}.json')
+        search_results_dir = '/tmp/flask_session/'
+        search_results_path = os.path.join(search_results_dir, f'{search_id}.json')
+
+        # Ensure the directory exists
+        os.makedirs(search_results_dir, exist_ok=True)
 
         # Save the search results to a file
         with open(search_results_path, 'w', encoding='utf-8') as f:

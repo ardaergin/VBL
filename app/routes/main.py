@@ -1,9 +1,13 @@
-from flask import Blueprint, render_template, request
+from flask import Blueprint, render_template, request, redirect, url_for
 import os
 from app.utils import markdown_to_html
 from app.utils import NAVIGATION, full_page_hierarchy
 
 bp = Blueprint('main', __name__)
+
+@bp.route('/')
+def index():
+    return redirect(url_for('main.show_page', page_name='home'))
 
 @bp.route('/<page_name>')
 def show_page(page_name):

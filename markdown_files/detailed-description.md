@@ -1,7 +1,7 @@
 
 # Detailed Description
 
-In this section, similar to choosing an appropriate study name and brief abstract, we do not recommend that you give detailed information about your study: **do not include any information about your hypotheses or variables**.
+In this section, similar with choosing an appropriate study name and brief abstract, we do not recommend that you give detailed information about your study: **do not include any information about your hypotheses or variables**.
 
 Do not forget to write the study description in the language of the study.
 
@@ -11,7 +11,7 @@ For your ease, you can **copy-paste the following text**. Adjust the `{...}` fie
 
 >[!info] <i class="fa-solid fa-info"></i> &nbsp Text to Copy Paste 
 ><br>
-> This study will take approximately {...} minutes. The study language is {...}. Payments will only be allocated when you carefully up on all instructions of the researchers.   
+> This study will take approximately {...} minutes. The study language is {...}. Payments will only be allocated when you carefully read instructions of the researchers.   
 >  
 > This research takes place in the Applied Behavioral Science Lab, located on the second basement level (-2) of the [Transitorium Building](https://vu.nl/en/about-vu/more-about/transitorium).   
 >  

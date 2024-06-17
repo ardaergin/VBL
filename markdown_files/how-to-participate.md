@@ -1,13 +1,13 @@
 
 # How to Participate in Research
 
-As a participant of the SBE Research Participation Project, you get to contribute to the research at VU, experience the most recent research in the fields of marketing, economics, and organizational behavior, and earn money for this contribution.
+As a participant of VBL, you get to contribute to the research at VU, experience the most recent research in the fields of marketing, economics, and organizational behavior, and earn money for this contribution.
 
 ### Paid Research Participation
 
 To do so, you can simply log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**, and participate in the available studies! When you are using VBL SONA for the first time, you will need to fill in your name, email, address, and IBAN (for payment). This data is essential for the finance department of the VU to be able to financially compensate you for your research participation. 
 
-The compensation rate is 10 EUR per hour.
+The compensation rate is **10 EUR per hour**. This rate might be higher for studies with a performance incentive.
 
 ### Online or Physical Lab Studies
 

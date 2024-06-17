@@ -33,13 +33,13 @@ After we have verified your study details and have given you a green light,	if y
 On the other hand, if you have **a Physical Lab Study**:	
 
 1. First, we would like you to [Schedule a Pilot Testing](schedule-a-pilot-testing) with us			
-2. After a successful pilot testing, [make a reservation for the lab](lab-reservation) in which you would like your research to be conducted		
+2. After a successful pilot testing, based on the availability of the lab and the research assistants, we will make a reservation for you in the lab.		
 3. After selecting the dates for the lab, you can [create time slots](arranging-time-slots) for participants in SONA.		
 
 <br>
 
 ### Step 3: The Data Collection
 
-1. We will handle the [study launch](study-launch), and students will be notified about your study		
+1. We will handle the [study launch](study-launch), and students in the VBL pool will be notified about your study		
 2. [Your Responsibility During Data Collection](responsibility-during-data-collection) 	
 3. [Granting or Denying Payment](granting-or-denying-payment)		

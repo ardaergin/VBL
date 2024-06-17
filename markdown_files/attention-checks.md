@@ -8,7 +8,7 @@ Even though it is not mandatory, we strongly advise you to incorporate attention
 
 ---
 
-We would like our researchers to make use of **at least one attention check per study**. If participants fail that attention check, please make sure these students will not receive any credits for this study. This is important to guarantee that students read instructions carefully. Make sure to reject with a message in Panl explaining that they failed the attention check(s).
+We would like our researchers to make use of **at least one attention check per study**. If participants fail that attention check, please make sure these students will not receive any credits for this study. This is important to guarantee that students read instructions carefully. Make sure to reject with a message in SONA explaining that they failed the attention check(s).
 
 Attention checks should be fair, and are the responsibility of the researcher. They should be easy to justify to colleagues and students, and decided about BEFORE the start of the study.
 
@@ -18,5 +18,5 @@ Attention checks should be fair, and are the responsibility of the researcher. T
 **At the beginning of your study:** 
 At the beginning of your study, please use the following standard form in order **to inform students that they have to pay attention**:
 
-"*ATTENTION! For the quality of the data, it is very important that participation in the session is done with care. Therefore, there will be some attention checks in the survey. If you fail to answer these questions correctly, the credits of this session will be deducted in your account (within two weeks after participation). Click the box below to indicate you have read and understood this remark, and agree with the conditions.*"
+"*ATTENTION! For the quality of the data, it is very important that participation in the session is done with care. Therefore, there will be some attention checks in the survey. If you fail to answer these questions correctly, the payment of this session will be deducted in your account (within two weeks after participation). Click the box below to indicate you have read and understood this remark, and agree with the conditions.*"
 

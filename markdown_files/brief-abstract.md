@@ -3,7 +3,7 @@
 
 Here, explain your study in **a single line** to give students a general idea about what they should expect if they participate in your study (e.g., the topic or the number of sessions).
 
-Similar to choosing an study name, do not include study specifics. 
+Similar to choosing a study name, do not include study specifics. 
 
 >[!success] <i class="fa-regular fa-thumbs-up"></i> &nbsp Example: Good Abstract
 ><br>

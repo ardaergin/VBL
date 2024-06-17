@@ -8,7 +8,7 @@ Setting up your study in the SONA Pool is easier than you think! Just follow the
 
 For a smoother process:
 
-1. Make sure you have your [ethical approval](ethical-approval).        
+1. Make sure you have your ethical approval ready. If you do not know how to obtain an ethical or what the ethical approval should look like, check the [ethical approval](ethical-approval) page.         
 2. Know your [desired number of participants](desired-number-of-participants).      
 3. Incorporate [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
 4. Are you planning to only allow participation based on a certain criteria? Then you should check out how to set up an initial [prescreening study](prescreening-study).

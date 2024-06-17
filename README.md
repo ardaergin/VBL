@@ -1,7 +1,7 @@
 
 # VBL Repository
 
-This repository is developed for VU Behavioral Lab (VBL). 
+This repository is developed for VU Behavioural Lab (VBL). 
 
 The VU Behavioural Lab (VBL) is interdisciplinary and consists of several laboratories from different disciplines – bringing together scholars from behavioural economics, psychology, organizational behaviour, marketing, public administration, law, and communication. It is designed to integrate, professionalize, and expand the facilities for behavioural experimental research, in order to stimulate research and collaborations, and to improve visibility.
 

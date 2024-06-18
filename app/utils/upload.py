@@ -3,7 +3,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
-from webdriver_manager.chrome import ChromeDriverManager
 import logging
 import time
 import os
@@ -20,9 +19,13 @@ def register_user(first_name, last_name, user_id, email):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-    # Initialize the WebDriver using webdriver-manager
-    service = Service(ChromeDriverManager().install())
-    driver = webdriver.Chrome(service=service)
+    # Set up the Chrome options to use the installed Chromium browser and Chromedriver
+    chrome_options = webdriver.ChromeOptions()
+    chrome_options.binary_location = "/usr/bin/chromium-browser"
+
+    # Initialize the WebDriver
+    service = Service("/usr/bin/chromedriver")
+    driver = webdriver.Chrome(service=service, options=chrome_options)
 
     # URL for the login page and upload page
     login_url = 'https://vu-vbl.sona-systems.com/'
@@ -99,3 +102,6 @@ def register_user(first_name, last_name, user_id, email):
         # Close the WebDriver
         logging.info('Closing the WebDriver...')
         driver.quit()
+
+# Example usage
+register_user('John', 'Doe', 'johndoe123', 'john.doe@example.com')

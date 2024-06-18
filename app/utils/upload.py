@@ -22,24 +22,26 @@ def register_user(first_name, last_name, user_id, email):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-    # Set up the Chrome options to use the installed Chromium browser and Chromedriver
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.binary_location = "/usr/bin/chromium-browser"
-
-    # Set proxy settings
-    if http_proxy and https_proxy:
-        proxy = f"{http_proxy};{https_proxy}"
-        chrome_options.add_argument(f'--proxy-server={proxy}')
-
-    # Initialize the WebDriver
-    service = Service("/usr/bin/chromedriver")
-    driver = webdriver.Chrome(service=service, options=chrome_options)
-
-    # URL for the login page and upload page
-    login_url = 'https://vu-vbl.sona-systems.com/'
-    add_user_page_url = 'https://vu-vbl.sona-systems.com/admin_update_record.aspx?p_action=AF&p_type=E'
-
     try:
+        # Set up the Chrome options to use the installed Chromium browser and Chromedriver
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.binary_location = "/snap/bin/chromium"
+
+        # Set proxy settings
+        if http_proxy and https_proxy:
+            proxy = f"{http_proxy};{https_proxy}"
+            chrome_options.add_argument(f'--proxy-server={proxy}')
+
+        # Initialize the WebDriver
+        service = Service("/snap/bin/chromium.chromedriver")
+        logging.info("Starting WebDriver service...")
+        driver = webdriver.Chrome(service=service, options=chrome_options)
+        logging.info("WebDriver started successfully")
+
+        # URL for the login page and upload page
+        login_url = 'https://vu-vbl.sona-systems.com/'
+        add_user_page_url = 'https://vu-vbl.sona-systems.com/admin_update_record.aspx?p_action=AF&p_type=E'
+
         # Open the login page
         logging.info('Opening login page...')
         driver.get(login_url)
@@ -110,3 +112,6 @@ def register_user(first_name, last_name, user_id, email):
         # Close the WebDriver
         logging.info('Closing the WebDriver...')
         driver.quit()
+
+# Example usage
+register_user('John', 'Doe', 'johndoe123', 'john.doe@example.com')

@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 import logging
+import time
 import os
 from dotenv import load_dotenv
 
@@ -14,10 +15,6 @@ load_dotenv()
 username = os.getenv('ADMIN_USERNAME')
 password = os.getenv('ADMIN_PASSWORD')
 
-# Get proxy settings from environment variables
-http_proxy = os.getenv('HTTP_PROXY')
-https_proxy = os.getenv('HTTPS_PROXY')
-
 def register_user(first_name, last_name, user_id, email):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -25,11 +22,6 @@ def register_user(first_name, last_name, user_id, email):
     # Set up the Chrome options to use the installed Chromium browser and Chromedriver
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = "/usr/bin/chromium-browser"
-
-    # Set proxy settings
-    if http_proxy and https_proxy:
-        proxy = f"{http_proxy};{https_proxy}"
-        chrome_options.add_argument(f'--proxy-server={proxy}')
 
     # Initialize the WebDriver
     service = Service("/usr/bin/chromedriver")
@@ -110,3 +102,6 @@ def register_user(first_name, last_name, user_id, email):
         # Close the WebDriver
         logging.info('Closing the WebDriver...')
         driver.quit()
+
+# Example usage
+register_user('John', 'Doe', 'johndoe123', 'john.doe@example.com')

@@ -22,7 +22,7 @@ https_proxy = os.getenv('HTTPS_PROXY')
 def register_user(first_name, last_name, user_id, email):
     # Configure logging
     logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
-    
+
     # Set up the Chrome options to use the installed Chromium browser and Chromedriver
     chrome_options = webdriver.ChromeOptions()
     chrome_options.binary_location = "/usr/bin/chromium-browser"
@@ -111,6 +111,3 @@ def register_user(first_name, last_name, user_id, email):
         # Close the WebDriver
         logging.info('Closing the WebDriver...')
         driver.quit()
-
-# Example usage
-register_user('John', 'Doe', 'johndoe123', 'john.doe@example.com')

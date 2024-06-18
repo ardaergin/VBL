@@ -13,7 +13,7 @@ For your ease, you can **copy-paste the following text**. Adjust the `{...}` fie
 ><br>
 > This study will take approximately {...} minutes. The study language is {...}. Payments will only be allocated when you carefully read instructions of the researchers.   
 >  
-> This research takes place in the Applied Behavioral Science Lab, located on the second basement level (-2) of the [Transitorium Building](https://vu.nl/en/about-vu/more-about/transitorium).   
+> This research takes place in the Applied Behavioural Science Lab, located on the second basement level (-2) of the [Transitorium Building](https://vu.nl/en/about-vu/more-about/transitorium).   
 >  
 > We would like to ask you to be present in the waiting area at least 5 minutes in advance. The waiting room K1B74, which is on the first basement level (-1). The session starts right on time and access to the lab after start time will be denied.   
 >  

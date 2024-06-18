@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="content-container text-center">
+    {% if success %}
+        <h1>Registration Successful!</h1>
+        <p>Your registration was successful. You will receive an email with your login information soon.</p>
+    {% else %}
+        <h1>Registration Failed</h1>
+        <p>{{ error_message }}</p>
+    {% endif %}
+    <a href="{{ url_for('main.show_page', page_name='overview-on-conducting-a-study') }}" class="btn btn-primary">Return to Overview</a>
+</div>
+{% endblock %}

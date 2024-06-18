@@ -1,6 +1,6 @@
 # Overview on Conducting a Study through VBL
 
-Setting up your study in the SONA Pool is easier than you think! Just follow the steps below, and in case your study has special requirements, contact [vbl@vu.nl](mailto:vbl@vu.nl).
+Setting up your study in the SONA Pool is easier than you think! Just follow the steps below, and in case the information you are looking for is not available, please do not hesitate to contact us at [vbl@vu.nl](mailto:vbl@vu.nl).
 
 <br>
 
@@ -11,13 +11,14 @@ For a smoother process:
 1. Make sure you have your ethical approval ready. If you do not know how to obtain an ethical or what the ethical approval should look like, check the [ethical approval](ethical-approval) page.         
 2. Know your [desired number of participants](desired-number-of-participants).      
 3. Incorporate [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
-4. Are you planning to only allow participation based on a certain criteria? Then you should check out how to set up an initial [prescreening study](prescreening-study).
+4. Are you planning to only allow participation based on a certain criteria? VBL currently does not support a collection of prescreeners, hence, you can set this up within your own study.
 
 <br>
 
 ### Step 1: Study Creation
 
-1. Log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**		
+1. Request a researcher account by emai
+Log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**		
 2. [Create a New Study](create-a-new-study):		
     - [Select the Study Type](select-the-study-type)		
     - [Fill in the Study Information](fill-in-the-study-information)		
@@ -26,13 +27,16 @@ For a smoother process:
 
 ### Step 2: After Creating Your Study
 
-After creating your study, **contact us** for [Initial Study Verification](initial-study-verification) at [vbl@vu.nl](mailto:vbl@vu.nl).
+After creating your study, **contact us** for [Initial Study Verification](initial-study-verification) at [vbl@vu.nl](mailto:vbl@vu.nl). Once we have verified your study details and have given you a green light,	
 
-After we have verified your study details and have given you a green light,	if you have **an Online Study**, you can simply [Submit your Study for Final Approval](submission-for-final-approval), and wait for us to launch your study!
+If you have **an Online Study**, you can simply [Submit your Study for Final Approval](submission-for-final-approval), and wait for us to launch your study!
 
-On the other hand, if you have **a Physical Lab Study**:	
-
-1. First, we would like you to [Schedule a Pilot Testing](schedule-a-pilot-testing) with us			
+If you have **a Physical Lab Study**, you can contact us to reserve you a lab spot.
+if you have never tested your design
+you can simply [Submit your Study for Final Approval](submission-for-final-approval), and wait for us to launch your study!
+we will contact you for needed clarifications
+- reduce the number of back and forth confirmation
+1. First, we would like you to [Schedule a Pilot Testing](schedule-a-pilot-testing) with us		
 2. After a successful pilot testing, based on the availability of the lab and the research assistants, we will make a reservation for you in the lab.		
 3. After selecting the dates for the lab, you can [create time slots](arranging-time-slots) for participants in SONA.		
 

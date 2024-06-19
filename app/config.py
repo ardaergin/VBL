@@ -11,8 +11,8 @@ class Config:
     SESSION_PERMANENT = False
     SESSION_USE_SIGNER = True
     SESSION_COOKIE_HTTPONLY = True
-    SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE').lower() in ['true', '1', 't']
+    SESSION_COOKIE_SECURE = os.getenv('SESSION_COOKIE_SECURE', 'false').strip().lower() in ['true', '1', 't']
     SESSION_COOKIE_SAMESITE = os.getenv('SESSION_COOKIE_SAMESITE')
 
     FLASK_ENV = os.getenv('FLASK_ENV')
-    DEBUG = os.getenv('FLASK_DEBUG').lower() in ['true', '1', 't']
+    DEBUG = os.getenv('FLASK_DEBUG', 'false').strip().lower() in ['true', '1', 't']

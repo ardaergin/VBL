@@ -9,3 +9,5 @@ __pycache__/
 .env
 tmp/flask_session
 generate_key.py
+combine_markdowns.py
+combined.md

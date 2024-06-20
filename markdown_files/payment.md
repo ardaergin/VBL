@@ -1,3 +1,4 @@
+
 # Payment
 
 The payment for the studies are calculated based on 10 EUR per hour. You can use the tool below to calculate the amount you have to pay the participants based on the duration of your study.

@@ -17,6 +17,6 @@ The first section of the study planner contains information about the 'promotion
 7. [Payment](payment)
 8. [Preparation](preparation)
 9. [(Add) Researcher(s)](add-researchers)
-10. [IRB Approval Code](ethical-approval)
+10. [Ethical Approval Code](ethical-approval)
 
-In the next stage of the process, we will conduct an [initial study verification](initial-study-verification), where we will carefully review your study information. Studies with missing information will not be approved. 
+In the next step of the process, when you submit your study for approval, we will conduct a [study verification](study-verification), where we will carefully review these study information you have entered. If you have missing information, or information that do not adhere to the requested standards, you will be asked to change it. 

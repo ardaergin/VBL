@@ -1,5 +1,5 @@
 
-# Create, modify, or Schedule Time Slots
+# Create, modify, or Schedule Time Slots on SONA
 
 In this step, you will need to open timeslots in SONA for participants. Please follow the step-by-step process below:
 

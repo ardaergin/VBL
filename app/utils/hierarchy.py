@@ -1,11 +1,32 @@
 page_hierarchy = {
     "home": 0,
 
+    "contact": {
+        "parent": "home", 
+        "display": "Contact"
+        },
+    "facilities": {
+        "parent": "home", 
+        "display": "Facilities at VBL"
+        },
+    "faq-for-researchers": {
+        "parent": "home", 
+        "display": "FAQ for Researchers"
+        },
+    "faq-for-students": {
+        "parent": "home", 
+        "display": "FAQ for Students"
+        },
+    
+
+    ##### STUDENTS #####
     "how-to-participate": {
         "parent": "home", 
         "display": "How to Participate"
         },
     
+
+    ##### RESEARCHERS #####
     "overview-on-conducting-a-study": {
         "parent": "home", 
         "display": "Overview on Conducting a Study"
@@ -45,39 +66,67 @@ page_hierarchy = {
                     "parent": "fill-in-the-study-information", 
                     "display": "Duration"
                     },
+                "payment": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Payment"
+                    },
                 "preparation": {
                     "parent": "fill-in-the-study-information", 
                     "display": "Preparation"
+                    },
+                "add-researchers": {
+                    "parent": "fill-in-the-study-information", 
+                    "display": "Adding Researchers to Your Study"
                     },
                 "ethical-approval": {
                     "parent": "fill-in-the-study-information", 
                     "display": "Ethical Approval"
                     },
 
-        "initial-study-verification": {
+        "submission-for-approval": {
             "parent": "overview-on-conducting-a-study", 
-            "display": "Initial Study Verification"
+            "display": "Submitting Your Study for Approval"
             },
 
-        "schedule-a-pilot-testing": {
+        "study-verification": {
             "parent": "overview-on-conducting-a-study", 
-            "display": "Schedule a Pilot Testing"
-            },
-        
-        "pick-available-dates": {
-            "parent": "overview-on-conducting-a-study", 
-            "display": "Pick Available Dates"
+            "display": "Study Verification"
             },
 
-        "arranging-time-slots": {
+            "attention-checks": {
+                "parent": "overview-on-conducting-a-study", 
+                "display": "Attention Checks"
+                },
+        
+        "arranging-lab-study-yourself": {
             "parent": "overview-on-conducting-a-study", 
-            "display": "Arranging Time Slots"
+            "display": "Arranging a Physical Study Yourself"
+            },
+
+            "arranging-time-slots": {
+                "parent": "arranging-lab-study-yourself", 
+                "display": "Arranging Time Slots on SONA"
+                },
+
+        "lab-try-out": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Conducting a Lab Try-out"
+            },
+
+        "responsibility-during-data-collection": {
+            "parent": "overview-on-conducting-a-study", 
+            "display": "Responsibility During the Data Collection"
             },
         
-        "arranging-time-slots": {
+        "granting-or-denying-payment": {
             "parent": "overview-on-conducting-a-study", 
-            "display": "Arranging Time Slots"
+            "display": "Granting or Denying Payment"
             },
+
+            "conditions-for-rejecting-payment": {
+                "parent": "overview-on-conducting-a-study", 
+                "display": "Conditions For Rejecting Payment"
+                },
             
 }
 

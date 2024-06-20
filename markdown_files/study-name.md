@@ -1,3 +1,4 @@
+
 # Study Name
 
 A Study Name should be **short** and **general** (i.e., not containing highly-specific study information).

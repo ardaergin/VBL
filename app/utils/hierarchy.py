@@ -123,9 +123,9 @@ page_hierarchy = {
             "display": "Granting or Denying Payment"
             },
 
-            "conditions-for-rejecting-payment": {
-                "parent": "overview-on-conducting-a-study", 
-                "display": "Conditions For Rejecting Payment"
+            "denying-payment": {
+                "parent": "granting-or-denying-payment", 
+                "display": "Denying Payment"
                 },
             
 }

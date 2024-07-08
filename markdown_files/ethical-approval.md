@@ -1,10 +1,17 @@
 
 # Ethical Approval
 
-Here, provide the reference number that you have received from the Ethical Review Board. Every research should have an ethical review code to be able to conduct a study at VBL.
+All studies at VBL require an ethical approval. When you are filling in your study information on SONA, you will need to provide the Ethical Review Board (ERB) approval code for your study.
 
-Every faculty have their own review board. Please obtain a ethical review board approval (and the associated ethical review code) for your study from your respective faculty before starting to conduct a study at VBL. 
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Are you from the School of Business and Economics (SBE)?
+>You can start the ethical approval procedure by filling in the [online ethics self-check](https://vueconomics.eu.qualtrics.com/jfe/form/SV_1SKjMzceWRZIk9D){:target="_blank" rel="noopener noreferrer"}. 
+>
+>- If your research does not require a Ethics Review Board approval, you will automatically receive a ethical review code (e.g., `SBE3/29/2021djg590`) after filling in the online ethics self-check.
+>- If the online ethics self-check requests that your research needs additional approval, you will be asked to download a copy of your ethics application so that you can send it to the Ethics Review Board for further evaluation. For more information regarding this, see [this page](https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office){:target="_blank" rel="noopener noreferrer"}.
 
-The only exception to this is the Law Faculty. **If you are a researcher from the Law Faculty**, please get in touch with us.
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Are you from the Law Faculty?
+> The law faculty does not have its own ethical review board. Please get in touch with us at [vbl@vu.nl](mailto:vbl@vu.nl) for this matter.
 
-**Are you a researcher from the School of Business and Economics (SBE)?** Then, ethical approval can be obtained either via the [online ethical checklist](https://vueconomics.eu.qualtrics.com/jfe/form/SV_1SKjMzceWRZIk9D){:target="_blank" rel="noopener noreferrer"} or the [Ethics Review Board](https://vu.nl/en/about-vu/more-about/research-office){:target="_blank" rel="noopener noreferrer"} when needed. If the ethical checklist is not sufficient for your study, or you believe that your research should be approved by the **SBE Ethics Review Board (ERB)**, make sure to contact them and fill in the reference number. After you have completed the ethical checklist, you will receive a reference number formatted like `SBE3/29/2021djg590`. This is the code you will enter in SONA.
+
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Are you from any other Faculty?
+> Every faculty has their own ethical review board. Please obtain an ethical approval for your study from your respective faculty. 

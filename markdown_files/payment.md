@@ -1,7 +1,9 @@
 
 # Payment
 
-The payment for the studies are calculated based on 10 EUR per hour. You can use the tool below to calculate the amount you have to pay the participants based on the duration of your study.
+The payment for the studies are calculated based on **10 EUR per hour**. You can use the tool below to calculate the amount you have to pay the participants based on the [duration](duration) of your study.
+
+---
 
 <div>
     <label for="timeSlider">Time in minutes:</label>
@@ -12,4 +14,6 @@ The payment for the studies are calculated based on 10 EUR per hour. You can use
     <p>Total Amount: <span id="totalAmount">€0.00</span></p>
 </div>
 
-Studies that require more engagement from the participant (i.e., studies with an additional payment incentive), are subject to a higher rate of payment, and this should be discussed with the lab manager.
+---
+
+Studies that require more engagement from the participant (i.e., studies with an additional payment incentive), are subject to a higher rate of payment. If this is the case for you, please email us at [vbl@vu.nl](mailto:vbl@vu.nl).

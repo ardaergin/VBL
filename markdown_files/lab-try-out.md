@@ -1,7 +1,7 @@
 
 # Conducting a Lab Try-out
 
-If you have **a Physical Lab Study**, we strongly advise you to schedule a try-out before the study launch. This ensures that the study run smoothly in our physical lab location. This would be an informal try-out with some of our student-assistants being participants.
+If you have **a Physical Lab Study**, we strongly advise you to schedule a try-out before the study launch. This ensures that the study run smoothly in our physical lab location. 
 
 This is not exactly a pilot testing, but more of understanding whether the instructions given to participants, the procedure of the study, and the duration specified is reasonable. For instance, it might be possible that the instructions that you would like the participants to hear might take longer than expected, or there are some confusing aspects in the procedure that you have not realized.
 

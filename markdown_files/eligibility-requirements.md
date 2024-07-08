@@ -1,8 +1,8 @@
 
 # Eligibility Requirements
 
-This section is for more **study-specific requirements**.
+This section is for you to specify your **study-specific requirements**. 
 
-To begin with, if your study requires specific instructions, you are able to mention these here. For example, if you require participants to listen to audio in your study, you need to make sure that this is clear upfront (for instance, have access to headphones). This prevents students from registering for a study that they cannot complete because of software/hardware requirements.
+For example, "you can only participate in this research if you are male". For further guarantee, also include a corresponding check in your research.
 
-Only students who fulfil the requirements will have access to the study.
+For example, for eye-tracking studies, you would need to specify that people with glasses cannot participate and you have to specify this in this section. 

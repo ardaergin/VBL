@@ -9,8 +9,9 @@ Setting up your study in the VBL student pool is easier than you think! Just fol
 
 1. Request a researcher account by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl) with your (1) first name, (2) last name, (3) VUnet ID, and (4) VU email address. While we create your account, please ensure that the following points are completed in the meantime.       
 2. Make sure you have your ethical approval ready. If you do not know how to obtain an ethical or what the ethical approval should look like, check the [ethical approval](ethical-approval) page.         
-3. Know your desired number of participants. You will need to communicate this information to us later in the process.
-4. We highly recommend incorporating [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
+3. Make sure you have your budget number ready. This is necessary for the financial department to process the payments to the participants. 
+4. Know your desired number of participants. You will need to communicate this information to us later in the process.
+5. We highly recommend incorporating [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
 
 <br>
 
@@ -50,4 +51,6 @@ When we launch your study, the students in the VBL pool will be notified.
 
 **Paying the Participants**:
 
-Once the study is concluded, you have two weeks to carry out the process of [Granting or Denying Payment](granting-or-denying-payment). 
+Once the study is concluded, you have five days to carry out the process of [granting or denying payment](granting-or-denying-payment). 
+
+Once this period is over, we will relay the payment information to the financial department. They will contact you for approval. Please provide this approval as soon as possible.

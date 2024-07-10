@@ -179,6 +179,7 @@ p {
     border-width: 20px;
     background-color: #d7eaff;
     padding-left: 20px; /* Give enough space for the icon */
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 
 .callout button {
@@ -189,6 +190,7 @@ p {
     padding: 0;
     font-size: 1em;
     cursor: pointer;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout ul, .callout ol {
     padding-left: 20px; /* Adjust as needed for indentation */
@@ -202,45 +204,56 @@ p {
 /* SCREENSHOT */
 .callout-screenshot {
     border-color: #5f2eb9; /* Info blue */
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout-screenshot button {
     color: #5f2eb9;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 
 /* WARNING */
 .callout-warning {
     border-color: #ff3b3b; 
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout-warning button {
     color: #ff3b3b; 
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 
 /* ERROR */
 /*    <i class="fa-regular fa-circle-xmark"></i>    */
 .callout-error {
     border-color: #ff3b3b;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout-error button {
     color: #ff3b3b;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 
 /* SUCCESS */
 /*    <i class="fa-regular fa-thumbs-up"></i>    */
 .callout-success {
     border-color: #4CAF50;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout-success button {
     color: #4CAF50;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 
 /* INFO */
 /*    <i class="fa-solid fa-info"></i>    */
 .callout-info {
     border-color: #3532e7; /* Info blue */
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
 .callout-info button {
     color: #3532e7;
+    border-radius: 10px; /* Add this line to make rounded corners */
 }
+
 
 
 

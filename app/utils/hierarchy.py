@@ -88,15 +88,10 @@ page_hierarchy = {
             "display": "Submitting Your Study for Approval"
             },
 
-        "study-verification": {
+        "attention-checks": {
             "parent": "overview-on-conducting-a-study", 
-            "display": "Study Verification"
+            "display": "Attention Checks"
             },
-
-            "attention-checks": {
-                "parent": "overview-on-conducting-a-study", 
-                "display": "Attention Checks"
-                },
         
         "arranging-lab-study-yourself": {
             "parent": "overview-on-conducting-a-study", 
@@ -107,11 +102,6 @@ page_hierarchy = {
                 "parent": "arranging-lab-study-yourself", 
                 "display": "Arranging Time Slots on SONA"
                 },
-
-        "lab-try-out": {
-            "parent": "overview-on-conducting-a-study", 
-            "display": "Conducting a Lab Try-out"
-            },
 
         "responsibility-during-data-collection": {
             "parent": "overview-on-conducting-a-study", 

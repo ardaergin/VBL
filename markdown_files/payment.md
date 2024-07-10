@@ -17,3 +17,5 @@ The payment for the studies are calculated based on **10 EUR per hour**. You can
 ---
 
 Studies that require more engagement from the participant (i.e., studies with an additional payment incentive), are subject to a higher rate of payment. If this is the case for you, please email us at [vbl@vu.nl](mailto:vbl@vu.nl).
+
+**Do you have an incentivized study?** You can pay different participants different amounts. This can be arranged after the study is conducted. Please see the page for [granting or denying payment](granting-or-denying-payment)

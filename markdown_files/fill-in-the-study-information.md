@@ -23,5 +23,6 @@ This part concern the promotion of the study to the students.
 
 These settings concern the technical setup of the study.
 
-1. ...
-2. Setting up the Survey Link and the ID variable
+1. (Pre-requisites and Disqualifiers)[pre-requisites-and-disqualifiers]
+2. (Study URL and Survey Setup)[study-url-and-survey-setup]
+    - Note: the URL setup is for **online studies only**. If you have a physical study, please do not enter your survey link during the study setup.

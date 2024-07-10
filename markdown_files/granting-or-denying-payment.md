@@ -1,7 +1,7 @@
 
-# Granting or Denying Payment
+# Granting or denying payment
 
->[!info] <i class="fa-solid fa-info"></i> &nbsp How to Go to the Payment Page on SONA 
+>[!info] <i class="fa-solid fa-info"></i> &nbsp How to navigate to the payment page on SONA 
 >
 >1. In SONA, locate and click on the **'My Studies'**. This will take you to a list of all your posted studies. 
 >2. Among your studies, find the specific study for which you want to grant or deny payments and click on it. This action will display the study's details.
@@ -13,6 +13,17 @@
 >7. After making your selections for each participant, scroll down to the bottom of the table and make sure to click on the **'Update Sign-Ups'** button to register the granted or denied credits into the system.
 
 Once the study is concluded, **you have two weeks** to make any changes to the list of participants that needs to be paid. By the end of these two weeks, if you have not made any changes, all the participants will be paid regardless of their status.
+
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Do you have an incentivized study? 
+> For incentivized studies, you can also arrange the incentive payment through the payment page on SONA. 
+>
+> Example: 
+> 
+> - You have a performance task in your research and you incentivize participants.
+> - After your study is concluded you identify the top 10 best performing participants. 
+> - On the payment page on SONA (same page as described above), for each of these 10 participants, you should enter "Incentive: 15" as a comment. 
+> - We will make the payment according to these comments, hence, please do not deviate from the format of "Incentive: `{amount}`".
+
 
 ## For Online Studies
 

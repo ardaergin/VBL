@@ -41,6 +41,8 @@ When we launch your study, the students in the VBL pool will be notified.
 - For **online studies**, students can simply enroll and participate immediately, and you do not have a responsibility while data is being collected.
 - For **physical lab studies**, students will enroll to the upcoming time slots. If you are a PhD student (or you, or your own research assistants are carrying out the research), please take a look at [your responsibility during data collection](responsibility-during-data-collection).
 
+<br>
+
 ### Step 4: Post data collection
 
 **Checks**:

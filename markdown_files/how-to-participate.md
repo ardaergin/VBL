@@ -5,9 +5,13 @@ As a participant of VBL, you get to contribute to the research at VU, experience
 
 ### Paid Research Participation
 
-To do so, you can simply log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**, and participate in the available studies! When you are using VBL SONA for the first time, you will need to fill in your name, email, address, and IBAN (for payment). This data is essential for the finance department of the VU to be able to financially compensate you for your research participation. 
+To do so, you can simply log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using your **VUnetID**, and participate in the available studies! 
 
-The compensation rate is **10 EUR per hour**. This rate might be higher for studies with a performance incentive.
+When you are using VBL SONA for the first time, you will need to fill in your name, email, address, and IBAN (for payment). This data is essential for the finance department of the VU to be able to financially compensate you for your research participation. 
+
+If any of these details change (e.g., bank account, home address, email address, ...), please contact us at [vbl@vu.nl](mailto:vbl@vu.nl), we will delete your prescreen responses, and the next time you login, you can fill in your prescreen responses again."
+
+The compensation rate is **10 EUR per hour** if you participate in a on-site lab study and **7.5 EUR per hour** if you participate in an online study. This rate can be higher for studies with a performance incentive.
 
 ### Online or Physical Lab Studies
 

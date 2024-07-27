@@ -297,3 +297,9 @@ input[type="range"] {
 #timeDisplay, #totalAmount {
     font-weight: bold;
 }
+
+
+
+.vbl-logo {
+    border-radius: 10%; /* Makes the borders round */
+}

@@ -1,4 +1,7 @@
 
 # Pre-requisites and Disqualifiers
 
-...
+You can use this section if you want to screen for participants who have previously participated in another study. 
+
+- For example, you can disqualify participants based on a previous study they have participated in.
+- Or, by the same token, you can set a pre-requisite that the participant must have participated in a previous study.

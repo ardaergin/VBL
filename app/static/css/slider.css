@@ -1,0 +1,11 @@
+/* Slider */
+
+input[type="range"] {
+    width: 100%; /* Full-width slider */
+    margin: 10px 0; /* Some vertical space around the slider */
+}
+
+/* Styling for the display elements */
+#timeDisplay, #totalAmount {
+    font-weight: bold;
+}

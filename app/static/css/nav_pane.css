@@ -1,0 +1,51 @@
+/* Navigation Pane (Accordion) Styles */
+#accordion .card {
+    border: none;
+    background: none;
+}
+
+#accordion .card-header {
+    background-color: #0b5dae;
+    border-bottom: none;
+    padding: 0.5em 1em;
+}
+
+#accordion .btn-link {
+    color: white;
+    text-align: left;
+    width: 100%;
+    padding: 0.5em 1em;
+    font-size: 0.8em;
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+#accordion .btn-link:hover,
+#accordion .btn-link:focus {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#accordion .collapse.show .card-body a,
+#accordion .card-body a {
+    display: block;
+    color: #868e96;
+    padding: 0.5em 1em; /* Increased padding */
+    font-size: 0.8em; /* Set font size */
+    text-decoration: none;
+    box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+#accordion .collapse.show .card-body a:hover,
+#accordion .card-body a:hover {
+    color: #b90e0e;
+}
+
+#accordion .card-body {
+    background-color: #f8f9fa;
+    padding: 0.5em 1em; /* Consistent padding */
+}
+
+#accordion {
+    padding-top: 20px;
+}

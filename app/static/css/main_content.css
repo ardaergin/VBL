@@ -1,0 +1,28 @@
+/* Main Content Styles */
+.content-container {
+    max-width: 70%;
+    margin: auto;
+    padding: 25px;
+}
+
+/* Style for unordered list items */
+.content-container ul {
+    list-style-type: disc; /* Default unordered list style */
+    margin-left: 40px; /* Indentation for the list */
+    padding-left: 0;
+}
+
+.content-container ul li {
+    margin-bottom: 10px; /* Space between unordered list items */
+}
+
+/* Style for ordered list items */
+.content-container ol {
+    list-style-type: decimal; /* Default ordered list style */
+    margin-left: 40px; /* Indentation for the list */
+}
+
+.content-container ol li {
+    margin-top: 5px; /* Space above each ordered list item */
+    margin-bottom: 5px; /* Space below each ordered list item */
+}

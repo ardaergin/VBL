@@ -1,7 +1,7 @@
 
 # Payment
 
-The payment for the studies are calculated based on:
+The payment for the studies is calculated based on:
 
 - 10€ per hour for physical lab studies.
 - 7.5€ per hour for online studies. 
@@ -19,4 +19,4 @@ You can use the tool below to calculate the amount you have to pay each particip
 
 ---
 
-**Do you have an incentivized study?** You can pay different participants different amounts. This can be arranged after the study is conducted. Please see the page for [granting or denying payment](granting-or-denying-payment). For the current payment field in the study description, simply enter the usual amount (i.e., incentive not included). 
+**Do you have an incentivized study?** You can pay different participants different amounts. This can be arranged after data is collected. Please see the page for [granting or denying payment](granting-or-denying-payment). For the current payment field in the study description, simply enter the usual amount and mention in the study description regarding the incentive.

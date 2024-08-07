@@ -1,0 +1,16 @@
+/* Images */
+.responsive-image {
+    width: 98%; /* or any percentage that suits your design */
+    height: auto; /* keeps the aspect ratio */
+  }
+
+
+/* VBL Logo */
+.vbl-logo {
+    border-radius: 10%; /* Makes the borders round */
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}

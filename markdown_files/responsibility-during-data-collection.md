@@ -1,20 +1,30 @@
 
 # Your Responsibility During Data Collection
 
-As soon as the requested details have been approved by the research coordination, the study will be visible to students. 
+As soon as the requested details have been approved by us, the study will be launched and advertised to the students.
 
 ## Online Studies
-For **online studies**, students can simply enroll and participate immediately, and you do not have a responsibility during data collection.
+For **online studies**, students can enroll and participate directly, and you do not have a responsibility during data collection.
 
 ## Physical Lab Studies
-For **physical lab studies**, students will enroll to the upcoming time slots. 
+For **physical lab studies**, students will enroll in one of the available time slots created by the you (or) the research assistants.
 
-On the day of your studies, once you or the lab assistants are in the lab, check each student using the dashboard section of your study. 
+On the day of your studies, once you or the assistants are in the lab, check each student using the dashboard section of your study. 
+
+[video](/static/videos/output.mp4)
 
 ### Prior to your sessions
-Prior to the first session of the day, arrive at lab about 45 minutes in advance and set up all computers. We will provide the login details to you prior to your experiment. 
+Arrive at the lab about 30-45 minutes in advance, and set up all computers. 
 
-- First, log in to the main computer at the enterence, and put the link to your survey as a shortcut to the desktop on the computer, it will automatically be on all other desktops. 
+- Log in to the main computer (we will provide the login details to you prior to your experiment).
+- Place the link to your survey as a shortcut to the folder named "x" on the desktop on the computer, it will automatically be on all other desktops. 
+
+The IT has given us a solution where we have a folder placed in the desktop and the the link can be placed within the folder so that it is accessible in all other cubicles. I will let you know the name of the folder next week.
+
+
+Adding a screenshot of the desktop here would also help. I will send you a picture of the screenshot too.
+
+
 - Then, proceed with turning on the other computers inside the cubicles, and login to them with the same login. 
 - 5-10 mins before the participants enter the lab make sure the study is opened on each computer (click on the link and press F11 to have full screen on each computer).
 

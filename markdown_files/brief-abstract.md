@@ -1,5 +1,5 @@
 
-# Brief Abstract
+# Brief abstract
 
 Here, explain your study in **a single line** to give students a general idea about what they should expect if they participate in your study (e.g., the topic or the number of sessions). **Do not include any study specifics**. 
 

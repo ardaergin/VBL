@@ -1,5 +1,5 @@
 
-# Adding Researchers to Your Study
+# Adding researchers to your study
 
 Here you select your name as a researcher, and add your co-authors if there are any.
 
@@ -9,4 +9,4 @@ Here you select your name as a researcher, and add your co-authors if there are 
 
 **Are you going to request lab assistants from VBL for your physical study?**   
 
-- Then, you do not have to do anything. We will add the the appropriate research assistants to your study for them to manage the time slots and payment.
+- Then, you do not have to do anything. We will add the available VBL research assistants to your study for them to manage the time slots and payment.

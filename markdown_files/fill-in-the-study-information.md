@@ -1,13 +1,13 @@
 
-# Fill in the Study Information
+# Fill in the study information
 
 After you select the study type, you will need to fill in your study information.
 
-**Make sure to check out the pages below if you have not set up a study in SONA before**. When you submit your study for approval, we will review the study information you have entered. If you have missing information, or information that do not adhere to the requested standards, you will be asked to change it.
+**Make sure to check out the pages below if you have not set up a study in SONA before**. When you submit your study for approval, we will review the study information you have entered. If you have missing information, or information that does not adhere to the requested standards, you will be asked to change it.
 
-### Basic Study Information
+### Basic study information
 
-This part concern the promotion of the study to the students.
+This part concerns the promotion of the study to the students.
 
 1. [Study Name](study-name)
 2. [Brief Abstract](brief-abstract)
@@ -19,7 +19,7 @@ This part concern the promotion of the study to the students.
 8. [(Add) Researcher(s)](add-researchers)
 9. [Ethical Approval Code](ethical-approval)
 
-### Advanced Settings
+### Advanced settings
 
 These settings concern the technical setup of the study.
 

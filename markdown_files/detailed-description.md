@@ -1,7 +1,7 @@
 
-# Detailed Description
+# Detailed description
 
-For this section, you can **copy-paste one of the texts below**. Adjust the empty fields `{...}`  according to your study.
+For this section, you can **copy-paste one of the texts below**. Adjust the empty fields `{...}` according to your study.
 
 If you would like to add more information for the participants, you can do so, but please **do not include any information about your hypotheses or variables**. 
 

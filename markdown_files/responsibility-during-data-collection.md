@@ -11,7 +11,8 @@ For **physical lab studies**, students will enroll in one of the available time 
 
 On the day of your studies, once you or the assistants are in the lab, check each student using the dashboard section of your study. 
 
-[video](/static/videos/output.mp4)
+[video](/static/videos/create_timeslots.mp4)
+<br>
 
 ### Prior to your sessions
 Arrive at the lab about 30-45 minutes in advance, and set up all computers. 

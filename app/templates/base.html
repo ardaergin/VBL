@@ -78,22 +78,9 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
-    <script>
-        function toggleVisibility(id) {
-            var x = document.getElementById(id);
-            if (x.style.display === "none") {
-                x.style.display = "block";
-            } else {
-                x.style.display = "none";
-            }
-        }
-    
-        // Add a function to capitalize the first letter of each word
-        String.prototype.capitalize = function() {
-            return this.replace(/\b\w/g, function(char) { return char.toUpperCase(); });
-        };
-    </script>
-    
+    <!-- My JS -->
+    <script src="{{ url_for('static', filename='js/slider.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/callouts.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/preview.js') }}"></script>
 </body>
 </html>

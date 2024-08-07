@@ -1,16 +1,3 @@
-$(document).ready(function(){
-    $('[data-toggle="popover"]').popover({
-        placement: 'right',
-        trigger: 'hover',
-        html: true,
-        content: function () {
-            // Fetch content dynamically if needed
-            return '<img src="path-to-image-preview" />';
-        }
-    });
-});
-
-
 function updateAmount() {
     var onlineRatePerMinute = 7.5 / 60; // 7 € per hour converted to per minute
     var physicalRatePerMinute = 10 / 60; // 10 € per hour converted to per minute

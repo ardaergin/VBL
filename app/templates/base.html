@@ -9,10 +9,10 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
     <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_pane.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/callouts.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main_content.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_pane.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
@@ -25,33 +25,18 @@
     <div class="container-fluid">
         <div class="row">
             <!-- Navigation Pane -->
-            <div class="col-md-3">
+            <div class="col-md-3 nav-pane-container">
                 <!-- Logo -->
-                <div class="logo-container mb-3">
+                <div class="logo-container">
                     <a href="{{ url_for('main.show_page', page_name='home') }}">
                         <img src="{{ url_for('static', filename='images/vbl_logo_cropped.png') }}" alt="Logo" class="img-fluid vbl-logo">
                     </a>
                 </div>                
                 
                 <!-- Navigation Pane -->
-                <div id="accordion">
-                    {% for section in navigation %}
-                    <div class="card">
-                        <div class="card-header" id="heading{{ loop.index }}">
-                            <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapse{{ loop.index }}" aria-expanded="false" aria-controls="collapse{{ loop.index }}">
-                                    {{ section.title }}
-                                </button>
-                            </h5>
-                        </div>
-                        <div id="collapse{{ loop.index }}" class="collapse" aria-labelledby="heading{{ loop.index }}" data-parent="#accordion">
-                            <div class="card-body">
-                                {% for page in section.pages %}
-                                <a href="{{ url_for('main.show_page', page_name=page.name) }}">{{ page.display }}</a>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
+                <div class="nav-pane">
+                    {% for page in navigation %}
+                    <a href="{{ url_for('main.show_page', page_name=page.name) }}" class="nav-link">{{ page.display }}</a>
                     {% endfor %}
                 </div>
             </div>

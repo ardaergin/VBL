@@ -17,7 +17,7 @@ body {
 }
 
 h1 {
-    color: #0469d4;
+    color: #1d75e0;
     font-size: 2em; /* Larger size for h1 */
 }
 
@@ -31,4 +31,16 @@ h3 {
 
 p {
     font-size: 1em; /* Default size for paragraph text, usually the same as body */
+}
+
+/* Link styles */
+a {
+    color: #164fac; /* Set the default link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Smooth transition for color change */
+}
+
+a:hover, a:focus {
+    color: #2cb0fd; /* Set the hover and focus color */
+    text-decoration: underline; /* Add underline on hover */
 }

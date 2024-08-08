@@ -1,8 +1,12 @@
 /* Main Content Styles */
 .content-container {
-    max-width: 70%;
+    max-width: 65%;
     margin: auto;
-    padding: 25px;
+    padding: 20px;
+
+    background-color: #ffffff;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* Style for unordered list items */
@@ -25,4 +29,15 @@
 .content-container ol li {
     margin-top: 5px; /* Space above each ordered list item */
     margin-bottom: 5px; /* Space below each ordered list item */
+}
+
+
+
+/* Breadcrumb */
+.breadcrumb {
+    padding: 20px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    background-color: #ffffff;
 }

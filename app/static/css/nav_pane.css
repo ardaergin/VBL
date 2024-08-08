@@ -1,51 +1,37 @@
-/* Navigation Pane (Accordion) Styles */
-#accordion .card {
-    border: none;
-    background: none;
-}
-
-#accordion .card-header {
-    background-color: #0b5dae;
-    border-bottom: none;
-    padding: 0.5em 1em;
-}
-
-#accordion .btn-link {
-    color: white;
-    text-align: left;
-    width: 100%;
-    padding: 0.5em 1em;
-    font-size: 0.8em;
-    text-decoration: none;
-    box-sizing: border-box; /* Ensures padding is included in width */
-}
-
-#accordion .btn-link:hover,
-#accordion .btn-link:focus {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-#accordion .collapse.show .card-body a,
-#accordion .card-body a {
-    display: block;
-    color: #868e96;
-    padding: 0.5em 1em; /* Increased padding */
-    font-size: 0.8em; /* Set font size */
-    text-decoration: none;
-    box-sizing: border-box; /* Ensures padding is included in width */
-}
-
-#accordion .collapse.show .card-body a:hover,
-#accordion .card-body a:hover {
-    color: #b90e0e;
-}
-
-#accordion .card-body {
-    background-color: #f8f9fa;
-    padding: 0.5em 1em; /* Consistent padding */
-}
-
-#accordion {
+/* Navigation Pane Container Styles */
+.nav-pane-container {
+    background-color: #0080c9; /* Light grey background color */
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0; /* Stick to the top of the viewport */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling if content overflows */
+}
+
+.nav-pane {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 0.25rem;
+}
+
+.nav-link {
+    display: block;
+    color: #0080c9;
+    padding: 10px 15px;
+    font-size: 1.2rem;
+    text-decoration: none;
+    margin-bottom: 10px; /* Add spacing between items */
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+.nav-link:hover {
+    background-color: #0080c9;
+    color: #ffffff;
+    text-decoration: none;
 }

@@ -1,5 +1,5 @@
 
-# Submitting Your Study for Approval
+# Submitting your study for approval
 
 Once you have your study ready, you can submit your study for appoval. 
 

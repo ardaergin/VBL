@@ -1,12 +1,12 @@
 
-# Your Responsibility During Data Collection
+# Your responsibility during data collection
 
 As soon as the requested details have been approved by us, the study will be launched and advertised to the students.
 
-## Online Studies
+## Online studies
 For **online studies**, students can enroll and participate directly, and you do not have a responsibility during data collection.
 
-## Physical Lab Studies
+## Lab studies
 For **physical lab studies**, students will enroll in one of the available time slots created by the you (or) the research assistants.
 
 On the day of your studies, once you or the assistants are in the lab, check each student using the dashboard section of your study. 
@@ -14,42 +14,36 @@ On the day of your studies, once you or the assistants are in the lab, check eac
 [video](/static/videos/create_timeslots.mp4)
 <br>
 
-### Prior to your sessions
+### Setting up the lab
 Arrive at the lab about 30-45 minutes in advance, and set up all computers. 
 
-- Log in to the main computer (we will provide the login details to you prior to your experiment).
+- Log in to the main computer (you will have been provided the login credentials prior to your experiment).
 - Place the link to your survey as a shortcut to the folder named "x" on the desktop on the computer, it will automatically be on all other desktops. 
-
-The IT has given us a solution where we have a folder placed in the desktop and the the link can be placed within the folder so that it is accessible in all other cubicles. I will let you know the name of the folder next week.
-
-
-Adding a screenshot of the desktop here would also help. I will send you a picture of the screenshot too.
+- Turn on the other computers inside the cubicles, and login with the same credentials. 
+- You should see the folder in all other computers through which you can access the study link. 
+- Ensure the study link is opened on each computer (click on the link and press F11 to have a full screen mode).
 
 
-- Then, proceed with turning on the other computers inside the cubicles, and login to them with the same login. 
-- 5-10 mins before the participants enter the lab make sure the study is opened on each computer (click on the link and press F11 to have full screen on each computer).
+### Starting your study sessions
 
-### During the sessions
-
-Pick up the participants from the waiting room (-1 Floor of the Transitorium building) and bring them to the lab. Give instructions in front of the lab to all students!
-
-- Call their attention/opening: "Are you here for the `[Time]` session of the `[Experiment Name]`? 
-- Standard Instructions: "This experiment will take about _______ minutes and it consists of several independent studies. Please read everything carefully and answer all the required questions. Please also prepare your research ID (a 4/5-digit number). When there is no way to continue to next page, it’s finished. After that, come to the experimenter (me), write down your research ID, and sign your name. Please remember, you can get your credit only when: you finish all studies and sign your name. Now please follow me."
-
-After all the participants are downstairs, 
-
-- Ask each student for their SONA ID before letting them proceed to the cubicles.
-- For each SONA ID, mark them in the SONA system as 'participated'. Please see the [granting or denying payment page](granting-or-denying-payment) to learn how to do that.
-- **Critical:** Do not forget to check students in, no check-in means that the student cannot receive payment. After the student is checked in, their participation is automatically approved. In cases of failed attention checks or unusual behaviour, you are able to withdraw your research credits in the system.
+1. Pick up the participants from the waiting room (-1 Floor of the Transitorium building).
+    - Call their attention/opening: "Are you here for the `[Time]` session of the `[Experiment Name]`? 
+    - Then, bring them to the lab. 
+2. After all the participants are downstairs, mark them as participated/unexcused.
+    - Read outloud the SONA IDs you have for the current timeslot, and ask students to identify themselves. 
+    - Mark them as participated or unexcused. Please see the [granting or denying payment page](granting-or-denying-payment) to learn how to do that.
+3. Give instructions to all students.
+    - Standard Instructions: "Thank you for your participation! Please leave your bags and phones outside. Hand your coats on the coat hangers available. This study will take about `[your study duration]` minutes, and it `[consists of a single study / several independent studies]`. Please read everything carefully and answer all the required questions. Please also prepare your research ID (a 4/5-digit number). When there is no way to continue to the next page, it’s finished. Now you can enter a cubicle."
 
 Commonly asked questions by participants:
 
-1. Can I switch session (normally move forward): it’s flexible. But if you decide to let them switch, make sure you record everything and mark it down in the attendance sheet. Also, this is not encouraged, so even if you let them do it, indicate to participants that you are making an EXCEPTION.
-2. Computer crashed. If there is not enough computer due to emergent issues, ask people who belong to this session to sign their name, assign them credits, and let them go. Report the issue to VBL (vbl@vu.nl) and the Lab manager (s.desikan@vu.nl)
+- **"Can I switch sessions?"** or **"I am late, can I participate in the next session?"**: This type of request is usually not encouraged. However, if there are available timeslots in the next session and you feel comfortable to accommodate the request, you can do so. We recommend you to take a note of such situations for yourself for recordkeeping purposes.
+- **"My computer crashed!"**: If there is an available cubicle, take the participant there. If there are not enough computers due to emergent issues, take a note of the participant's ID, and let them go. The participant will receive payment for their participation regardless. Report the issue asap to VBL (vbl@vu.nl) and the Lab manager (s.desikan@vu.nl). 
 
-### After the final session of the day
-It is important to note that you put the things in the lab as it was before. 
+### Ending your study sessions
+It is important to note that you put the things in the lab as they were before. 
 
+- Switch off all computers.
 - All keyboards, mouse, headphones and chairs should be placed as you found them. 
-- Thereafter close the door and check if it is locked.
-- Return your access cards to the HOST of the Transitorium building when you are finished.
+- Turn off the lights, close the door, and check if it is locked.
+- Return your access cards to the HOST of the Transitorium building.

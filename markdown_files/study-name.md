@@ -1,5 +1,5 @@
 
-# Study Name
+# Study name
 
 A Study Name should be **short** and **general** (i.e., not containing highly-specific study information). Please also enter the **current date** before the title of your study.
 

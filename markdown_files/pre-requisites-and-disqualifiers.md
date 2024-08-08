@@ -1,5 +1,5 @@
 
-# Pre-requisites and Disqualifiers
+# Pre-requisites and disqualifiers
 
 You can use this section if you want to screen for participants who have previously participated in another study. 
 

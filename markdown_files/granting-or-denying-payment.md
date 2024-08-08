@@ -26,7 +26,7 @@ Once the study is concluded, **you have two working days** to make any changes t
 > - We will make the payment according to these comments, hence, please do not deviate from the format of "Incentive: `{amount}`".
 
 
-## For Online Studies
+## For online studies
 
 For online studies, participants are marked as "participated" automatically when they complete your study. Nevertheless, you still have actions to take.
 
@@ -36,7 +36,7 @@ First, sometimes participants sign up to participate but do not end up participa
 
 Secondly, you should investigate your data, and deny payment if necessary. Please see [this page](denying-payment) for the conditions under which you can deny payment and how to do so.
 
-## For Physical Studies
+## For lab studies
 
 For physical studies, your tasks depend on whether you have requested research assistants from us. 
 

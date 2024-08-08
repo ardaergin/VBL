@@ -18,10 +18,13 @@ On the day of your studies, once you or the assistants are in the lab, check eac
 Arrive at the lab about 30-45 minutes in advance, and set up all computers. 
 
 - Log in to the main computer (you will have been provided the login credentials prior to your experiment).
-- Place the link to your survey as a shortcut to the folder named "x" on the desktop on the computer, it will automatically be on all other desktops. 
+- Place the link to your survey as a shortcut to the folder named "Start Here" on the desktop on the computer, it will automatically be on all other desktops. 
 - Turn on the other computers inside the cubicles, and login with the same credentials. 
 - You should see the folder in all other computers through which you can access the study link. 
 - Ensure the study link is opened on each computer (click on the link and press F11 to have a full screen mode).
+
+>[!screenshot] <i class="fa-solid fa-camera"></i> &nbsp Screenshot: The folder in the lab computer desktop
+><img src="/static/images/desktop.png" alt="Desktop" class="responsive-image">
 
 
 ### Starting your study sessions

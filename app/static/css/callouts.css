@@ -88,3 +88,14 @@
     color: #3532e7;
     border-radius: 10px; /* Add this line to make rounded corners */
 }
+
+/* QUESTION */
+/*    <i class="fa-solid fa-circle-question"></i>    */
+.callout-question {
+    border-color: #ecaa1b; /* Info blue */
+    border-radius: 10px; /* Add this line to make rounded corners */
+}
+.callout-question button {
+    color: #ecaa1b;
+    border-radius: 10px; /* Add this line to make rounded corners */
+}

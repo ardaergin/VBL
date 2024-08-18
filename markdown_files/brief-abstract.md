@@ -1,7 +1,7 @@
 
 # Brief abstract
 
-Here, explain your study in **a single line** to give students a general idea about what they should expect if they participate in your study (e.g., the topic or the number of sessions). **Do not include any study specifics**. 
+Here, explain your study in **a single sentence** to give students a general idea about what they should expect if they participate in your study (e.g., the topic or the number of sessions). **Do not include any study specifics**. 
 
 >[!success] <i class="fa-regular fa-thumbs-up"></i> &nbsp Example: Good Abstract
 ><br>

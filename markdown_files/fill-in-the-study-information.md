@@ -26,3 +26,5 @@ These settings concern the technical setup of the study.
 1. (Pre-requisites and Disqualifiers)[pre-requisites-and-disqualifiers]
 2. (Study URL and Survey Setup)[study-url-and-survey-setup]
     - Note: the URL setup is for **online studies only**. If you have a physical study, please do not enter your survey link during the study setup.
+
+Now you can continue with the next steps! Back to the overview.

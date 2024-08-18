@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <!-- Custom Styles -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/nav_pane.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/callouts.css') }}">
@@ -16,7 +17,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/typography.css') }}">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/typography.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">  
     <!-- Page Title and Favicon -->
     <title>VBL</title>
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/vbl_logo_cropped.png') }}">
@@ -28,10 +30,18 @@
             <div class="col-md-3 nav-pane-container">
                 <!-- Logo -->
                 <div class="logo-container">
+                    <div class="logo-text">VU Behavioural Lab</div>
                     <a href="{{ url_for('main.show_page', page_name='home') }}">
                         <img src="{{ url_for('static', filename='images/vbl_logo_cropped.png') }}" alt="Logo" class="img-fluid vbl-logo">
                     </a>
-                </div>                
+                </div>
+                
+                <!-- Search Form -->
+                <form id="search-form" class="form-inline my-2 my-lg-0 search-form" onsubmit="event.preventDefault(); performSearch();">
+                    <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" name="query" id="search-query">
+                    <button class="custom-search-button" type="submit">Search</button> <!-- Updated class here -->
+                </form>
+
                 
                 <!-- Navigation Pane -->
                 <div class="nav-pane">
@@ -70,5 +80,29 @@
     <script src="{{ url_for('static', filename='js/slider.js') }}"></script>
     <script src="{{ url_for('static', filename='js/callouts.js') }}"></script>
     <script src="{{ url_for('static', filename='js/preview.js') }}"></script>
+    <script>
+        function performSearch() {
+            const query = document.getElementById('search-query').value;
+            console.log('Search function triggered with query: ' + query);
+            fetch("{{ url_for('search.search') }}", {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ query: query })
+            })
+            .then(response => {
+                if (response.ok) {
+                    window.location.href = "{{ url_for('search.results_page') }}";
+                } else {
+                    response.json().then(data => {
+                        const container = document.getElementById('search-results-container');
+                        container.innerHTML = `<p>${data.error}</p>`;
+                    });
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    </script> 
 </body>
 </html>

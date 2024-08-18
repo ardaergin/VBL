@@ -2,7 +2,7 @@
 .content-container {
     max-width: 65%;
     margin: auto;
-    padding: 20px;
+    padding: 2vw; /* Responsive padding using vw */
 
     background-color: #ffffff;
     border-radius: 0.25rem;
@@ -12,30 +12,28 @@
 /* Style for unordered list items */
 .content-container ul {
     list-style-type: disc; /* Default unordered list style */
-    margin-left: 40px; /* Indentation for the list */
+    margin-left: 2rem; /* Indentation for the list using rem */
     padding-left: 0;
 }
 
 .content-container ul li {
-    margin-bottom: 10px; /* Space between unordered list items */
+    margin-bottom: 0.75rem; /* Space between unordered list items using rem */
 }
 
 /* Style for ordered list items */
 .content-container ol {
     list-style-type: decimal; /* Default ordered list style */
-    margin-left: 40px; /* Indentation for the list */
+    margin-left: 2rem; /* Indentation for the list using rem */
 }
 
 .content-container ol li {
-    margin-top: 5px; /* Space above each ordered list item */
-    margin-bottom: 5px; /* Space below each ordered list item */
+    margin-top: 0.5rem; /* Space above each ordered list item using rem */
+    margin-bottom: 0.5rem; /* Space below each ordered list item using rem */
 }
-
-
 
 /* Breadcrumb */
 .breadcrumb {
-    padding: 20px;
+    padding: 1.5vh 1.5vw; /* Responsive padding using vh and vw */
     border-radius: 0.25rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 1rem;

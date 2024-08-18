@@ -1,0 +1,36 @@
+.search-form {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1rem; /* Optional: Adds some space below the search bar */
+}
+
+.search-input {
+    flex: 1;
+    margin-right: 0.5rem; /* Optional: Adds some space between input and button */
+}
+
+/* Add space below the search bar */
+.search-form {
+    margin-bottom: 20px; /* Adjust the value as needed */
+}
+
+/* Custom styles for the search button */
+.custom-search-button {
+    background-color: #de3d3d; /* Change to your desired background color */
+    color: white;              /* Text color */
+    border: none;              /* Remove default border */
+    padding: 10px 20px;        /* Padding inside the button */
+    text-align: center;        /* Center the text */
+    text-decoration: none;     /* Remove text underline */
+    display: inline-block;     /* Keep it inline */
+    font-size: 16px;           /* Text size */
+    margin: 4px 2px;           /* Margin around the button */
+    cursor: pointer;           /* Change cursor to pointer */
+    border-radius: 4px;        /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+/* Add a hover effect */
+.custom-search-button:hover {
+    background-color: #a04945; /* Darker shade on hover */
+}

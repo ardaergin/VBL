@@ -1,10 +1,10 @@
 /* Navigation Pane Container Styles */
 .nav-pane-container {
     background-color: #0080c9; /* Light grey background color */
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-top: 2vh; /* Responsive padding */
+    padding-bottom: 2vh; /* Responsive padding */
+    padding-left: 1.5vw; /* Responsive padding */
+    padding-right: 1.5vw; /* Responsive padding */
     border-radius: 0.25rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     position: sticky;
@@ -15,17 +15,18 @@
 
 .nav-pane {
     background-color: #f8f9fa;
-    padding: 10px;
+    padding: 1.5vw; /* Responsive padding */
     border-radius: 0.25rem;
+    margin-top: 2vh; /* Adjust spacing between logo, search bar, and nav pane */
 }
 
 .nav-link {
     display: block;
     color: #0080c9;
-    padding: 10px 15px;
-    font-size: 1.2rem;
+    padding: 0.8em 1em; /* Responsive padding using em */
+    font-size: 1.2rem; /* Font size in rem */
     text-decoration: none;
-    margin-bottom: 10px; /* Add spacing between items */
+    margin-bottom: 1rem; /* Add spacing between items using rem */
     transition: background-color 0.3s, color 0.3s;
     border-radius: 5px; /* Rounded corners for links */
 }

@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Search Results for "{{ query }}"</h2>
+{% if results %}
+    <ul>
+    {% for result in results %}
+        <li>
+            <a href="{{ url_for('main.show_page', page_name=result['filename'].replace('.md', '')) }}">
+                {{ result['title'] }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No results found.</p>
+{% endif %}
+{% endblock %}

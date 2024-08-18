@@ -13,24 +13,24 @@ body, h1, h2, h3, p, button { /* Added button to the list */
 
 body {
     background-color: #f8f9fa;
-    font-size: 1.25em; /* Increase the font size as needed */
+    font-size: 1.4rem; /* Increase the font size using rem */
 }
 
 h1 {
     color: #1d75e0;
-    font-size: 2em; /* Larger size for h1 */
+    font-size: 2rem; /* Larger size for h1 using rem */
 }
 
 h2 {
-    font-size: 1.75em; /* Larger size for h2 */
+    font-size: 1.75rem; /* Larger size for h2 using rem */
 }
 
 h3 {
-    font-size: 1.5em; /* Larger size for h3 */
+    font-size: 1.5rem; /* Larger size for h3 using rem */
 }
 
 p {
-    font-size: 1em; /* Default size for paragraph text, usually the same as body */
+    font-size: 1.3rem; /* Default size for paragraph text */
 }
 
 /* Link styles */

@@ -4,14 +4,23 @@
     height: auto; /* keeps the aspect ratio */
   }
 
+.logo-container {
+  text-align: center; /* Center the text and logo */
+  margin-bottom: 2rem; /* Adjust space below the logo */
+}
+
+.logo-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8vw; /* Responsive font size */
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 
 /* VBL Logo */
 .vbl-logo {
-    border-radius: 10%; /* Makes the borders round */
-}
-
-.logo-container img {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 30px;
+  border-radius: 10%; /* Makes the borders round */
 }

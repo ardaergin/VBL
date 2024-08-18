@@ -10,4 +10,3 @@ gunicorn==22.0.0
 faiss-cpu==1.8.0
 transformers==4.41.1
 torch==2.4.0
-numpy==2.0.1

@@ -7,3 +7,7 @@ Werkzeug==3.0.1
 Flask-Session==0.8.0
 python-dotenv==1.0.1
 gunicorn==22.0.0
+faiss-cpu==1.7.3
+transformers==4.30.2
+torch==2.0.1
+numpy==1.25.0

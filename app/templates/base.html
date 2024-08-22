@@ -49,6 +49,11 @@
                     <a href="{{ url_for('main.show_page', page_name=page.name) }}" class="nav-link">{{ page.display }}</a>
                     {% endfor %}
                 </div>
+
+                <div class="university-logo-container">
+                    <img src="{{ url_for('static', filename='images/vu_logo.png') }}" alt="University Logo" class="university-logo">
+                </div>
+                
             </div>
 
             <!-- Main Content Area -->

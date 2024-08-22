@@ -15,3 +15,5 @@ All studies at VBL require an ethical approval. When you are filling in your stu
 
 >[!info] <i class="fa-solid fa-info"></i> &nbsp Are you from any other Faculty?
 > Every faculty has their own ethical review board. Please obtain an ethical approval for your study from your respective faculty. 
+
+

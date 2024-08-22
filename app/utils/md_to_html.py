@@ -23,11 +23,12 @@ def preprocess_markdown(md_content):
         
         toggle_id = f"toggle_{id(content)}"
         return (f'<div class="callout callout-{callout_type}">'
-                f'<button onclick="toggleVisibility(\'{toggle_id}\')">'
+                f'<button onclick="toggleVisibility(\'{toggle_id}\')" aria-expanded="false">'
                 f'<span class="callout-title">{title}</span>'
                 f'</button>'
-                f'<div id="{toggle_id}" class="callout-content" style="display:none;">{content_html}</div>'
+                f'<div id="{toggle_id}" class="callout-content">{content_html}</div>'
                 f'</div>')
+
 
     def replace_video(match):
         video_url = match.group(1)

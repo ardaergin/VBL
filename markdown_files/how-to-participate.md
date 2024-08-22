@@ -3,15 +3,15 @@
 
 As a participant of VBL, you get to contribute to the research at VU and earn money for your participation.
 
-### Paid research participation
+### Getting started
 
 Log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using VU SSO (Single Sign-on), and participate in the available studies! 
 
-When you are using VBL SONA for the first time, please "Request an Account” by clicking on the request an account button on the right side. Once your account is created, you will be asked some questions where you need to fill in your name, email, address, and IBAN (for payment). This data is essential to financially compensate you for your research participation.
+When you are logging in to VBL SONA for the first time, you will be asked some questions where you need to fill in your name, email, address, and IBAN (for payment). This data is essential to financially compensate you for your research participation.
 
 If any of these details change (e.g., bank account, home address, email address, ...), it is your responsibility to inform us about the change by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl).
 
-### Online or physical lab studies
+### Paid research participation
 
 You will receive a notification via email when a study is available for you to participate in. You can participate in online or physical lab studies.
 

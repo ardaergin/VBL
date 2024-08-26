@@ -21,10 +21,10 @@ This part concerns the promotion of the study to the students.
 
 ### Advanced settings
 
-These settings concern the technical setup of the study.
+These settings concern the technical setup of the study. 
 
-1. (Pre-requisites and Disqualifiers)[pre-requisites-and-disqualifiers]
-2. (Study URL and Survey Setup)[study-url-and-survey-setup]
+1. [Pre-requisites and Disqualifiers](pre-requisites-and-disqualifiers)
+2. [Study URL and Survey Setup](study-url-and-survey-setup)
     - Note: the URL setup is for **online studies only**. If you have a physical study, please do not enter your survey link during the study setup.
 
-Now you can continue with the next steps! Back to the overview.
+Now you can continue with the next steps! [Go back to the overview](overview-on-conducting-a-study).

@@ -7,7 +7,7 @@ As a participant of VBL, you get to contribute to the research at VU and earn mo
 
 Log in to [VBL SONA](https://vu-vbl.sona-systems.com){:target="_blank" rel="noopener noreferrer"} using VU SSO (Single Sign-on), and participate in the available studies! 
 
-When you are logging in to VBL SONA for the first time, you will be asked some questions where you need to fill in your name, email, address, and IBAN (for payment). This data is essential to financially compensate you for your research participation.
+When you are logging in to VBL SONA for the first time, you will be asked some questions where you need to fill in your name, email, address, and IBAN (for payment). This data is essential to financially compensate you for your research participation, is collected per VU privacy policy, and will only be viewed by the financial administration to pay you.
 
 If any of these details change (e.g., bank account, home address, email address, ...), it is your responsibility to inform us about the change by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl).
 

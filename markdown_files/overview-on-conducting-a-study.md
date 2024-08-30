@@ -3,15 +3,7 @@
 
 Setting up your study in the VBL student pool is easier than you think! Just follow the steps below.
 
-<br>
-
-### Step 0: Checks before starting the process
-
-1. Request a researcher account by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl) with your (1) first name, (2) last name, (3) VUnet ID, and (4) VU email address. While we create your account, please ensure that the following points are completed in the meantime.       
-2. Have your ethical approval ready. If you do not know how to obtain an ethical or what the ethical approval should look like, check the [ethical approval](ethical-approval) page.         
-3. Have your budget number ready. We will ask for it during payment processing.
-4. Know your desired number of participants. You will need to communicate this information to us later in the process.
-5. We highly recommend incorporating [attention check(s)](attention-checks) in your survey. This will ensure that you can [deny payment](granting-or-denying-payment) for non-serious participation.       
+Request a researcher account by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl) with your (1) first name, (2) last name, (3) VUnet ID, and (4) VU email address. 
 
 <br>
 

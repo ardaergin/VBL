@@ -7,7 +7,7 @@ After you select the study type, you will need to fill in your study information
 
 ### Basic study information
 
-This part concerns the promotion of the study to the students.
+This part concerns the promotion of the study and will be visible to the students.
 
 1. [Study Name](study-name)
 2. [Brief Abstract](brief-abstract)
@@ -15,7 +15,7 @@ This part concerns the promotion of the study to the students.
 4. [Eligibility Requirements](eligibility-requirements)
 5. [Duration](duration)
 6. [Payment](payment)
-7. [Preparation](preparation)
+7. [Preparation](preparation) (physical studies only)
 8. [(Add) Researcher(s)](add-researchers)
 9. [Ethical Approval Code](ethical-approval)
 

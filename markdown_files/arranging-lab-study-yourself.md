@@ -15,7 +15,7 @@ Once you have added the time slots, please email us at [vbl@vu.nl](mailto:vbl@vu
 
 ## Arranging access to the Transitorium building 
 
-Our computer labs are located on the second basement floow of the Transitorium building. You need access cards to open the lab doors. We have arranged for the security team to provide access cards for researchers wanting to enter the lab spaces.
+Our computer labs are located on the second basement floor of the Transitorium building. You need access cards to open the lab doors. We have arranged for the security team to provide access cards for researchers wanting to enter the lab spaces.
 
 Please email the host/security of the Transitorium building that you will need an access card. 
 - In this email, include your name, email address, phone number, experiment date and times, any instructions to the Host (like number of students, directing them to the waiting room on the first basement floor, etc). 

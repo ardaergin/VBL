@@ -1,9 +1,7 @@
 
 # Conduct a study as a researcher
 
-Setting up your study in the VBL student pool is easier than you think! Just follow the steps below.
-
-Request a researcher account by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl) with your (1) first name, (2) last name, (3) VUnet ID, and (4) VU email address. 
+Setting up your study in the VBL student pool is easier than you think! First, request a researcher account by emailing us at [vbl@vu.nl](mailto:vbl@vu.nl) with your (1) first name, (2) last name, (3) VUnet ID, and (4) VU email address. Once we create an account for you, just follow the steps below.
 
 <br>
 

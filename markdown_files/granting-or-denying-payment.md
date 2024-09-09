@@ -30,24 +30,20 @@ Once the study is concluded, **you have two working days** to make any changes t
 
 For online studies, participants are marked as "participated" automatically when they complete your study. Nevertheless, you still have actions to take.
 
-First, sometimes participants sign up to participate but do not end up participating. 
+First, sometimes participants sign up to participate but do not end up participating. In these cases, you should select "Excused" under "No-Show" instead. The participant will be denied payments, but will not receive any penalty.
 
-- In these cases, you should select "Excused" under "No-Show" instead. The participant will not be denied payments. 
-
-Secondly, you should investigate your data, and deny payment if necessary. Please see [this page](denying-payment) for the conditions under which you can deny payment and how to do so.
+Secondly, you should check your data, and deny payment if necessary. Please see [this page](denying-payment) for the conditions under which you can deny payment and how to do so.
 
 ## For lab studies
 
 For physical studies, your tasks depend on whether you have requested research assistants from us. 
 
-If you have requested research assistants from us, they will mark participants as "participated" and “no-shows”. 
-
 **If you have requested research assistants from us**, they will mark participants as "participated" or “no-show”. Hence, your only task is to investigate your data, and deny payment if necessary. Please see [this page](denying-payment) for the conditions under which you can deny payment and how to do so.
 
 **If you, or your own research assistants, have carried out your study**, you must mark "participated" or "no-show" yourself. For a smoother process, these two should be carried out as the study is ongoing.
 
-- To mark a participant as "participated", click on the empty circle in the 'Participated' column.
-- For students who did not cancel participation in time but contacted you BEFORE the start of their session, choose **"Excused No-Show"** in the No-Show column.
-- For students who never contact you, or only AFTER the start of the session they were supposed to participate in, select **'Unexcused No-Show'**.
+- Participant participated > "Participated"
+- Participant no-show, contacted you on time > **"Excused No-Show"**
+- Participant no-show, *did not* contact you on time > **'Unexcused No-Show'**
 
 After the study has been completed, you can [deny payment](denying-payment) if necessary.

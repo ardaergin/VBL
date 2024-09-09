@@ -1,5 +1,5 @@
 
-# Facilities at VBL
+# Facilities at VU Behavioural Lab
 
 At VBL, we have different kinds of labs
 

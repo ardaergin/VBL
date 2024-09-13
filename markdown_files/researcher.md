@@ -5,7 +5,7 @@ Setting up your study in the VBL student pool is easier than you think! First, r
 <div style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
 
     <!-- Step 1 Button -->
-    <a href="step-1" style="text-decoration: none;">
+    <a href="/step-1/questions" style="text-decoration: none;">
         <button style="
             width: 100%;
             padding: 20px;

@@ -1,0 +1,92 @@
+<div class="form-container">
+    <div class="form-group text-center">
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Is your study an online study or a lab study?</label>
+        
+        <!-- Online / Lab buttons -->
+        <div class="btn-group" role="group" aria-label="Study type question">
+            <button type="button" id="studyOnline" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('online')">Online Study</button>
+            <button type="button" id="studyLab" class="btn btn-outline-secondary btn-lg" onclick="handleStudyType('lab')">Lab Study</button>
+        </div>
+    </div>
+
+    <!-- PhD / Assistants question will be revealed after the first question -->
+    <div id="nextQuestion" class="form-group text-center hidden mt-4">
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Are you a PhD student or will you request research assistants from VBL?</label>
+        <div class="btn-group" role="group" aria-label="PhD question">
+            <button type="button" id="phdYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('y')">PhD Student</button>
+            <button type="button" id="assistYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('n')">Request Assistants</button>
+        </div>
+    </div>
+
+    <!-- Revealed Step Buttons -->
+    <div id="stepButtons" class="hidden mt-4">
+        <div class="d-grid gap-3">
+            <a id="step1Link" href="#" class="btn btn-outline-info btn-lg">Step 1: Study Creation</a>
+            <a id="step2Link" href="#" class="btn btn-outline-info btn-lg">Step 2: Receiving Approval for Your Study</a>
+            <a id="step3Link" href="#" class="btn btn-outline-info btn-lg">Step 3: Data Collection</a>
+        </div>
+    </div>
+</div>
+
+<script>
+    let studyType = '';
+    let assistantStatus = '';
+
+    function handleStudyType(type) {
+        studyType = type;
+        document.getElementById('studyOnline').classList.toggle('btn-primary', type === 'online');
+        document.getElementById('studyLab').classList.toggle('btn-primary', type === 'lab');
+        document.getElementById('nextQuestion').classList.remove('hidden');
+    }
+
+    function handlePhdStatus(status) {
+        assistantStatus = status;
+        document.getElementById('phdYes').classList.toggle('btn-success', status === 'y');
+        document.getElementById('assistYes').classList.toggle('btn-success', status === 'n');
+
+        // Generate dynamic links for each step
+        let basePath = `/step-1/${studyType}/${assistantStatus}`;
+        document.getElementById('step1Link').href = `${basePath}/step-1-overview`;
+        document.getElementById('step2Link').href = `/step-2/${studyType}/${assistantStatus}/step-2-overview`;
+        document.getElementById('step3Link').href = `/step-3/${studyType}/${assistantStatus}/step-3-overview`;
+
+        document.getElementById('stepButtons').classList.remove('hidden');
+    }
+</script>
+
+<style>
+    .form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info {
+        padding: 10px 30px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-outline-primary:hover, .btn-outline-info:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    .btn-outline-success:hover {
+        background-color: #28a745;
+        color: white;
+    }
+</style>

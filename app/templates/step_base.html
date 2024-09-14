@@ -15,10 +15,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main_content.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/media.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/progress.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/typography.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">  
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/progress.css') }}">  
     <title>Search Results</title>
     <link rel="icon" type="ximage/png" href="{{ url_for('static', filename='images/vbl_logo_cropped.png') }}">
 </head>
@@ -54,15 +55,27 @@
             </div>
 
             <!-- Main Content Area -->
+
             <div class="col-md-9">
+
+                <nav aria-label="breadcrumb" style="font-size: 1rem;"></nav>
+                    <ol class="breadcrumb">
+                      {% for crumb in breadcrumb_path %}
+                      <li class="breadcrumb-item">
+                        <a href="{{ url_for('main.show_page', page_name=crumb.name) }}">{{ crumb.display }}</a>
+                      </li>
+                      {% endfor %}
+                    </ol>
+                </nav>
+
                 <nav aria-label="progress-bar" style="font-size: 1rem;">
                     <!-- Progress Bar -->
                     {% if progress is defined %}
-                    <div class="progress" style="width: 90%; height: 20px; margin: 20px auto;">
+                    <div class="progress" style="width: 85%; height: 30px; margin: 20px auto;">
                         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
                             style="width: {{ progress|round(0) }}%; background-color: #007bff;"
                             aria-valuenow="{{ progress|round(0) }}" aria-valuemin="0" aria-valuemax="100">
-                            {{ progress|round(0) }}%
+                            {{ progress|int }}%
                         </div>
                     </div>
                     {% endif %}
@@ -87,20 +100,6 @@
                     </div>          
 
                     {{ content|safe }}
-
-                    <div class="d-flex justify-content-between mt-4" style="margin-top: 40px;">
-                        {% if previous_page %}
-                            <a href="{{ url_for('main.show_step', step=step, path_type=path_type, page_name=previous_page) }}" class="btn btn-outline-primary">Previous</a>
-                        {% else %}
-                            <span></span>
-                        {% endif %}
-                
-                        {% if next_page %}
-                            <a href="{{ url_for('main.show_step', step=step, path_type=path_type, page_name=next_page) }}" class="btn btn-outline-primary">Next</a>
-                        {% else %}
-                            <span></span>
-                        {% endif %}
-                    </div>
                     
                 </div>
 

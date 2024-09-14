@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Do You Already Have an Account on VBL SONA?</h2>
+
+    <!-- Form for asking the user about the VBL SONA account -->
+    <div class="form-container">
+        <div class="form-group text-center">
+            <label class="d-block mb-3" style="font-size: 1.2rem;">Keep in mind that even if you have an account on another SONA platform, you still need to request an account from us!</label>
+            
+            <!-- Yes/No buttons -->
+            <div class="btn-group" role="group" aria-label="VBL SONA account question">
+                <button type="button" id="vblYes" class="btn btn-outline-primary btn-lg" onclick="handleSelection('yes')">Yes</button>
+                <button type="button" id="vblNo" class="btn btn-outline-secondary btn-lg" onclick="handleSelection('no')">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Response for No -->
+    <div id="accountRequestMessage" class="alert alert-info mt-4 hidden">
+        <p>To request a researcher account, please email us at 
+            <a href="mailto:vbl@vu.nl">vbl@vu.nl</a> with the following details:</p>
+        <ul>
+            <li>First Name</li>
+            <li>Last Name</li>
+            <li>VUnet ID</li>
+            <li>VU Email Address</li>
+        </ul>
+        <p>We will email you once we create an account for you. Then, you can proceed with conducting a study!</p>
+    </div>
+
+    <!-- Response for Yes with Green Proceed Button -->
+    <div id="accountConfirmationMessage" class="alert alert-success mt-4 hidden text-center">
+        <p>Great! Now you can proceed with conducting your research in VBL.</p>
+        <a href="/researcher" class="btn btn-success btn-lg mt-3">Proceed to VBL Research Manual</a>
+    </div>
+</div>
+
+<script>
+    function handleSelection(selection) {
+        if (selection === 'no') {
+            document.getElementById('accountRequestMessage').classList.remove('hidden');
+            document.getElementById('accountConfirmationMessage').classList.add('hidden');
+        } else if (selection === 'yes') {
+            document.getElementById('accountRequestMessage').classList.add('hidden');
+            document.getElementById('accountConfirmationMessage').classList.remove('hidden');
+        }
+    }
+</script>
+
+<style>
+    .form-container {
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 30px;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .btn-outline-primary, .btn-outline-secondary {
+        padding: 10px 30px;
+        border-radius: 50px;
+        font-size: 1.2rem;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-outline-primary:hover {
+        background-color: #007bff;
+        color: white;
+    }
+
+    .btn-outline-secondary:hover {
+        background-color: #6c757d;
+        color: white;
+    }
+
+    /* Green Button */
+    .btn-success {
+        background-color: #28a745;
+        border: none;
+        padding: 10px 30px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        transition: background-color 0.3s ease;
+        color: white;
+    }
+
+    .btn-success:hover {
+        background-color: #218838;
+    }
+
+    /* Centering the button */
+    .text-center .btn-success {
+        display: inline-block;
+    }
+</style>
+{% endblock %}

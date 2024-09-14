@@ -5,15 +5,13 @@
     <h2 class="text-center mb-4">Do You Already Have an Account on VBL SONA?</h2>
 
     <!-- Form for asking the user about the VBL SONA account -->
-    <div class="form-container">
-        <div class="form-group text-center">
-            <label class="d-block mb-3" style="font-size: 1.2rem;">Keep in mind that even if you have an account on another SONA platform, you still need to request an account from us!</label>
-            
-            <!-- Yes/No buttons -->
-            <div class="btn-group" role="group" aria-label="VBL SONA account question">
-                <button type="button" id="vblYes" class="btn btn-outline-primary btn-lg" onclick="handleSelection('yes')">Yes</button>
-                <button type="button" id="vblNo" class="btn btn-outline-secondary btn-lg" onclick="handleSelection('no')">No</button>
-            </div>
+    <div class="form-group text-center">
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Keep in mind that even if you have an account on another SONA platform, you still need to request an account from us!</label>
+        
+        <!-- Yes/No buttons -->
+        <div class="btn-group" role="group" aria-label="VBL SONA account question">
+            <button type="button" id="vblYes" class="btn btn-outline-primary btn-lg" onclick="handleSelection('yes')">Yes</button>
+            <button type="button" id="vblNo" class="btn btn-outline-secondary btn-lg" onclick="handleSelection('no')">No</button>
         </div>
     </div>
 
@@ -33,7 +31,7 @@
     <!-- Response for Yes with Green Proceed Button -->
     <div id="accountConfirmationMessage" class="alert alert-success mt-4 hidden text-center">
         <p>Great! Now you can proceed with conducting your research in VBL.</p>
-        <a href="/researcher" class="btn btn-success btn-lg mt-3">Proceed to VBL Research Manual</a>
+        <a href="/researcher-overview" class="btn btn-success btn-lg mt-3">Proceed to VBL Research Manual</a>
     </div>
 </div>
 

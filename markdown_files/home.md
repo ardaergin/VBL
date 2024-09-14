@@ -3,7 +3,7 @@
 Thank you for your interest in using the student pool of the VU Behavioural Lab (VBL)!
 
 <!-- Researcher Button -->
-<a href="account" style="text-decoration: none; display: block;">
+<a href="researcher-account" style="text-decoration: none; display: block;">
     <button style="
         background-color: #007bff; 
         color: white; 

@@ -1,11 +1,16 @@
-<div class="form-container">
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container mt-3"> <!-- Reduced margin-top -->
+
+    <!-- Form for asking the user about the study type -->
     <div class="form-group text-center">
         <label class="d-block mb-3" style="font-size: 1.2rem;">Is your study an online study or a lab study?</label>
         
         <!-- Online / Lab buttons -->
         <div class="btn-group" role="group" aria-label="Study type question">
             <button type="button" id="studyOnline" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('online')">Online Study</button>
-            <button type="button" id="studyLab" class="btn btn-outline-secondary btn-lg" onclick="handleStudyType('lab')">Lab Study</button>
+            <button type="button" id="studyLab" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('lab')">Lab Study</button>
         </div>
     </div>
 
@@ -13,80 +18,150 @@
     <div id="nextQuestion" class="form-group text-center hidden mt-4">
         <label class="d-block mb-3" style="font-size: 1.2rem;">Are you a PhD student or will you request research assistants from VBL?</label>
         <div class="btn-group" role="group" aria-label="PhD question">
-            <button type="button" id="phdYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('y')">PhD Student</button>
-            <button type="button" id="assistYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('n')">Request Assistants</button>
+            <button type="button" id="phdYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('n')">PhD Student</button>
+            <button type="button" id="assistYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('y')">Request Assistants</button>
         </div>
     </div>
 
-    <!-- Revealed Step Buttons -->
-    <div id="stepButtons" class="hidden mt-4">
-        <div class="d-grid gap-3">
-            <a id="step1Link" href="#" class="btn btn-outline-info btn-lg">Step 1: Study Creation</a>
-            <a id="step2Link" href="#" class="btn btn-outline-info btn-lg">Step 2: Receiving Approval for Your Study</a>
-            <a id="step3Link" href="#" class="btn btn-outline-info btn-lg">Step 3: Data Collection</a>
+    <!-- Study Steps will be revealed after both questions are answered -->
+    <div id="studySteps" class="mt-4 hidden">
+        <h4 class="text-center">Your Steps</h4>
+        <div class="step-buttons-container" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
+            <!-- Dynamically generated links -->
+            <a href="#" id="step1Link" class="step-button">
+                <button style="
+                    width: 100%;
+                    padding: 15px; /* Reduced padding */
+                    background-color: transparent;
+                    border: 2px solid #007bff;
+                    color: #007bff;
+                    font-size: 22px; /* Reduced font size */
+                    border-radius: 8px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;">
+                    Step 1: Study creation
+                </button>
+            </a>
+            <a href="#" id="step2Link" class="step-button">
+                <button style="
+                    width: 100%;
+                    padding: 15px; 
+                    background-color: transparent;
+                    border: 2px solid #007bff;
+                    color: #007bff;
+                    font-size: 22px;
+                    border-radius: 8px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;">
+                    Step 2: Data collection
+                </button>
+            </a>
+            <a href="#" id="step3Link" class="step-button">
+                <button style="
+                    width: 100%;
+                    padding: 15px; 
+                    background-color: transparent;
+                    border: 2px solid #007bff;
+                    color: #007bff;
+                    font-size: 22px;
+                    border-radius: 8px;
+                    text-align: center;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;">
+                    Step 3: After data collection
+                </button>
+            </a>
         </div>
     </div>
 </div>
 
 <script>
     let studyType = '';
-    let assistantStatus = '';
+    let phdStatus = '';
 
     function handleStudyType(type) {
         studyType = type;
-        document.getElementById('studyOnline').classList.toggle('btn-primary', type === 'online');
-        document.getElementById('studyLab').classList.toggle('btn-primary', type === 'lab');
+
+        // Reset button styles
+        document.getElementById('studyOnline').classList.remove('btn-primary');
+        document.getElementById('studyOnline').classList.add('btn-outline-primary');
+        document.getElementById('studyLab').classList.remove('btn-primary');
+        document.getElementById('studyLab').classList.add('btn-outline-primary');
+
+        // Highlight the chosen button
+        if (type === 'online') {
+            document.getElementById('studyOnline').classList.add('btn-primary');
+            document.getElementById('studyOnline').classList.remove('btn-outline-primary');
+        } else if (type === 'lab') {
+            document.getElementById('studyLab').classList.add('btn-primary');
+            document.getElementById('studyLab').classList.remove('btn-outline-primary');
+        }
+
+        // Show the next question
         document.getElementById('nextQuestion').classList.remove('hidden');
     }
 
     function handlePhdStatus(status) {
-        assistantStatus = status;
-        document.getElementById('phdYes').classList.toggle('btn-success', status === 'y');
-        document.getElementById('assistYes').classList.toggle('btn-success', status === 'n');
+        phdStatus = status;
 
-        // Generate dynamic links for each step
-        let basePath = `/step-1/${studyType}/${assistantStatus}`;
-        document.getElementById('step1Link').href = `${basePath}/step-1-overview`;
-        document.getElementById('step2Link').href = `/step-2/${studyType}/${assistantStatus}/step-2-overview`;
-        document.getElementById('step3Link').href = `/step-3/${studyType}/${assistantStatus}/step-3-overview`;
+        // Reset button styles
+        document.getElementById('phdYes').classList.remove('btn-success');
+        document.getElementById('phdYes').classList.add('btn-outline-success');
+        document.getElementById('assistYes').classList.remove('btn-success');
+        document.getElementById('assistYes').classList.add('btn-outline-success');
 
-        document.getElementById('stepButtons').classList.remove('hidden');
+        // Highlight the chosen button
+        if (status === 'n') {
+            document.getElementById('phdYes').classList.add('btn-success');
+            document.getElementById('phdYes').classList.remove('btn-outline-success');
+        } else if (status === 'y') {
+            document.getElementById('assistYes').classList.add('btn-success');
+            document.getElementById('assistYes').classList.remove('btn-outline-success');
+        }
+
+        // Show the study steps and update links
+        document.getElementById('studySteps').classList.remove('hidden');
+        updateLinks();
+    }
+
+    function updateLinks() {
+        let studyPath = studyType === 'online' ? 'online' : 'lab';
+        studyPath += phdStatus === 'n' ? '/n' : '/y';
+
+        document.getElementById('step1Link').href = `/step-1/${studyPath}/step-1-overview`;
+        document.getElementById('step2Link').href = `/step-2/${studyPath}/step-2-overview`;
+        document.getElementById('step3Link').href = `/step-3/${studyPath}/step-3-overview`;
     }
 </script>
 
 <style>
-    .form-container {
-        background-color: white;
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        padding: 30px;
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
     .hidden {
         display: none;
     }
 
-    .btn-outline-primary, .btn-outline-secondary, .btn-outline-success, .btn-outline-info {
+    .btn-outline-primary, .btn-outline-success {
         padding: 10px 30px;
         border-radius: 50px;
         font-size: 1.2rem;
         transition: background-color 0.3s, color 0.3s;
     }
 
-    .btn-outline-primary:hover, .btn-outline-info:hover {
+    .btn-outline-primary:hover, .btn-outline-success:hover {
         background-color: #007bff;
         color: white;
     }
 
-    .btn-outline-secondary:hover {
-        background-color: #6c757d;
-        color: white;
+    .step-button:hover button {
+        transform: scale(1.05);
+        background-color: transparent; /* Removed blue background */
+        color: #007bff;
+        border: 2px solid #007bff;
     }
 
-    .btn-outline-success:hover {
-        background-color: #28a745;
-        color: white;
+    .step-button button {
+        background-color: transparent; /* Default to transparent */
     }
 </style>
+{% endblock %}

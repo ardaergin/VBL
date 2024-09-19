@@ -10,7 +10,6 @@ def create_app():
     # Register blueprints
     register_blueprints(app)
 
-    # Initialize the Flask-Session extension
     Session(app)
 
     return app

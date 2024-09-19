@@ -1,0 +1,31 @@
+
+.hidden {
+    display: none;
+}
+
+.badge-primary {
+    cursor: pointer;
+}
+
+.btn-outline-primary, .btn-outline-success {
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-primary:hover, .btn-outline-success:hover {
+    background-color: #007bff;
+    color: white;
+}
+
+.step-button:hover button {
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
+.step-button button {
+    background-color: transparent;
+}

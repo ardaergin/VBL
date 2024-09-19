@@ -18,9 +18,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/slider.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/typography.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/search.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/progress.css') }}">  
-    <title>Search Results</title>
     <link rel="icon" type="ximage/png" href="{{ url_for('static', filename='images/vbl_logo_cropped.png') }}">
 </head>
 <body>
@@ -55,7 +53,6 @@
             </div>
 
             <!-- Main Content Area -->
-
             <div class="col-md-9">
                 <nav aria-label="breadcrumb" style="font-size: 1rem;">
                     <ol class="breadcrumb">
@@ -68,35 +65,45 @@
                 </nav>
 
                 <nav aria-label="progress-bar" style="font-size: 1rem;">
-                    <!-- Progress Bar -->
-                    {% if progress is defined %}
-                    <div class="progress" style="width: 85%; height: 30px; margin: 20px auto;">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
-                            style="width: {{ progress|round(0) }}%; background-color: #007bff;"
-                            aria-valuenow="{{ progress|round(0) }}" aria-valuemin="0" aria-valuemax="100">
-                            {{ progress|int }}%
+                    <div class="d-flex justify-content-between align-items-center" style="width: 100%; margin: 20px 0;">
+                        
+                        
+                        <!-- Progress Bar -->
+                        {% if progress is defined %}
+                        <div class="progress" style="width: 80%; height: 30px;">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                                style="width: {{ progress|round(0) }}%; background-color: #007bff;"
+                                aria-valuenow="{{ progress|round(0) }}" aria-valuemin="0" aria-valuemax="100">
+                                {{ progress|int }}%
+                            </div>
                         </div>
+                        {% endif %}
+
+                        <!-- Return to Homepage Button -->
+                        <a href="{{ url_for('main.show_page', page_name='researcher-overview') }}" class="btn btn-secondary">
+                            <i class="fas fa-home"></i> Return to Overview
+                        </a>
+                        
                     </div>
-                    {% endif %}
                 </nav>
-                
+                                
                 <!-- Search Results Content -->
                 <div class="content-container mt-4">
                     
                     <!-- Top Navigation Buttons -->
                     <div class="d-flex justify-content-between mt-1" style="margin-bottom: 40px;">
                         {% if previous_page %}
-                            <a href="{{ url_for('main.show_step', step=step, study_type=study_type, assistant_status=assistant_status, page_name=previous_page) }}" class="btn btn-outline-primary">Previous</a>
+                            <a href="{{ url_for('main.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=previous_page) }}" class="btn btn-outline-primary">Previous</a>
                         {% else %}
                             <span></span>
                         {% endif %}
-                
+
                         {% if next_page %}
-                            <a href="{{ url_for('main.show_step', step=step, study_type=study_type, assistant_status=assistant_status, page_name=next_page) }}" class="btn btn-outline-primary">Next</a>
+                            <a href="{{ url_for('main.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=next_page) }}" class="btn btn-outline-primary">Next</a>
                         {% else %}
                             <span></span>
                         {% endif %}
-                    </div>          
+                    </div>
 
                     {{ content|safe }}
                     

@@ -1,29 +1,51 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="container mt-3"> <!-- Reduced margin-top -->
+<div class="container mt-3">
 
-    <!-- Form for asking the user about the study type -->
-    <div class="form-group text-center">
+    <!-- Selections made will move to this row in the top-left -->
+    <div id="selectionsRow" class="d-flex flex-row justify-content-between align-items-center mb-4 hidden" style="min-height: 50px;">
+        <!-- Selections will be displayed here -->
+        <div id="selectedTags" class="d-flex flex-row align-items-center"></div>
+    
+        <!-- Change Selection Button -->
+        <button id="changeSelectionBtn" class="btn btn-outline-danger hidden" onclick="resetSelections()">Change Selection</button>
+    </div>
+
+    <!-- Faculty question -->
+    <div id="facultyQuestion" class="form-group text-center">
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Which faculty are you a part of?</label>
+        
+        <!-- FMG / SBE buttons -->
+        <div class="btn-group" role="group" aria-label="Faculty question">
+            <button type="button" id="facultyFMG" class="btn btn-outline-primary btn-lg" onclick="handleFacultySelection('FMG')">FMG</button>
+            <button type="button" id="facultySBE" class="btn btn-outline-primary btn-lg" onclick="handleFacultySelection('SBE')">SBE</button>
+        </div>
+    </div>
+
+    <!-- Study type question, hidden initially -->
+    <div id="studyTypeQuestion" class="form-group text-center hidden">
         <label class="d-block mb-3" style="font-size: 1.2rem;">Is your study an online study or a lab study?</label>
         
         <!-- Online / Lab buttons -->
         <div class="btn-group" role="group" aria-label="Study type question">
-            <button type="button" id="studyOnline" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('online')">Online Study</button>
-            <button type="button" id="studyLab" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('lab')">Lab Study</button>
+            <button type="button" id="studyOnline" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('Online Study')">Online Study</button>
+            <button type="button" id="studyLab" class="btn btn-outline-primary btn-lg" onclick="handleStudyType('Lab Study')">Lab Study</button>
         </div>
     </div>
 
-    <!-- PhD / Assistants question will be revealed after the first question -->
-    <div id="nextQuestion" class="form-group text-center hidden mt-4">
-        <label class="d-block mb-3" style="font-size: 1.2rem;">Are you a PhD student or will you request research assistants from VBL?</label>
-        <div class="btn-group" role="group" aria-label="PhD question">
-            <button type="button" id="phdYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('n')">PhD Student</button>
-            <button type="button" id="assistYes" class="btn btn-outline-success btn-lg" onclick="handlePhdStatus('y')">Request Assistants</button>
+    <!-- Assistants question, hidden initially -->
+    <div id="nextQuestion" class="form-group text-center hidden">
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Will you be requesting research assistants from us? <br> 
+            (<i>Please note that if you are a PhD student, you need to conduct your study yourself.</i>)
+        </label>
+        <div class="btn-group" role="group" aria-label="Assistants question">
+            <button type="button" id="assistYes" class="btn btn-outline-success btn-lg" onclick="handleAssistants('Request Assistants')">Yes</button>
+            <button type="button" id="assistNo" class="btn btn-outline-success btn-lg" onclick="handleAssistants('Conduct Study Yourself')">No</button>
         </div>
     </div>
 
-    <!-- Study Steps will be revealed after both questions are answered -->
+    <!-- Study Steps will be revealed after all questions are answered -->
     <div id="studySteps" class="mt-4 hidden">
         <h4 class="text-center">Your Steps</h4>
         <div class="step-buttons-container" style="display: flex; flex-direction: column; gap: 20px; margin-top: 20px;">
@@ -31,11 +53,11 @@
             <a href="#" id="step1Link" class="step-button">
                 <button style="
                     width: 100%;
-                    padding: 15px; /* Reduced padding */
+                    padding: 15px;
                     background-color: transparent;
                     border: 2px solid #007bff;
                     color: #007bff;
-                    font-size: 22px; /* Reduced font size */
+                    font-size: 22px;
                     border-radius: 8px;
                     text-align: center;
                     cursor: pointer;
@@ -77,91 +99,7 @@
     </div>
 </div>
 
-<script>
-    let studyType = '';
-    let phdStatus = '';
+<script src="{{ url_for('static', filename='js/researcher_overview.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/researcher_overview.css') }}">  
 
-    function handleStudyType(type) {
-        studyType = type;
-
-        // Reset button styles
-        document.getElementById('studyOnline').classList.remove('btn-primary');
-        document.getElementById('studyOnline').classList.add('btn-outline-primary');
-        document.getElementById('studyLab').classList.remove('btn-primary');
-        document.getElementById('studyLab').classList.add('btn-outline-primary');
-
-        // Highlight the chosen button
-        if (type === 'online') {
-            document.getElementById('studyOnline').classList.add('btn-primary');
-            document.getElementById('studyOnline').classList.remove('btn-outline-primary');
-        } else if (type === 'lab') {
-            document.getElementById('studyLab').classList.add('btn-primary');
-            document.getElementById('studyLab').classList.remove('btn-outline-primary');
-        }
-
-        // Show the next question
-        document.getElementById('nextQuestion').classList.remove('hidden');
-    }
-
-    function handlePhdStatus(status) {
-        phdStatus = status;
-
-        // Reset button styles
-        document.getElementById('phdYes').classList.remove('btn-success');
-        document.getElementById('phdYes').classList.add('btn-outline-success');
-        document.getElementById('assistYes').classList.remove('btn-success');
-        document.getElementById('assistYes').classList.add('btn-outline-success');
-
-        // Highlight the chosen button
-        if (status === 'n') {
-            document.getElementById('phdYes').classList.add('btn-success');
-            document.getElementById('phdYes').classList.remove('btn-outline-success');
-        } else if (status === 'y') {
-            document.getElementById('assistYes').classList.add('btn-success');
-            document.getElementById('assistYes').classList.remove('btn-outline-success');
-        }
-
-        // Show the study steps and update links
-        document.getElementById('studySteps').classList.remove('hidden');
-        updateLinks();
-    }
-
-    function updateLinks() {
-        let studyPath = studyType === 'online' ? 'online' : 'lab';
-        studyPath += phdStatus === 'n' ? '/n' : '/y';
-
-        document.getElementById('step1Link').href = `/step-1/${studyPath}/step-1-overview`;
-        document.getElementById('step2Link').href = `/step-2/${studyPath}/step-2-overview`;
-        document.getElementById('step3Link').href = `/step-3/${studyPath}/step-3-overview`;
-    }
-</script>
-
-<style>
-    .hidden {
-        display: none;
-    }
-
-    .btn-outline-primary, .btn-outline-success {
-        padding: 10px 30px;
-        border-radius: 50px;
-        font-size: 1.2rem;
-        transition: background-color 0.3s, color 0.3s;
-    }
-
-    .btn-outline-primary:hover, .btn-outline-success:hover {
-        background-color: #007bff;
-        color: white;
-    }
-
-    .step-button:hover button {
-        transform: scale(1.05);
-        background-color: transparent; /* Removed blue background */
-        color: #007bff;
-        border: 2px solid #007bff;
-    }
-
-    .step-button button {
-        background-color: transparent; /* Default to transparent */
-    }
-</style>
 {% endblock %}

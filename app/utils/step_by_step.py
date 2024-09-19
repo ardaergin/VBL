@@ -1,23 +1,5 @@
 step_1 = {
-    "online-y": [
-        "step-1-overview",
-        "create-a-new-study",
-        "select-the-study-type",
-        "fill-in-the-study-information-short",
-        "study-name",
-        "brief-abstract",
-        "detailed-description",
-        "eligibility-requirements",
-        "duration",
-        "payment",
-        "preparation",
-        "add-researchers",
-        "ethical-approval",
-        "pre-requisites-and-disqualifiers",
-        "study-url-and-survey-setup",
-        "submission-for-approval"
-    ],
-    "online-n": [
+    "online-n": [  # Using 'n' as a placeholder for online studies
         "step-1-overview",
         "create-a-new-study",
         "select-the-study-type",
@@ -74,14 +56,7 @@ step_1 = {
 }
 
 step_2 = {
-    "online-y": [
-        "step-2-overview",
-        "attention-checks",
-        "arranging-lab-study-yourself",
-        "arranging-time-slots",
-        "responsibility-during-data-collection"
-    ],
-    "online-n": [
+    "online-n": [  # Online study using 'n' placeholder
         "step-2-overview",
         "attention-checks",
         "arranging-lab-study-yourself",
@@ -101,16 +76,11 @@ step_2 = {
         "arranging-lab-study-yourself",
         "arranging-time-slots",
         "responsibility-during-data-collection"
-    ],
+    ]
 }
 
 step_3 = {
-    "online-y": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "online-n": [
+    "online-n": [  # Online study using 'n' placeholder
         "step-3-overview",
         "granting-or-denying-payment",
         "denying-payment"

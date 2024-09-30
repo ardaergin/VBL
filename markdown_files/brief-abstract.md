@@ -14,3 +14,4 @@ Here, explain your study in **a single sentence** to give students a general ide
 >[!error] <i class="fa-regular fa-circle-xmark"></i> &nbsp Example: Inappropriate Abstract
 ><br>
 >"In this study, you will have to complete a writing task about shampoo advertising."
+

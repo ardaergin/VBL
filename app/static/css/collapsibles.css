@@ -1,0 +1,139 @@
+/* Callout Styles */
+
+/* GENERAL */
+.callout {
+    padding: 10px;
+    margin: 25px 0;
+    border-left: 4px solid;
+    background: #f8f9fa; /* Light grey background for modern look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 8px; /* Subtle rounding of corners */
+    transition: background 0.3s ease, border-left-color 0.3s ease; /* Smooth transitions */
+}
+
+.callout button {
+    display: flex;
+    justify-content: space-between; /* Align title left and arrow right */
+    align-items: center;
+    width: 100%; /* Make the button take the full width */
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 0;
+    font-size: 1em; /* Slightly larger font size for emphasis */
+    cursor: pointer;
+    color: #343a40; /* Dark grey for modern text color */
+    font-weight: 700; /* Slightly bolder text */
+    transition: color 0.3s ease; /* Smooth color transition */
+    padding: 15px; /* Add padding to make it easier to click */
+    border-radius: 8px; /* Keep button rounded */
+}
+
+.callout button::after {
+    content: "\f0d7"; /* FontAwesome down arrow */
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: auto; /* Ensure it stays on the right side */
+    transition: transform 0.3s ease;
+}
+
+.callout button:hover {
+    color: #007bff; /* Subtle blue on hover */
+}
+
+.callout button[aria-expanded="true"]::after {
+    transform: rotate(180deg); /* Rotate arrow when expanded */
+}
+
+.callout-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out; /* Add padding transition */
+    padding-top: 0;
+    padding-left: 20px; /* Add padding to the left side */
+    padding-right: 10px; /* Add padding to the right side */
+    margin-bottom: 10px; /* Add some margin at the bottom to separate content from next element */
+}
+
+.callout-content.expanded {
+    max-height: 1000px;
+    padding-top: 10px; /* Add padding to make the content less cramped */
+}
+
+/* SPECIFIC TYPES */
+
+/* INFO */
+.callout-info {
+    border-left-color: #17a2b8;
+    background: linear-gradient(145deg, #e3f6fd, #d7effa); /* Soft gradient for modern look */
+}
+
+.callout-info button {
+    color: #17a2b8;
+}
+
+.callout-info button:hover {
+    color: #0f6b82; /* Darker blue on hover */
+}
+
+/* WARNING */
+.callout-warning {
+    border-left-color: #ffc107;
+    background: linear-gradient(145deg, #fff5e3, #ffecb3);
+}
+
+.callout-warning button {
+    color: #ffc107;
+}
+
+.callout-warning button:hover {
+    color: #b38407;
+}
+
+/* ERROR */
+.callout-error {
+    border-left-color: #dc3545;
+    background: linear-gradient(145deg, #fde3e3, #fac3c3);
+}
+
+.callout-error button {
+    color: #dc3545;
+}
+
+.callout-error button:hover {
+    color: #a0252f;
+}
+
+/* SUCCESS */
+.callout-success {
+    border-left-color: #28a745;
+    background: linear-gradient(145deg, #e3fdea, #c3f8d1);
+}
+
+.callout-success button {
+    color: #28a745;
+}
+
+.callout-success button:hover {
+    color: #1d6f32;
+}
+
+/* QUESTION */
+.callout-question {
+    border-left-color: #fd7e14;
+    background: linear-gradient(145deg, #ffedd4, #ffdeaa);
+}
+
+.callout-question button {
+    color: #fd7e14;
+}
+
+.callout-question button:hover {
+    color: #b3550d;
+}
+
+/* Icons for Callouts */
+.callout-icon {
+    margin-right: 10px;
+    font-size: 1.5em;
+}

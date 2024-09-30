@@ -1,5 +1,6 @@
 import markdown
 import re
+from jinja2 import Template
 from flask import url_for
 
 # Existing regex for callouts
@@ -33,9 +34,12 @@ def preprocess_markdown(md_content):
 
     def replace_video(match):
         video_url = match.group(1)
+        # Assuming the poster image has the same name as the video but with a '.jpg' extension
+        poster_url = video_url.replace('.mp4', '.jpg')  # Adjust this logic as needed for your project
+        
         video_tag = (
             f'<div class="embed-responsive embed-responsive-16by9">'
-            f'<video controls class="embed-responsive-item">'
+            f'<video controls class="embed-responsive-item" poster="{poster_url}">'
             f'<source src="{video_url}" type="video/mp4">'
             f'Your browser does not support the video tag.'
             f'</video>'
@@ -47,7 +51,7 @@ def preprocess_markdown(md_content):
     processed_content = CALLOUT_RE.sub(replace_callout, md_content)
     processed_content = VIDEO_RE.sub(replace_video, processed_content)
 
-    return markdown.markdown(processed_content, extensions=['extra', 'toc', 'sane_lists', 'smarty'])
+    return processed_content
 
 def adjust_links(html_content):
     """Adjust links that should be standalone instead of within the step paths."""
@@ -67,12 +71,21 @@ def adjust_links(html_content):
 
     return adjusted_html
 
-def markdown_to_html(filename):
-    with open(filename, 'r', encoding='utf-8') as f:
-        text = f.read()
-        preprocessed_text = preprocess_markdown(text)
-        html = markdown.markdown(preprocessed_text, extensions=['extra', 'toc', 'sane_lists', 'smarty'])
+def render_markdown_with_context(file_path, context):
+    """Render the markdown file with the given context (like faculty, study_type, assistant_status)."""
+    with open(file_path, 'r', encoding='utf-8') as f:
+        template = Template(f.read())
+
+        # Render the markdown file with the given context (faculty, study_type, etc.)
+        rendered_content = template.render(context)
+        
+        # Preprocess callouts and videos within the rendered content
+        preprocessed_content = preprocess_markdown(rendered_content)
+
+        # Convert the rendered markdown content to HTML
+        html_content = markdown.markdown(preprocessed_content, extensions=['extra', 'toc', 'sane_lists', 'smarty'])
 
         # Adjust the links to point to standalone pages where necessary
-        html = adjust_links(html)
-    return html
+        html_content = adjust_links(html_content)
+
+    return html_content

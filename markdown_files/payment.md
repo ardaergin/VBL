@@ -22,3 +22,4 @@ You can use the tool below to calculate the amount you have to pay each particip
 >[!info] <i class="fa-solid fa-info"></i> &nbsp Do you have an incentivized study?
 ><br>
 > You can pay different participants different amounts. This can be arranged after data is collected. Please see the page for [granting or denying payment](granting-or-denying-payment). For the current payment field in the study description, simply enter the usual amount and mention in the study description regarding the incentive.
+

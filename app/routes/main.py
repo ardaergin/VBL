@@ -1,6 +1,6 @@
 from flask import Blueprint, render_template, request, redirect, url_for
 import os
-from app.utils import markdown_to_html
+from app.utils import render_markdown_with_context
 from app.utils import NAVIGATION, full_page_hierarchy
 from app.utils import step_1, step_2, step_3
 
@@ -15,7 +15,7 @@ def index():
 def show_page(page_name):
     standalone_file_path = os.path.join('markdown_files', f'{page_name}.md')
     if os.path.exists(standalone_file_path):
-        content = markdown_to_html(standalone_file_path)
+        content = render_markdown_with_context(standalone_file_path, {})  # Empty context for standalone pages
         title = page_name.replace('_', ' ').capitalize()
         breadcrumb_path = full_page_hierarchy.get(page_name, [{"name": "home", "display": "Home"}])
         return render_template(
@@ -36,9 +36,17 @@ def show_step(step, faculty, study_type, assistant_status, page_name):
     file_path = os.path.join('markdown_files', f'{page_name}.md')
 
     if os.path.exists(file_path):
-        content = markdown_to_html(file_path)
+        # Prepare the context to be passed to the markdown file
+        context = {
+            'faculty': faculty,
+            'study_type': study_type,
+            'assistant_status': assistant_status
+        }
+
+        content = render_markdown_with_context(file_path, context)
         title = page_name.replace('_', ' ').capitalize()
 
+        # Dynamically get the step data (step_1, step_2, etc.)
         step_data = {
             1: step_1,
             2: step_2,
@@ -48,11 +56,14 @@ def show_step(step, faculty, study_type, assistant_status, page_name):
         if not step_data:
             return "Step not found", 404
 
-        # Use "online-n" as the key for online studies
-        key = f"{study_type}-{assistant_status}"
-        if page_name not in step_data.get(key, []):
+        # Construct the key based on faculty, study type, and assistant status
+        key = f"{faculty}-{study_type}-{assistant_status}"
+
+        # Check if the page exists for the specific path
+        if key not in step_data or page_name not in step_data[key]:
             return "Page not found", 404
 
+        # Get the current, previous, and next steps
         current_index = step_data[key].index(page_name)
         total_steps = len(step_data[key])
         current_step = current_index + 1
@@ -72,7 +83,7 @@ def show_step(step, faculty, study_type, assistant_status, page_name):
             previous_page=previous_page,
             next_page=next_page,
             step=step,
-            faculty=faculty,  # Make sure faculty is passed here
+            faculty=faculty,  # Pass the faculty
             study_type=study_type,  # Pass the study type
             assistant_status=assistant_status,  # Pass the assistant status (even if it's 'n' for online)
             breadcrumb_path=full_page_hierarchy.get(step, [{"name": "home", "display": "Home"}])

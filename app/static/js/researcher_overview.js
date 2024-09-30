@@ -40,15 +40,15 @@ function handleFacultySelection(selectedFaculty) {
     faculty = selectedFaculty;
 
     // Reset button styles
-    document.getElementById('facultyFMG').classList.remove('btn-primary');
-    document.getElementById('facultyFMG').classList.add('btn-outline-primary');
+    document.getElementById('facultyFGB').classList.remove('btn-primary');
+    document.getElementById('facultyFGB').classList.add('btn-outline-primary');
     document.getElementById('facultySBE').classList.remove('btn-primary');
     document.getElementById('facultySBE').classList.add('btn-outline-primary');
 
     // Highlight the chosen button
-    if (selectedFaculty === 'FMG') {
-        document.getElementById('facultyFMG').classList.add('btn-primary');
-        document.getElementById('facultyFMG').classList.remove('btn-outline-primary');
+    if (selectedFaculty === 'FGB') {
+        document.getElementById('facultyFGB').classList.add('btn-primary');
+        document.getElementById('facultyFGB').classList.remove('btn-outline-primary');
     } else if (selectedFaculty === 'SBE') {
         document.getElementById('facultySBE').classList.add('btn-primary');
         document.getElementById('facultySBE').classList.remove('btn-outline-primary');
@@ -166,8 +166,8 @@ function resetSelections() {
 }
 
 function resetButtonStyles() {
-    document.getElementById('facultyFMG').classList.remove('btn-primary');
-    document.getElementById('facultyFMG').classList.add('btn-outline-primary');
+    document.getElementById('facultyFGB').classList.remove('btn-primary');
+    document.getElementById('facultyFGB').classList.add('btn-outline-primary');
     document.getElementById('facultySBE').classList.remove('btn-primary');
     document.getElementById('facultySBE').classList.add('btn-outline-primary');
 

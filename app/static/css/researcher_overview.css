@@ -1,22 +1,52 @@
 
+/* Question Card Styling */
+.question-card {
+    background-color: #f8f9fa;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.question-card:hover {
+    background-color: #e6f2ff; /* Light blue background on hover */
+    transform: translateY(-5px); /* Slight lift effect on hover */
+}
+
+.question-card i {
+    color: #007bff;
+}
+
+.question-card p {
+    color: #007bff;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.question-card.selected {
+    background-color: #007bff; /* Filled background for selected state */
+    border-color: #0056b3; /* Darker border for contrast */
+    color: white;
+}
+
+.question-card.selected i, .question-card.selected p {
+    color: white; /* Change text and icon color to white when selected */
+}
+
+
 .hidden {
     display: none;
 }
 
 .badge-primary {
     cursor: pointer;
-}
-
-.btn-outline-primary, .btn-outline-success {
-    padding: 10px 30px;
-    border-radius: 50px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.btn-outline-primary:hover, .btn-outline-success:hover {
-    background-color: #007bff;
-    color: white;
 }
 
 .step-button:hover button {
@@ -26,6 +56,59 @@
     border: 2px solid #007bff;
 }
 
+.vbl-portal-button-container:hover button {
+    transform: scale(1.05);
+    background-color: transparent;
+    color: #007bff;
+    border: 2px solid #007bff;
+}
+
 .step-button button {
     background-color: transparent;
+}
+
+.vbl-portal-button-container button:hover {
+    background-color: #e6f2ff; /* Light blue background on hover */
+    color: #0056b3; /* Darker blue text on hover */
+}
+
+/* Selections Container Styling */
+.selections-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f8f9fa; /* Light background for better visibility */
+    padding: 10px 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px;
+}
+
+/* Selected Tags Styling */
+.selected-tags .badge {
+    background-color: #007bff; /* Blue background for tags */
+    color: white;
+    padding: 8px 12px;
+    margin-right: 8px;
+    border-radius: 20px; /* Rounded look for tags */
+    font-size: 0.9rem;
+    cursor: default;
+    transition: background-color 0.3s ease;
+}
+
+.selected-tags .badge:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Change Selection Button Styling */
+.change-selection-btn {
+    padding: 8px 12px;
+    font-size: 0.9rem;
+    border-radius: 20px; /* Match the rounded look of the tags */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.change-selection-btn:hover {
+    background-color: #c82333; /* Darker red on hover */
+    color: white;
 }

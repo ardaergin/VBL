@@ -1,5 +1,19 @@
 
-# Arranging access to the Transitorium building 
+# Arranging access to the labs
+
+The most common location for psychology researchers is the Brain and behaviour lab, and for that, you need to arrange it yourself. Check the BBlabs website.
+
+For using the Transitorium, or other... 
+
+
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Transitorium
+>
+>...
+
+>[!info] <i class="fa-solid fa-info"></i> &nbsp Brain and behavior labs
+>
+>We do not know.
+
 
 Our computer labs are located on the second basement floor of the Transitorium building. You need access cards to open the lab doors. We have arranged for the security team to provide access cards for researchers wanting to enter the lab spaces.
 

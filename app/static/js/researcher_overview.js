@@ -1,11 +1,29 @@
-let faculty = '';
-let studyType = '';
-let assistantStatus = '';  // Updated variable
+// Load selections from sessionStorage when the page loads
+document.addEventListener('DOMContentLoaded', function () {
+    // Load saved selections from sessionStorage
+    faculty = sessionStorage.getItem('faculty') || '';
+    studyType = sessionStorage.getItem('studyType') || '';
+    assistantStatus = sessionStorage.getItem('assistantStatus') || '';
+
+    // If there are saved selections, update the display
+    if (faculty) {
+        handleFacultySelection(faculty, true); // Second parameter indicates it's a pre-loaded value
+    }
+
+    if (studyType) {
+        handleStudyType(studyType, true);
+    }
+
+    if (assistantStatus && faculty !== 'FGB') { // Only set assistant status if it's not FGB
+        handleAssistants(assistantStatus, true);
+    }
+});
 
 function updateSelections() {
     const selectionsRow = document.getElementById('selectedTags');
     selectionsRow.innerHTML = ''; // Clear previous selections
 
+    // Only add the faculty and study type to the selections
     if (faculty) {
         const facultyTag = createSelectionTag(faculty);
         selectionsRow.appendChild(facultyTag);
@@ -14,7 +32,9 @@ function updateSelections() {
         const studyTag = createSelectionTag(studyType);
         selectionsRow.appendChild(studyTag);
     }
-    if (assistantStatus) {
+
+    // Only add assistant status if it was explicitly selected by the user (i.e., not auto-set for FGB)
+    if (assistantStatus && faculty !== 'FGB') {
         const assistantTag = createSelectionTag(assistantStatus);
         selectionsRow.appendChild(assistantTag);
     }
@@ -32,12 +52,28 @@ function updateSelections() {
 function createSelectionTag(label) {
     const tag = document.createElement('span');
     tag.classList.add('badge', 'badge-primary', 'mr-2', 'p-2');
-    tag.innerText = label;
+
+    // Format labels to be more user-friendly
+    switch (label) {
+        case 'n':
+            tag.innerText = 'Conduct Study Yourself';
+            break;
+        case 'y':
+            tag.innerText = 'Request Assistants';
+            break;
+        default:
+            tag.innerText = label;
+    }
+
     return tag;
 }
 
-function handleFacultySelection(selectedFaculty) {
+
+function handleFacultySelection(selectedFaculty, isPreloaded = false) {
     faculty = selectedFaculty;
+    if (!isPreloaded) {
+        sessionStorage.setItem('faculty', faculty); // Save to sessionStorage if it's a user action
+    }
 
     // Reset button styles
     document.getElementById('facultyFGB').classList.remove('btn-primary');
@@ -60,8 +96,11 @@ function handleFacultySelection(selectedFaculty) {
     updateSelections();  // Update selection display
 }
 
-function handleStudyType(type) {
+function handleStudyType(type, isPreloaded = false) {
     studyType = type;
+    if (!isPreloaded) {
+        sessionStorage.setItem('studyType', studyType); // Save to sessionStorage if it's a user action
+    }
 
     // Reset button styles
     document.getElementById('studyOnline').classList.remove('btn-primary');
@@ -71,30 +110,37 @@ function handleStudyType(type) {
 
     // Highlight the chosen button
     if (type === 'Online Study') {
-        console.log('Online Study selected');  // Debugging
         document.getElementById('studyOnline').classList.add('btn-primary');
         document.getElementById('studyOnline').classList.remove('btn-outline-primary');
-
-        // Hide the study type question and reveal study steps immediately
         document.getElementById('studyTypeQuestion').classList.add('hidden');
         document.getElementById('studySteps').classList.remove('hidden');
         assistantStatus = ''; // Clear assistant status for online studies
         updateLinks();  // Now call updateLinks here
     } else if (type === 'Lab Study') {
-        console.log('Lab Study selected');  // Debugging
         document.getElementById('studyLab').classList.add('btn-primary');
         document.getElementById('studyLab').classList.remove('btn-outline-primary');
-
-        // Hide the study type question and show the next question (Request Assistants)
         document.getElementById('studyTypeQuestion').classList.add('hidden');
-        document.getElementById('nextQuestion').classList.remove('hidden');
+        if (faculty !== 'FGB') {
+            // Show the assistant question if it's not FGB
+            document.getElementById('nextQuestion').classList.remove('hidden');
+        } else {
+            // Automatically set the assistant status for FGB and display the steps
+            assistantStatus = 'n'; // Set to 'n' for Conduct Study Yourself
+            sessionStorage.setItem('assistantStatus', assistantStatus);
+            document.getElementById('studySteps').classList.remove('hidden'); // Show the steps for FGB Lab Study
+            updateLinks(); // Ensure the links are updated correctly for FGB Lab Study
+        }
     }
 
     updateSelections();  // Update selection display
 }
 
-function handleAssistants(status) {
+
+function handleAssistants(status, isPreloaded = false) {
     assistantStatus = status;
+    if (!isPreloaded) {
+        sessionStorage.setItem('assistantStatus', assistantStatus); // Save to sessionStorage if it's a user action
+    }
 
     // Reset button styles
     document.getElementById('assistYes').classList.remove('btn-success');
@@ -111,7 +157,6 @@ function handleAssistants(status) {
         document.getElementById('assistNo').classList.remove('btn-outline-success');
     }
 
-    // Hide Assistants question and reveal study steps
     document.getElementById('nextQuestion').classList.add('hidden');
     document.getElementById('studySteps').classList.remove('hidden');
     updateSelections();  // Update selection display
@@ -125,9 +170,15 @@ function updateLinks() {
         // Online Study doesn't need the assistant status, but we add '/n/' as a placeholder
         studyPath = `${faculty}/online/n`;
     } else {
-        // Lab study needs all three selections (faculty, study type, assistant status)
-        studyPath = `${faculty}/lab`;
-        studyPath += assistantStatus === 'Conduct Study Yourself' ? '/n' : '/y';
+        // Lab study logic
+        if (faculty === 'FGB') {
+            // For FGB, automatically set the assistant status to 'n' and do not show it in the display
+            studyPath = `${faculty}/lab/n`;
+        } else {
+            // For other faculties, respect the chosen assistant status
+            studyPath = `${faculty}/lab`;
+            studyPath += assistantStatus === 'Conduct Study Yourself' ? '/n' : '/y';
+        }
     }
 
     // Update the links with the correct path
@@ -142,11 +193,17 @@ function updateLinks() {
     });
 }
 
-// Reset all selections when the user clicks "Change Selection"
+
+
 function resetSelections() {
     faculty = '';
     studyType = '';
     assistantStatus = '';  // Reset this variable as well
+
+    // Clear sessionStorage
+    sessionStorage.removeItem('faculty');
+    sessionStorage.removeItem('studyType');
+    sessionStorage.removeItem('assistantStatus');
 
     // Hide the selections row and change button
     document.getElementById('selectionsRow').classList.add('hidden');

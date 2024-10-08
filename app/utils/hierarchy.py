@@ -24,12 +24,13 @@ page_hierarchy = {
         "parent": "home", 
         "display": "How to Participate"
         },
+
     
 
     ##### RESEARCHERS #####
-    "overview-on-conducting-a-study": {
+    "researcher-overview": {
         "parent": "home", 
-        "display": "Overview on Conducting a Study"
+        "display": "Researcher manual"
         },
 
         "create-a-new-study": {

@@ -54,19 +54,9 @@
 
             <!-- Main Content Area -->
             <div class="col-md-9">
-                <nav aria-label="breadcrumb" style="font-size: 1rem;">
-                    <ol class="breadcrumb">
-                      {% for crumb in breadcrumb_path %}
-                      <li class="breadcrumb-item">
-                        <a href="{{ url_for('main.show_page', page_name=crumb.name) }}">{{ crumb.display }}</a>
-                      </li>
-                      {% endfor %}
-                    </ol>
-                </nav>
-
+                
                 <nav aria-label="progress-bar" style="font-size: 1rem;">
-                    <div class="d-flex justify-content-between align-items-center" style="width: 100%; margin: 20px 0;">
-                        
+                    <div class="d-flex justify-content-between align-items-center" style="width: 100%; margin: 5px 0;">
                         
                         <!-- Progress Bar -->
                         {% if progress is defined %}
@@ -93,13 +83,13 @@
                     <!-- Top Navigation Buttons -->
                     <div class="d-flex justify-content-between mt-1" style="margin-bottom: 40px;">
                         {% if previous_page %}
-                            <a href="{{ url_for('main.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=previous_page) }}" class="btn btn-outline-primary">Previous</a>
+                            <a href="{{ url_for('manual.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=previous_page) }}" class="btn btn-outline-primary">Previous</a>
                         {% else %}
                             <span></span>
                         {% endif %}
 
                         {% if next_page %}
-                            <a href="{{ url_for('main.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=next_page) }}" class="btn btn-outline-primary">Next</a>
+                            <a href="{{ url_for('manual.show_step', step=step, faculty=faculty, study_type=study_type, assistant_status=assistant_status, page_name=next_page) }}" class="btn btn-outline-primary">Next</a>
                         {% else %}
                             <span></span>
                         {% endif %}

@@ -2,6 +2,7 @@ import markdown
 import re
 from jinja2 import Template
 from flask import url_for
+import yaml
 
 # Existing regex for callouts
 CALLOUT_RE = re.compile(
@@ -74,7 +75,17 @@ def adjust_links(html_content):
 def render_markdown_with_context(file_path, context):
     """Render the markdown file with the given context (like faculty, study_type, assistant_status)."""
     with open(file_path, 'r', encoding='utf-8') as f:
-        template = Template(f.read())
+        content = f.read()
+
+        # Split YAML front matter and markdown content
+        if content.startswith('---'):
+            yaml_section, markdown_content = content.split('---', 2)[1:]
+            yaml_data = yaml.safe_load(yaml_section)
+        else:
+            yaml_data = {}
+            markdown_content = content
+
+        template = Template(markdown_content)
 
         # Render the markdown file with the given context (faculty, study_type, etc.)
         rendered_content = template.render(context)
@@ -88,4 +99,4 @@ def render_markdown_with_context(file_path, context):
         # Adjust the links to point to standalone pages where necessary
         html_content = adjust_links(html_content)
 
-    return html_content
+    return html_content, yaml_data

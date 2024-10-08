@@ -6,7 +6,7 @@
 
     <!-- Form for asking the user about the VBL SONA account -->
     <div class="form-group text-center">
-        <label class="d-block mb-3" style="font-size: 1.2rem;">Keep in mind that even if you have an account on another SONA platform, you still need to request an account from us!</label>
+        <label class="d-block mb-3" style="font-size: 1.2rem;">Keep in mind that even if you have an account on another SONA platform (e.g., FGB subject pool, SBE research participation), you still need to request an account from us!</label>
         
         <!-- Yes/No buttons -->
         <div class="btn-group" role="group" aria-label="VBL SONA account question">
@@ -36,7 +36,21 @@
 </div>
 
 <script>
-    function handleSelection(selection) {
+    // Load selection from localStorage when the page loads
+    document.addEventListener('DOMContentLoaded', function () {
+        const savedSelection = localStorage.getItem('vblAccountSelection');
+        if (savedSelection) {
+            handleSelection(savedSelection, true); // true indicates this is a preloaded value
+        }
+    });
+
+    function handleSelection(selection, isPreloaded = false) {
+        // Save to localStorage only if the user explicitly makes the selection (not preloaded)
+        if (!isPreloaded) {
+            localStorage.setItem('vblAccountSelection', selection);
+        }
+
+        // Show or hide the relevant messages based on the selection
         if (selection === 'no') {
             document.getElementById('accountRequestMessage').classList.remove('hidden');
             document.getElementById('accountConfirmationMessage').classList.add('hidden');

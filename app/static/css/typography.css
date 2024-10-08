@@ -53,5 +53,34 @@ a:hover, a:focus {
     text-decoration: underline; /* Add underline on hover */
 }
 
-/* Load Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&display=swap');
+/* Inline Code Style */
+code {
+    background-color: #e3e6ea; /* Softer grey background for better readability */
+    color: #0056b3; /* Subtle blue color to fit with a professional look */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for clarity */
+    padding: 0.2em 0.4em; /* Adequate padding for inline code */
+    border-radius: 5px; /* Slightly rounded corners */
+    border: 1px solid #d1d5da; /* Light border for definition */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow for a subtle 3D effect */
+}
+
+/* Block Code Style */
+pre {
+    background-color: #f0f4f8; /* Softer background color for a clean look */
+    color: #333; /* Neutral dark color for readability */
+    font-family: 'Courier New', Courier, monospace; /* Monospaced font for consistency */
+    padding: 1.5em; /* Generous padding for better text spacing */
+    border-radius: 8px; /* Rounded corners for a smoother look */
+    overflow-x: auto; /* Allow scrolling for long lines */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly more defined shadow for emphasis */
+    border: 1px solid #d1d5da; /* Soft border to add contrast */
+    margin: 1.5rem 0; /* Increased margin for clearer separation */
+}
+
+/* Style for code inside pre elements to ensure consistency */
+pre code {
+    color: #0056b3; /* Consistent color for text within block code */
+    background: none; /* Remove inline background inside pre */
+    padding: 0; /* Remove padding inside pre to avoid redundancy */
+    border: none; /* Remove border inside pre */
+}

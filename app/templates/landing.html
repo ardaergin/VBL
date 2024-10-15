@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>VU Behavioural Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo_blue.png') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="{{ url_for('main.index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/logo_blue.png') }}"
+                     alt="VU Behavioural Lab Logo"
+                     id="logo">
+                <span class="logo-text">VU Behavioural Lab</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="https://vu.nl/en/about-vu/more-about/our-laboratories-at-vbl">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <video autoplay muted loop id="hero-video">
+            <source src="../static/videos/hero-video.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Advancing Behavioural Science Together</h1>
+            <p>At the VU Behavioural Lab, we unite researchers from psychology, economics, law, and beyond to provide cutting-edge facilities, collaborative opportunities, and comprehensive support — fueling innovative research that shapes our understanding of human behavior.</p>
+            <div class="hero-buttons">
+                <a href="researcher-account" class="btn btn-primary"><i class="fas fa-flask"></i> Researchers</a>
+                <a href="how-to-participate" class="btn btn-secondary"><i class="fas fa-user"></i> Participants</a>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2>About VU Behavioural Lab</h2>
+            <p>The VU Behavioural Lab (VBL) is interdisciplinary and consists of several laboratories from different disciplines – bringing together scholars from behavioural economics, psychology, organizational behaviour, marketing, public administration, law, and communication. It is designed to integrate, professionalize, and expand the facilities for behavioural experimental research, in order to stimulate research and collaborations, and to improve visibility.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions? Reach out to us, and we'll be happy to assist you.</p>
+            <a href="mailto:vbl@vu.nl" class="btn btn-primary">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VU Behavioural Lab. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

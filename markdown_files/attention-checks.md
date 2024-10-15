@@ -1,7 +1,7 @@
 
 # Attention checks
 
-Even though it is not mandatory, we strongly advise you to incorporate attention checks in your survey. This is important to guarantee that students read instructions carefully and to ensure the quality of the data. It will also make the process of [denying payment](granting-or-denying-payment), if neccessary, easier for you.
+Even though it is not mandatory, we strongly advise you to incorporate attention checks in your study. This is important to guarantee that students read instructions carefully and to ensure the quality of the data. It will also make the process of [denying payment](granting-or-denying-payment), if necessary, easier for you.
 
 >[!success] <i class="fa-regular fa-thumbs-up"></i> &nbsp Example: Attention Check Item
 >"This is an attention check item, please select 'four' as your response."

@@ -14,7 +14,7 @@ Setting up your study in the VBL student pool is easier than you think! First, r
 
 ### Step 2: Receiving approval for your study
 
-1. After creating your study, check out the page for [submitting your study for approval](submission-for-approval). 
+1. After creating your study, check out the page for [submitting your study for approval](submit-study-for-approval). 
 2. Once you have submitted your study for approval, we will check your study details. If there is anything that needs to be changed about your study setup, we will contact you. 
 3. Once you have received an approval:
     - If you have **an online study**, you have no further actions to take for Step 2. We will launch your study.

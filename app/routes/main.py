@@ -7,9 +7,15 @@ from app.utils import NAVIGATION, full_page_hierarchy
 bp = Blueprint('main', __name__)
 
 
+# Landing page
 @bp.route('/')
 def index():
-    return redirect(url_for('main.show_page', page_name='home'))
+    return render_template('landing.html')
+
+
+@bp.route('/home')
+def home():
+    return redirect(url_for('main.index'))
 
 
 # Standalone route (e.g., /create-a-new-study)

@@ -15,7 +15,7 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ],
     "SBE-online-n": [
         "step-1-overview",
@@ -33,7 +33,7 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ],
     
     "FGB-lab-y": [
@@ -53,7 +53,7 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         # "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ],
     "FGB-lab-n": [
         "step-1-overview",
@@ -72,7 +72,7 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         # "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ],
     "SBE-lab-y": [
         "step-1-overview",
@@ -91,7 +91,7 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         # "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ],
     "SBE-lab-n": [
         "step-1-overview",
@@ -110,73 +110,47 @@ step_1 = {
         "pre-requisites-and-disqualifiers",
         # "study-url-and-survey-setup",
         "attention-checks",
-        "submission-for-approval"
+        "submit-study-for-approval"
     ]
 }
 
 step_2 = {
 
-
     "FGB-online-n": [
-        "step-2-overview"
+        "step-2-overview",
+        "data-collection",
+        "granting-or-denying-payment"
     ],
     "SBE-online-n": [
-        "step-2-overview"
+        "step-2-overview",
+        "data-collection",
+        "granting-or-denying-payment"
     ],
 
 
 
 
-    "FGB-lab-y": [
-        "step-2-overview"
-    ],
     "FGB-lab-n": [
         "step-2-overview",
+        "data-collection",
         "arrange-time-slots",
-        "arrange-access",
-        "data-collection"
+        "granting-or-denying-payment"
     ],
-    
+
+
+
+
     "SBE-lab-y": [
-        "step-2-overview"
+        "step-2-overview",
+        "data-collection",
+        "granting-or-denying-payment"
     ],
     "SBE-lab-n": [
         "step-2-overview",
+        "data-collection",
         "arrange-time-slots",
         "arrange-access",
-        "data-collection"
-    ]
-}
-
-step_3 = {
-    "FGB-online-n": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "SBE-online-n": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "FGB-lab-y": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "FGB-lab-n": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "SBE-lab-y": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
-    ],
-    "SBE-lab-n": [
-        "step-3-overview",
-        "granting-or-denying-payment",
-        "denying-payment"
+        "study-day",
+        "granting-or-denying-payment"
     ]
 }

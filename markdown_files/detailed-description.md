@@ -32,9 +32,7 @@ If you would like to add more information about your study, you can do so, but p
 
 {% endif %}
 {% if faculty == 'FGB' %}
-As a researcher from FMG, you need to arrange the labs in the FMG yourself. 
-If you will be using the Brain & Behaviour Labs facilities, please consult the 
-[BBLabs Documentation](https://brainbehavior.labs.vu.nl/docs#/){:target="_blank" rel="noopener noreferrer"}.
+As a researcher from FMG, you need to arrange the labs in the FMG yourself. If you will be using the Brain & Behaviour Labs facilities, please consult the [BBLabs Documentation](https://brainbehavior.labs.vu.nl/docs#/){:target="_blank" rel="noopener noreferrer"}.
 
 Importantly, if your experiment is a **walk-in study**, start the description with the word “walk-in” and describe when and where students can show up to participate in your study.
 

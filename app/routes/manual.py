@@ -2,7 +2,7 @@ from flask import Blueprint, render_template
 import os
 from app.utils import render_markdown_with_context
 from app.utils import NAVIGATION, full_page_hierarchy
-from app.utils import step_1, step_2, step_3
+from app.utils import step_1, step_2
 
 bp = Blueprint('manual', __name__)
 
@@ -30,7 +30,6 @@ def show_step(step, faculty, study_type, assistant_status, page_name):
         step_data = {
             1: step_1,
             2: step_2,
-            3: step_3,
         }.get(step)
 
         if not step_data:

@@ -1,0 +1,62 @@
+/* Full-width Header Image with Title */
+.page-header {
+    position: relative;
+    width: 100%;
+    height: 60vh; /* Adjust the height as needed */
+    overflow: hidden;
+}
+
+.page-header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.header-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5); /* Optional: for contrast */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+}
+
+.header-title h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Main Content */
+.main-content {
+    padding: 2rem 0;
+    background-color: #f5f5f5;
+}
+
+
+
+
+/* Ensure the navbar has no extra margin */
+/* Reset Margin and Padding */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.page-header {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* Ensure the navbar has no extra margin */
+.navbar {
+    margin-bottom: 0;
+}
+
+.page-header {
+    margin-top: var(--navbar-height); /* Adjust according to your navbar height */
+    position: relative;
+}

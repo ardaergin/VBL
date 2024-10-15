@@ -184,12 +184,10 @@ function updateLinks() {
     // Update the links with the correct path
     document.getElementById('step1Link').href = `/step-1/${studyPath}/step-1-overview`;
     document.getElementById('step2Link').href = `/step-2/${studyPath}/step-2-overview`;
-    document.getElementById('step3Link').href = `/step-3/${studyPath}/step-3-overview`;
 
     console.log("Generated Links: ", {
         step1: `/step-1/${studyPath}/step-1-overview`,
-        step2: `/step-2/${studyPath}/step-2-overview`,
-        step3: `/step-3/${studyPath}/step-3-overview`
+        step2: `/step-2/${studyPath}/step-2-overview`
     });
 }
 

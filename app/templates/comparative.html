@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comparative Judgment</title>
+</head>
+<body>
+    <h1>Which image is more similar to the reference?</h1>
+    <div class="reference">
+        <img src="{{ url_for('static', filename=images/img_0.jpg) }}" alt="Reference Image">
+    </div>
+    <form method="POST" action="/compare">
+        <div class="stimuli">
+            <button name="x" value="stimulus1">
+                <img src="{{ url_for('static', filename=images/img_1.jpg) }}" alt="Stimulus 1">
+            </button>
+            <button name="y" value="stimulus2">
+                <img src="{{ url_for('static', filename=images/img_2.jpg) }}" alt="Stimulus 2">
+            </button>
+        </div>
+    </form>
+</body>
+</html>

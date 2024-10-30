@@ -4,13 +4,11 @@
     <meta charset="UTF-8">
     <title>VU Behavioural Lab</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
     <!-- Custom CSS -->
     <link rel="stylesheet" href="{{ url_for('static', filename='css/landing.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/typohraphy.css') }}">
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo_blue.png') }}">
 </head>
@@ -19,10 +17,10 @@
     <nav class="navbar" id="navbar">
         <div class="container">
             <a href="{{ url_for('main.index') }}" class="logo">
-                <img src="{{ url_for('static', filename='images/logo_blue.png') }}"
+                <img src="{{ url_for('static', filename='images/vu_logo.jpg') }}"
                      alt="VU Behavioural Lab Logo"
                      id="logo">
-                <span class="logo-text">VU Behavioural Lab</span>
+                <span class="logo-text">| Behavioural Lab</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>

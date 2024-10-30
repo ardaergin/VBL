@@ -2,22 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Comparative Judgment</title>
+    <title>Static Image Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        .reference { margin-top: 20px; }
+        .comparison { margin-top: 40px; display: flex; justify-content: center; }
+        img { width: 200px; height: 200px; margin: 20px; }
+        .text { margin-top: 20px; font-size: 18px; }
+    </style>
 </head>
 <body>
-    <h1>Which image is more similar to the reference?</h1>
+    <!-- Reference Image (img_0) -->
     <div class="reference">
-        <img src="{{ url_for('static', filename=images/img_0.jpg) }}" alt="Reference Image">
+        <img src="{{ url_for('static', filename='images/img_0.jpg') }}" alt="Reference Image">
     </div>
-    <form method="POST" action="/compare">
-        <div class="stimuli">
-            <button name="x" value="stimulus1">
-                <img src="{{ url_for('static', filename=images/img_1.jpg) }}" alt="Stimulus 1">
-            </button>
-            <button name="y" value="stimulus2">
-                <img src="{{ url_for('static', filename=images/img_2.jpg) }}" alt="Stimulus 2">
-            </button>
-        </div>
-    </form>
+
+    <!-- Instruction Text -->
+    <div class="text">
+        <p>Which one is the most similar to the reference image?</p>
+    </div>
+
+    <!-- Comparison Images (img_1 and img_2) -->
+    <div class="comparison">
+        <img src="{{ url_for('static', filename='images/img_1.jpg') }}" alt="Image 1">
+        <img src="{{ url_for('static', filename='images/img_2.jpg') }}" alt="Image 2">
+    </div>
+
 </body>
 </html>

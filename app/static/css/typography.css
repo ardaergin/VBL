@@ -1,56 +1,137 @@
-/* Reset and base styles */
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+/* Color Variables */
+:root {
+    /* Neutral Colors */
+    --color-neutral-lightest: #ffffff;
+    --color-neutral-lighter: #FAF7F5;
+    --color-neutral-light: #f2efed;
+    --color-neutral-medium: #D8D3D0;
+    --color-neutral-dark: #333333;
+    --color-neutral-darkest: #000000;
+
+    /* Primary VU Colors */
+    --color-vu-blue: #0077b3;
+    --color-vu-orange: #cc4100;
+    --color-vu-green: #008053;
+    --color-vu-purple: #3b2171;
+
+    /* Secondary VU Colors */
+    --color-vu-light-blue: #66afd4;
+    --color-vu-light-orange: #e8692d;
+    --color-vu-light-green: #4faf48;
+    --color-vu-light-purple: #8e4da4;
+
+    /* Tertiary VU Colors */
+    --color-vu-pastel-blue: #dff2fd;
+    --color-vu-pastel-orange: #fcd3b6;
+    --color-vu-pastel-green: #ebf0c6;
+    --color-vu-pastel-purple: #ddc6ee;
 }
 
-/* Base Font Settings */
-body, h1, h2, h3, p, button {
-    font-family: 'Cochin', serif; /* Updated to a modern serif font */
-    line-height: 1.8; /* Increased line-height for better readability */
-    color: #333;
+/* Import Fonts as Separate Families */
+@font-face {
+    font-family: 'DINPro Light';
+    src: url('../fonts/DINPro-Light.otf') format('opentype');
+    font-style: normal;
 }
 
-body {
-    background-color: #f8f9fa;
-    font-size: 1.2rem; /* Slightly reduced base font size for better scaling */
+@font-face {
+    font-family: 'DINPro Light Italic';
+    src: url('../fonts/DINPro-LightItalic.otf') format('opentype');
+    font-style: italic;
 }
 
+@font-face {
+    font-family: 'DINPro Medium';
+    src: url('../fonts/DINPro-Medium.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro Medium Italic';
+    src: url('../fonts/DINPro-Italic.otf') format('opentype');
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'DINPro Bold';
+    src: url('../fonts/D-DIN-PRO-700-Bold.otf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DINPro Regular';
+    src: url('../fonts/DINPro.otf') format('opentype');
+    font-style: normal;
+}
+
+
+/* Headings */
 h1 {
-    color: #007bff;
-    font-size: 2.2rem; /* Adjusted size for a more balanced look */
-    font-weight: 700; /* Increased weight for better emphasis */
-    line-height: 1.3; /* Adjusted line-height */
+    font-family: 'DINPro Light';
+    font-size: 40px; /* Adjusted size */
+    line-height: 1.1;
+    color: var(--color-neutral-darkest);
 }
 
 h2 {
-    font-size: 1.9rem; /* Slightly larger size for better hierarchy */
-    font-weight: 600; /* Moderate weight for consistency */
-    line-height: 1.4; /* Adjusted line-height */
+    font-family: 'DINPro Medium';
+    font-size: 22px; /* Adjusted size */
+    line-height: 1.4;
+    color: var(--color-neutral-darkest);
 }
 
-h3 {
-    font-size: 1.6rem; /* Adjusted size for clarity */
-    font-weight: 600; /* Increased weight */
-    line-height: 1.5; /* Adjusted line-height */
+.subtitle {
+    font-family: 'DINPro Regular';
+    font-size: 20px; /* Adjusted size */
+    line-height: 1.4;
+    color: var(--color-vu-blue);
 }
 
-p {
-    font-size: 1.2rem; /* Adjusted size for better readability */
-    margin-bottom: 1.2rem; /* Added margin for better spacing */
+/* Intro/Lead Text */
+.lead-text {
+    font-family: 'DINPro Medium';
+    font-size: 14px; /* Adjusted size */
+    line-height: 1.3;
+    color: var(--color-neutral-darkest);
 }
 
-/* Link styles */
-a {
-    color: #007bff; /* Set the default link color */
-    text-decoration: none; /* Remove underline */
-    transition: color 0.3s; /* Smooth transition for color change */
+/* Body Text */
+p, .body {
+    font-family: 'DINPro Light';
+    font-size: 18px; /* Adjusted size */
+    line-height: 1.8;
+    color: var(--color-neutral-darkest);
 }
 
-a:hover, a:focus {
-    color: #0056b3; /* Slightly darker hover color for better contrast */
-    text-decoration: underline; /* Add underline on hover */
+/* Quotes */
+.quote {
+    font-family: 'DINPro Light';
+    font-size: 18px;
+    line-height: 1.4;
+    color: var(--color-neutral-darkest);
+}
+
+.quote strong {
+    font-family: 'DINPro Bold';
+    color: var(--color-vu-orange);
+}
+
+/* Footer Text */
+.footer {
+    font-family: 'DINPro Medium';
+    font-size: 7px;
+    line-height: 1.4;
+    text-transform: uppercase;
+    color: var(--color-vu-blue);
+}
+
+/* Links */
+a, .link {
+    color: var(--color-vu-blue);
+}
+
+a:hover, .link:hover {
+    color: var(--color-vu-orange);
 }
 
 /* Inline Code Style */

@@ -18,6 +18,12 @@ def home():
     return redirect(url_for('main.index'))
 
 
+# Student page
+@bp.route('/student')
+def student():
+    return render_template('student.html')
+
+
 # Standalone route (e.g., /create-a-new-study)
 @bp.route('/<page_name>')
 def show_page(page_name):

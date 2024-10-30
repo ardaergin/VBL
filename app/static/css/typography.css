@@ -27,7 +27,7 @@
     --color-vu-pastel-purple: #ddc6ee;
 }
 
-/* Import Fonts as Separate Families */
+/* Font Imports */
 @font-face {
     font-family: 'DINPro Light';
     src: url('../fonts/DINPro-Light.otf') format('opentype');
@@ -64,41 +64,39 @@
     font-style: normal;
 }
 
-
-/* Headings */
+/* Heading Styles */
 h1 {
     font-family: 'DINPro Light';
-    font-size: 40px; /* Adjusted size */
+    font-size: 40px;
     line-height: 1.1;
     color: var(--color-neutral-darkest);
 }
 
 h2 {
     font-family: 'DINPro Medium';
-    font-size: 22px; /* Adjusted size */
+    font-size: 22px;
     line-height: 1.4;
     color: var(--color-neutral-darkest);
 }
 
 .subtitle {
     font-family: 'DINPro Regular';
-    font-size: 20px; /* Adjusted size */
+    font-size: 20px;
     line-height: 1.4;
     color: var(--color-vu-blue);
 }
 
-/* Intro/Lead Text */
+/* Text Styles */
 .lead-text {
     font-family: 'DINPro Medium';
-    font-size: 14px; /* Adjusted size */
+    font-size: 14px;
     line-height: 1.3;
     color: var(--color-neutral-darkest);
 }
 
-/* Body Text */
 p, .body {
     font-family: 'DINPro Light';
-    font-size: 18px; /* Adjusted size */
+    font-size: 18px;
     line-height: 1.8;
     color: var(--color-neutral-darkest);
 }
@@ -116,7 +114,7 @@ p, .body {
     color: var(--color-vu-orange);
 }
 
-/* Footer Text */
+/* Footer */
 .footer {
     font-family: 'DINPro Medium';
     font-size: 7px;
@@ -126,42 +124,47 @@ p, .body {
 }
 
 /* Links */
-a, .link {
-    color: var(--color-vu-blue);
+a {
+    color: var(--color-neutral-dark);
+}
+a:hover {
+    color: var(--color-neutral-dark);
 }
 
-a:hover, .link:hover {
-    color: var(--color-vu-orange);
+.link {
+    color: var(--color-vu-blue);
+}
+.link:hover {
+    color: var(--color-vu-light-blue);
 }
 
 /* Inline Code Style */
 code {
-    background-color: #e3e6ea; /* Softer grey background for better readability */
-    color: #0056b3; /* Subtle blue color to fit with a professional look */
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for clarity */
-    padding: 0.2em 0.4em; /* Adequate padding for inline code */
-    border-radius: 5px; /* Slightly rounded corners */
-    border: 1px solid #d1d5da; /* Light border for definition */
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05); /* Light shadow for a subtle 3D effect */
+    background-color: #e3e6ea;
+    color: #0056b3;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0.2em 0.4em;
+    border-radius: 5px;
+    border: 1px solid #d1d5da;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 /* Block Code Style */
 pre {
-    background-color: #f0f4f8; /* Softer background color for a clean look */
-    color: #333; /* Neutral dark color for readability */
-    font-family: 'Courier New', Courier, monospace; /* Monospaced font for consistency */
-    padding: 1.5em; /* Generous padding for better text spacing */
-    border-radius: 8px; /* Rounded corners for a smoother look */
-    overflow-x: auto; /* Allow scrolling for long lines */
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1); /* Slightly more defined shadow for emphasis */
-    border: 1px solid #d1d5da; /* Soft border to add contrast */
-    margin: 1.5rem 0; /* Increased margin for clearer separation */
+    background-color: #f0f4f8;
+    color: #333;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 1.5em;
+    border-radius: 8px;
+    overflow-x: auto;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #d1d5da;
+    margin: 1.5rem 0;
 }
 
-/* Style for code inside pre elements to ensure consistency */
 pre code {
-    color: #0056b3; /* Consistent color for text within block code */
-    background: none; /* Remove inline background inside pre */
-    padding: 0; /* Remove padding inside pre to avoid redundancy */
-    border: none; /* Remove border inside pre */
+    color: #0056b3;
+    background: none;
+    padding: 0;
+    border: none;
 }

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Participate in Research | VU Behavioural Lab</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8cbbd58934.js" crossorigin="anonymous"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/typography.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/navbar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='images/logo_blue.png') }}">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="{{ url_for('main.index') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/vu_logo.jpg') }}" alt="VU Behavioural Lab Logo" id="logo">
+                <span class="logo-text">| Behavioural Lab</span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="https://vu.nl/en/about-vu/more-about/our-laboratories-at-vbl">Facilities</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section with Background Image and Overlay -->
+    <section class="page-header">
+        <div class="header-image">
+            <img src="{{ url_for('static', filename='images/vbl_logo.jpg') }}" alt="VBL Logo Background">
+            <div class="header-overlay">
+                <div class="header-title">
+                    <h1>How to Participate in Research</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Section -->
+    <main class="content-section">
+        <div class="container">
+            <h2>Getting Started</h2>
+            <p>Log in to <a href="https://vu-vbl.sona-systems.com" target="_blank" rel="noopener noreferrer" class="link">VBL SONA</a> using VU SSO (Single Sign-On), and participate in the available studies!</p>
+            <p>When logging in for the first time, fill in your name, email, address, and IBAN (for payment). This information, per VU privacy policy, is only accessed by the financial administration to process payments. Please notify us by email at <a href="mailto:vbl@vu.nl" class="link">vbl@vu.nl</a> if any details change.</p>
+
+            <h2>Paid Research Participation</h2>
+            <p>You will receive an email when a study is available for participation. You may participate in either online or physical lab studies:</p>
+            <ul>
+                <li>For online studies, you can participate immediately.</li>
+                <li>For physical lab studies, you must select a timeslot from the available options.</li>
+            </ul>
+            <p>The compensation rate is <strong>10 EUR per hour</strong> for lab studies and <strong>7.5 EUR per hour</strong> for online studies, with potential performance incentives for some studies.</p>
+            <p>Physical study participation may be canceled up to 24 hours in advance. Three unexcused absences will result in a three-month suspension.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 VU Behavioural Lab. All rights reserved.</p>
+    </footer>
+
+    <!-- Custom JS -->
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>

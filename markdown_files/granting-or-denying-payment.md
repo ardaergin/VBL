@@ -3,11 +3,11 @@
 
 As your study is running, it is your responsibility to keep the list of participants that need to be paid up to date.
 
-The system will automatically send the list of participants of your study that have participated the week before and are not marked as "no-show" to the financial department **every Tuesday at 23:59**.
+We will send the list of participants of your study that have participated the week before and are not marked as "no-show" to the financial department **every Tuesday at 23:59**.
 
-For instance, if a participant participated in your study on October 2nd, Wednesday, and marked as "participated", their financial information will be automatically sent to the financial department on October 8th, Tuesday at 23:59.
+- For instance, if a participant participated in your study on October 2nd, Wednesday, and marked as "participated", their financial information will be sent to the financial department on October 8th, Tuesday at 23:59.
 
-This process is regardless whether your study is completed, since some studies take long durations of time, and participants need to be paid periodically.
+- This process is regardless whether your study is completed, since some studies take long durations of time, and participants need to be paid periodically.
 
 Hence, it is your responsibility to make any changes to the list of participants that need to be paid. If you have not made any changes, all the participants will be paid, even if they are marked as "no action taken", and might not have participated in your study. 
 

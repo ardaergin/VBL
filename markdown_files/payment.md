@@ -3,8 +3,8 @@
 
 The payment for the studies is calculated based on:
 
-- 10€ per hour for physical lab studies.
-- 7.5€ per hour for online studies. 
+- 12.50€ per hour for physical lab studies.
+- 10 € per hour for online studies. 
 
 You can use the tool below to calculate the amount you have to pay each participant based on the [duration](/step-1/duration) of your study (in minutes).
 

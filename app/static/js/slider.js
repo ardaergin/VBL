@@ -1,6 +1,6 @@
 function updateAmount() {
-    var onlineRatePerMinute = 7.5 / 60; // 7 € per hour converted to per minute
-    var physicalRatePerMinute = 10 / 60; // 10 € per hour converted to per minute
+    var onlineRatePerMinute = 10 / 60; // 10 € per hour converted to per minute
+    var physicalRatePerMinute = 12.5 / 60; // 12.50 € per hour converted to per minute
 
     var minutes = document.getElementById("timeSlider").value;
     document.getElementById("timeDisplay").textContent = minutes;

@@ -7,8 +7,10 @@ load_dotenv()
 
 class Config:
     SECRET_KEY = os.getenv('SECRET_KEY')
-    SESSION_TYPE = os.getenv('SESSION_TYPE')
-    SESSION_FILE_DIR = os.getenv('SESSION_FILE_DIR')
+    SESSION_TYPE = os.getenv('SESSION_TYPE', 'filesystem')
+    SESSION_FILE_DIR = os.getenv('SESSION_FILE_DIR', './flask_session')  # or another safe default path
+    #SESSION_TYPE = os.getenv('SESSION_TYPE')
+    #SESSION_FILE_DIR = os.getenv('SESSION_FILE_DIR')
     SESSION_PERMANENT = False
     SESSION_USE_SIGNER = True
     SESSION_COOKIE_HTTPONLY = True

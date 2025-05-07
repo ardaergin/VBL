@@ -10,6 +10,6 @@ Professor of Consumer Behavior, School of Business and Economics
 Lab Manager       
 [s.desikan@vu.nl](mailto:s.desikan@vu.nl)     
 
-**Arda Ergin**      
+**Nadja Spannowsky**      
 Research Assistant and SONA administrator       
-[a.ergin2@student.vu.nl](mailto:a.ergin2@student.vu.nl)          
+[n.spannowsky@student.vu.nl](mailto:n.spannowsky@student.vu.nl)          

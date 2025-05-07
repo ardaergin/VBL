@@ -8,3 +8,5 @@ At VBL, we have different kinds of labs
 - Conference Room       
 - 8-15 person Large group rooms     
 - Common computer rooms (usually reserved for educational purposes)
+
+For more information, visit the [VU Behavioural Lab website](https://vu.nl/en/about-vu/organisations/vu-behavioural-lab).

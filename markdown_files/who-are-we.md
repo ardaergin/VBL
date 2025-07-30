@@ -3,7 +3,7 @@
 
 **Femke van Horen**     
 Scientific Director      
-Professor of Consumer Behavior, School of Business and Economics        
+Professor of Consumer Behaviour, School of Business and Economics        
 [femke.van.horen@vu.nl](mailto:femke.van.horen@vu.nl)       
 
 **Srinidhi Desikan**        

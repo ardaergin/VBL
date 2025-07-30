@@ -9,7 +9,7 @@ Here, explain your study in **a single sentence** to give students a general ide
 
 >[!success] <i class="fa-regular fa-thumbs-up"></i> &nbsp Example: Good Abstract
 ><br>
->"You will participate in a series of short studies about consumer behavior."
+>"You will participate in a series of short studies about consumer behaviour."
 
 >[!error] <i class="fa-regular fa-circle-xmark"></i> &nbsp Example: Inappropriate Abstract
 ><br>

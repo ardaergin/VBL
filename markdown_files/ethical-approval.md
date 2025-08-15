@@ -4,7 +4,9 @@
 All studies at VBL require an ethical approval. When you are filling in your study information on SONA, you will need to provide the Ethical Review Board (ERB) approval code for your study.
 
 {% if faculty == 'SBE' %}
-You can start the ethical approval procedure by filling in the [online ethics self-check](https://vueconomics.eu.qualtrics.com/jfe/form/SV_1SKjMzceWRZIk9D){:target="_blank" rel="noopener noreferrer"}. 
+Please contact your faculty's ethical approval board for getting this code.
+
+If you belong to the faculty SBE, you can start the ethical approval procedure by filling in the [online ethics self-check](https://vueconomics.eu.qualtrics.com/jfe/form/SV_1SKjMzceWRZIk9D){:target="_blank" rel="noopener noreferrer"}. 
 
 If your research does not require a Ethics Review Board approval, you will automatically receive a ethical review code (e.g., `SBE3/29/2021djg590`).
 

@@ -1,15 +1,13 @@
 
 # Granting or denying payment
 
-As your study is running, it is your responsibility to keep the list of participants that need to be paid up to date.
+While your study is running, you are responsible for maintaining an up-to-date list of participants who require payment. This list must include each participant’s Sona ID and the amount owed. **Please send this list to the [VBL administration](mailto:vbl@vu.nl) at the end of each week.**
 
-We will send the list of participants of your study that have participated the week before and are not marked as "no-show" to the financial department **every Tuesday at 23:59**.
+Once received, we will initiate the payment process with the budget holder and the finance department to ensure that participants are paid on time.
 
-- For instance, if a participant participated in your study on October 2nd, Wednesday, and marked as "participated", their financial information will be sent to the financial department on October 8th, Tuesday at 23:59.
+- It is essential that you provide this information every week. Failure to do so may result in your study being deactivated until the list is submitted.
 
-- This process is regardless whether your study is completed, since some studies take long durations of time, and participants need to be paid periodically.
-
-Hence, it is your responsibility to make any changes to the list of participants that need to be paid. If you have not made any changes, all the participants will be paid, even if they are marked as "no action taken", and might not have participated in your study. 
+- This requirement applies regardless of whether your study is completed. Since some studies run over longer periods, participants must be paid regularly throughout the process.
 
 >[!info] <i class="fa-solid fa-info"></i> &nbsp How to navigate to the payment page on SONA 
 >

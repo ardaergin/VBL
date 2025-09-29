@@ -72,6 +72,16 @@
     </div>
   </details>
 
+    <details class="faq-item">
+    <summary>
+      <span class="q">Will my study be deactivated if there are no new time slots?</span>
+      <span class="chev" aria-hidden="true"></span>
+    </summary>
+    <div class="a">
+      Yes. If no new time slots are added within 3 months, your study will be deactivated. This ensures that the system only displays active and available studies for participants.
+    </div>
+  </details>
+
  <details class="faq-item">
     <summary>
       <span class="q">I would like to invite an external researcher to the study.</span>

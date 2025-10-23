@@ -10,7 +10,7 @@ If you belong to the faculty SBE, you can start the ethical approval procedure b
 
 If your research does not require a Ethics Review Board approval, you will automatically receive a ethical review code (e.g., `SBE3/29/2021djg590`).
 
-If the online ethics self-check requests that your research needs additional approval, you will be asked to download a copy of your ethics application so that you can send it to the Ethics Review Board for further evaluation. For more information regarding this, see [this page](https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office){:target="_blank" rel="noopener noreferrer"}.
+If the online ethics self-check requests that your research needs additional approval, you will be asked to download a copy of your ethics application so that you can send it to the Ethics Review Board for further evaluation. For more information regarding this, see <u>**[this page](https://vu.nl/en/about-vu/faculties/school-of-business-and-economics/more-about/research-office){:target="_blank" rel="noopener noreferrer"}**</u>.
 {% endif %}
 
 {% if faculty == 'FGB' %}

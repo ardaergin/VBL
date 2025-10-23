@@ -18,6 +18,6 @@ You will receive a notification via email when a study is available for you to p
 - You can immediately participate in an available online study.
 - For a physical lab study, you will need  to choose your timeslot from the available timeslots
 
-The compensation rate is **12.5 EUR per hour** if you participate in a on-site lab study and **10 EUR per hour** if you participate in an online study. This rate can be higher for studies with a performance incentive.
+The compensation rate is **12.5 EUR per hour** if you participate in a on-site lab study and **10 EUR per hour** if you participate in an online study. This rate can be higher for studies with a performance incentive. After participating, payment will usually take 2-3 weeks.
 
 For physical studies, you are allowed to cancel your participation from the research up to 24 hours prior to your scheduled time. If circumstances prevent you from attending after this period, please notify the researchers by email. **Accumulating three unexcused absences will result in a suspension of your account for three months**.

@@ -3,7 +3,8 @@
 
 While your study is running, you are responsible for maintaining an up-to-date list of participants who require payment. This list must include each participant’s Sona ID and the amount owed. **Please send this list to the [VBL administration](mailto:vbl@vu.nl) at the end of each week.**
 
-Once received, we will initiate the payment process with the budget holder and the finance department to ensure that participants are paid on time.
+Once received, we will initiate the payment process with the budget holder and the finance department to ensure that participants are paid on time. The budget holder must respond to the payment request email with everyone in CC to approve it. 
+During the holiday season, it is the responsibility of the researcher/budget holder to ensure that payment emails are answered.
 
 - It is essential that you provide this information every week. Failure to do so may result in your study being deactivated until the list is submitted.
 

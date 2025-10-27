@@ -27,7 +27,7 @@
     </ul>
     <p>
       Once received, the budget holder will be contacted for approval, after which the payment is processed.  
-      If researchers fail to provide this information, the budget holders will be contacted directly using the details stored in the system, without the possibility for researchers to intervene further.
+      If researchers fail to provide this information, the budget holders will be contacted directly using the details stored in the system, without the possibility for researchers to intervene further. This will also lead to a deactivation of the study.
     </p>
     </div>
   </details>
@@ -58,7 +58,7 @@
       <span class="chev" aria-hidden="true"></span>
     </summary>
     <div class="a">
-      The VU Student Pool consists of students from various academic backgrounds who participate in behavioural and cognitive research studies. They are available throughout the entire academic year. As of August 2025, the pool includes 550 students, and the number is steadily increasing as more students join.
+      The VU Student Pool consists of students from various academic backgrounds who participate in behavioural and cognitive research studies. They are available throughout the entire academic year. As of October 2025, the pool includes 1200 students, and the number is steadily increasing as more students join.
     </div>
   </details>
 
